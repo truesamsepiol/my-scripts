@@ -45,7 +45,14 @@ static void check_params(int argc, char **argv) {
 int main(int argc, char **argv){
     
     check_params(argc, argv);
-    printf("path ->> %s\nlow ->> %s\n", setting.path, setting.low);
+
+    if(strcmp(setting.path, "no_file") == 0){
+	    fprintf(stderr, "\n---> Please specify path to application list <---\n");
+	    usage();
+	    exit(0);
+    }
+
+
     printf("All rigth\n");
     return 0;
 }
