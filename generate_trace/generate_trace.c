@@ -48,10 +48,11 @@ static void check_params(int argc, char **argv) {
 	exit(0);
     }
     while((opt = getopt(argc, argv, "ha:f:l:n:s:")) >= 0) { 
-	    switch(opt) {                                                                                            	case 'h': usage();
-			  exit(0);
+	    switch(opt) {
+		case 'h': usage();  exit(0);
 			  break;
-		case 'a': setting.alpha     = atof(optarg); break;                                      		case 'f': setting.path      = optarg; break;
+		case 'a': setting.alpha     = atof(optarg); break;
+		case 'f': setting.path      = optarg; break;
 		case 'l': setting.low       = optarg; break; 
 		case 'n': setting.nr_line   = atoi(optarg); break;
 		case 's': setting.seed      = atoi(optarg); break;
@@ -153,13 +154,14 @@ void generate_file(){
     }
     
     fprintf(trace, "app name,number of dpus,number of taskelt,input data\n");
-    int nr_apps = 0;
+    int nr_apps = 1;
     char buffer[SIZE_MAX_APP_NAME];
     while(fgets(buffer, SIZE_MAX_APP_NAME, desp)){
        sscanf(buffer, "%s %u", apps_name[nr_apps], &max_data_per_apps[nr_apps]);
        nr_apps += 1; 
     }
      
+    nr_apps -= 1;
     rand_val(setting.seed);
     for(int line = 0; line < setting.nr_line; line++){
 	    int zipf_app     = zipf(setting.alpha, nr_apps);
