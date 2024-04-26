@@ -47,22 +47,19 @@ static void check_params(int argc, char **argv) {
         usage();
 	exit(0);
     }
-    while((opt = getopt(argc, argv, "ha:f:l:n:s")) >= 0) {                                                
-        switch(opt) {                                                                                    
-        case 'h':                                                                                        
-            usage();                                                                                         
-            exit(0);                                                                                         
-            break;
-        case 'a': setting.alpha     = atof(optarg); break;                                                 
-        case 'f': setting.path      = optarg; break;                                                 
-        case 'l': setting.low       = optarg; break; 
-        case 'n': setting.nr_line   = atoi(optarg); break;                                                 
-        case 's': setting.seed      = atoi(optarg); break;                                                 
-        default:
-            fprintf(stderr, "\nUnrecognized option!\n");                                                 
-            usage();                                                                                     
-            exit(0);                                                                                     
-        }                                                                                                
+    while((opt = getopt(argc, argv, "ha:f:l:n:s:")) >= 0) { 
+	    switch(opt) {                                                                                            	case 'h': usage();
+			  exit(0);
+			  break;
+		case 'a': setting.alpha     = atof(optarg); break;                                      		case 'f': setting.path      = optarg; break;
+		case 'l': setting.low       = optarg; break; 
+		case 'n': setting.nr_line   = atoi(optarg); break;
+		case 's': setting.seed      = atoi(optarg); break;
+		default :
+			  fprintf(stderr, "\nUnrecognized option!\n");
+			  usage();
+			  exit(0);
+	}                                                                                             
     }
 }
 
@@ -83,7 +80,7 @@ double rand_val(int seed){
     if (seed > 0)
     {
         x = seed;
-        return 0.0;
+        return (0.0);
     }
 
     // RNG using integer arithmetic
@@ -136,7 +133,7 @@ int zipf(double alpha, int n){
     }
 
     // Assert that zipf_value is between 1 and N
-    //assert((zipf_value >=1) && (zipf_value <= n));
+    assert((zipf_value >=1) && (zipf_value <= n));
 
     return(zipf_value);
 }
@@ -159,18 +156,16 @@ void generate_file(){
     int nr_apps = 0;
     char buffer[SIZE_MAX_APP_NAME];
     while(fgets(buffer, SIZE_MAX_APP_NAME, desp)){
-       sscanf(buffer, "%s %d", apps_name[nr_apps], &max_data_per_apps[nr_apps]);
+       sscanf(buffer, "%s %u", apps_name[nr_apps], &max_data_per_apps[nr_apps]);
        nr_apps += 1; 
     }
      
     rand_val(setting.seed);
-    srand(time(0)); // we go to modify this implementation later
     for(int line = 0; line < setting.nr_line; line++){
 	    int zipf_app     = zipf(setting.alpha, nr_apps);
 	    int zipf_dpu     = zipf(setting.alpha, MAX_DPUS_PER_RANK);
 	    int zipf_tasklet = zipf(setting.alpha, MAX_TASKLETS);
-	    
-	    int zipf_data    = (int)rand() / (int)max_data_per_apps[zipf_app];//and this implementation of random //zipf(setting.alpha, max_data_per_apps[zipf_app]);
+	    int zipf_data    = zipf(setting.alpha, max_data_per_apps[zipf_app]);
 
 	    fprintf(trace, "%s,%d,%d,%d\n", apps_name[zipf_app], zipf_dpu, zipf_tasklet, zipf_data);
     }
