@@ -142,7 +142,7 @@ int zipf(double alpha, int n){
 
 void generate_file(){
     FILE *desp  = fopen(setting.path, "r");
-    FILE *trace = fopen("traces.csv", "w");
+    FILE *trace = fopen("traces", "w");
 
     if(desp == NULL){
         fprintf(stderr, "\n!!!    NO SUCH FILE    !!!\n");
@@ -170,10 +170,10 @@ void generate_file(){
 	    int zipf_tasklet = (int)rand() % (int)MAX_TASKLETS + 1;
 	    int zipf_data    = (int)rand() % (int) max_data_per_apps[zipf_app] + 1;
 
-	    fprintf(trace, "%s,%d,%d,%d\n", apps_name[zipf_app], zipf_dpu, zipf_tasklet, zipf_data);
+	    fprintf(trace, "%s %d %d %d\n", apps_name[zipf_app], zipf_dpu, zipf_tasklet, zipf_data);
     }
 
-    printf("\n\n------> output file \"traces.csv\" is generated <------\n");
+    printf("\n\n------> output file \"traces\" is generated <------\n");
     fclose(desp);
     fclose(trace);
 }
