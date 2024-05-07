@@ -59,10 +59,10 @@ void full_scheduler(){
 		exit(0);
 	}
 	
-	int id              = 0;
 	int round           = 0;
 	int nr_dpus_total   = 0;
 	char buffer[MAX_TRACES];
+
 	struct dpu_set_t set, dpu;
 
 	while(fgets(buffer, MAX_TRACES, desp)){
@@ -113,9 +113,9 @@ void full_scheduler(){
 
 	DPU_ASSERT(dpu_launch(set, DPU_SYNCHRONOUS));
 
-	DPU_FOREACH(set, dpu){
+	DPU_FOREACH(set, dpu)
 		DPU_ASSERT(dpu_log_read(dpu, stdout));
-	}
+	
 	
 	DPU_ASSERT(dpu_free(set));
 

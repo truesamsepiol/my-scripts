@@ -4,10 +4,16 @@
 #include <string.h>
 #include <sys/wait.h>
 #include <sys/times.h>
+#include <assert.h>
+#include <getopt.h>
+
+#include <dpu.h>
+#include <dpu_log.h>
 
 #define MAX_TRACES 10000
 #define NR_PARAMETERS 7
 #define SIZE_OF_COMMAND_PARAMETERS 30
+#define NR_DPUS_MAX 480
 
 
 struct parameter{
@@ -56,8 +62,9 @@ void single_scheduler(){
 		exit(0);
 	}
 	
+	int round           = 0;
+	int nr_dpus_total   = 0;
 	char buffer[MAX_TRACES];
-	int round = 0;
 
 	while(fgets(buffer, MAX_TRACES, desp)){
 		char app_name[MAX_TRACES];
@@ -74,6 +81,7 @@ void single_scheduler(){
 
 		programs[round].program[2] = malloc(sizeof(char) * strlen(nr_dpus));
 		strcpy(programs[round].program[2], nr_dpus);
+		nr_dpus_total += atoi(nr_dpus);
 
 		programs[round].program[3] = malloc(sizeof(char) * SIZE_OF_COMMAND_PARAMETERS);
 		strcpy(programs[round].program[3], "-NR_TASKLETS");
@@ -89,19 +97,18 @@ void single_scheduler(){
 		
 		round += 1;
 	}	
+
+
 	for(int id = 0; id < round; id++){
-		char *program[NR_PARAMETERS];
+		struct dpu_set_t set, dpu;
 
-		for(int j = 0; j < NR_PARAMETERS; j++){
-			program[j] = malloc(sizeof(char) * strlen(programs[id].program[j]));
-			strcpy(program[j], programs[id].program[j]);
-		}
+		DPU_ASSERT(dpu_alloc(atoi(programs[id].program[2]), NULL, &set));
+		DPU_ASSERT(dpu_load(set, programs[id].program[0], NULL));
+		DPU_ASSERT(dpu_launch(set, DPU_SYNCHRONOUS));
 
-		int pid = fork();
-		if(pid == 0)
-			execv(program[0], program);
-		else
-			wait(NULL);
+		DPU_FOREACH(set, dpu)
+			DPU_ASSERT(dpu_log_read(dpu, stdout));
+		DPU_ASSERT(dpu_free(set));
 	}
 
 	printf("\n\n################# END Excution of %d programs #################\n\n", round);
