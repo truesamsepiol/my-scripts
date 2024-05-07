@@ -1,0 +1,7 @@
+compilation --> dpu-upmem-dpurte-clang -o hello_world hello_world.c
+lancer des binaire --> dpu-lldb
+			- file chemin_vers_binaire
+			- process launch
+compilation host --> gcc --std=c99 helloworld_host.c -o helloworld_host -I/usr/include/dpu -ldpu
+gcc -O0 -g --std=c99 -o full_scheduler full_scheduler.c  -I/usr/include/dpu -ldpu
+gcc -O0 -g --std=c99 -o single_scheduler single_scheduler.c  -I/usr/include/dpu -ldpu
