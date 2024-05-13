@@ -8,7 +8,7 @@
 #include <assert.h>
 #include <time.h>
 
-#define MAX_DPUS_PER_RANK 244 
+#define MAX_DPUS_PER_RANK 20
 #define MAX_TASKLETS 24
 #define SIZE_MAX_APP_NAME 256
 #define MAX_APPS 1024
@@ -153,7 +153,6 @@ void generate_file(){
 	exit(0);
     }
     
-    fprintf(trace, "app name,number of dpus,number of taskelt,input data\n");
     int nr_apps = 1;
     char buffer[SIZE_MAX_APP_NAME];
     while(fgets(buffer, SIZE_MAX_APP_NAME, desp)){
@@ -170,7 +169,7 @@ void generate_file(){
 	    int zipf_tasklet = (int)rand() % (int)MAX_TASKLETS + 1;
 	    int zipf_data    = (int)rand() % (int) max_data_per_apps[zipf_app] + 1;
 
-	    fprintf(trace, "%s %d %d %d\n", apps_name[zipf_app], zipf_dpu, zipf_tasklet, zipf_data);
+	    fprintf(trace, "./%s %d %d %d\n", apps_name[zipf_app], zipf_dpu, zipf_tasklet, zipf_data);
     }
 
     printf("\n\n------> output file \"traces\" is generated <------\n");
