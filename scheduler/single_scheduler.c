@@ -105,6 +105,7 @@ void single_scheduler(){
 	parse_argv();
 	
 	for(int id = 0; id < tour; id++){
+		printf("\n++++++++++++++++ Begin round %d ++++++++++++++++\n", id + 1);
 		struct dpu_set_t set, dpu;
 		if(atoi(programs[id].program[2]) > NR_DPUS_MAX){
 			fprintf(stderr, "The program %s ask more than DPUS we have\n"\
@@ -119,6 +120,8 @@ void single_scheduler(){
 		DPU_FOREACH(set, dpu)
 			DPU_ASSERT(dpu_log_read(dpu, stdout));
 		DPU_ASSERT(dpu_free(set));
+		printf("++++++++++++++++ End round %d ++++++++++++++++\n\n", id + 1);
+		sleep(2); // wait a few minutes for dpu_free to finish 
 	}
 
 	printf("\n\n################# END Excution of %d programs #################\n\n", tour);
