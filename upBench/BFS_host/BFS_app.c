@@ -24,8 +24,6 @@
 
 // Main of the Host Application
 void bfs(int argc, char *argv[]) {
-    printf(" \n\n************** In BFS Great ****************\n\n");
-    exit(0);
     // Process parameters EO -> on our own parameters
     struct Params p = input_params(argc, argv);
 

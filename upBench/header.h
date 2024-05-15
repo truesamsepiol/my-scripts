@@ -16,6 +16,8 @@
 #define SIZE_OF_COMMAND_PARAMETERS 30
 #define NR_DPUS_MAX 480
 
+#define BFS_BINARY "./BFS_bin/dpu_code"
+
 struct dpu_set_t set, dpu;
 
 struct parameter{

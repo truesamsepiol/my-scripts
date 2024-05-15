@@ -91,13 +91,65 @@ void single_scheduler(){
 	 			NR_DPUS_MAX, programs[id].program[2]);	
 			exit(0);
 		}
-		DPU_ASSERT(dpu_alloc(atoi(programs[id].program[2]), NULL, &set));
-		DPU_ASSERT(dpu_load(set, programs[id].program[0], NULL));
-		DPU_ASSERT(dpu_launch(set, DPU_SYNCHRONOUS));
+		
+		if(!strcmp(programs[id].program[0], "./BFS")){
+			printf("BFS\n");
+		}
+		else if(!strcmp(programs[id].program[0], "./BS")){
+			printf("BS\n");
+		}
+		else if(!strcmp(programs[id].program[0], "./GEMV")){
+			printf("GEMV\n");
+		}
+		else if(!strcmp(programs[id].program[0], "./HST-L")){
+			printf("HST-L\n");
+		}
+		else if(!strcmp(programs[id].program[0], "./HST-S")){
+			printf("HST-S\n");
+		}
+		else if(!strcmp(programs[id].program[0], "./MLP")){
+			printf("MLP\n");
+		}
+		else if(!strcmp(programs[id].program[0], "./NW")){
+			printf("NW\n");
+		}
+		else if(!strcmp(programs[id].program[0], "./RED")){
+			printf("RED\n");
+		}
+		else if(!strcmp(programs[id].program[0], "./SCAN-RSS")){
+			printf("SCAN-RSS\n");
+		}
+		else if(!strcmp(programs[id].program[0], "./SCAN-SSA")){
+			printf("SCAN-SSA\n");
+		}
+		else if(!strcmp(programs[id].program[0], "./SEL")){
+			printf("SEL\n");
+		}
+		else if(!strcmp(programs[id].program[0], "./SpMV")){
+			printf("SpMV\n");
+		}
+		else if(!strcmp(programs[id].program[0], "./TRNS")){
+			printf("TRNS\n");
+		}
+		else if(!strcmp(programs[id].program[0], "./TS")){
+			printf("TS\n");
+		}
+		else if(!strcmp(programs[id].program[0], "./UNI")){
+			printf("UNI\n");
+		}
+		else if(!strcmp(programs[id].program[0], "./VA")){
+			printf("VA\n");
+		}
+		else{
 
-		DPU_FOREACH(set, dpu)
-			DPU_ASSERT(dpu_log_read(dpu, stdout));
-		DPU_ASSERT(dpu_free(set));
+			DPU_ASSERT(dpu_alloc(atoi(programs[id].program[2]), NULL, &set));
+			DPU_ASSERT(dpu_load(set, programs[id].program[0], NULL));
+			DPU_ASSERT(dpu_launch(set, DPU_SYNCHRONOUS));
+
+			DPU_FOREACH(set, dpu)
+				DPU_ASSERT(dpu_log_read(dpu, stdout));
+			DPU_ASSERT(dpu_free(set));
+		}
 		printf("++++++++++++++++ End round %d ++++++++++++++++\n\n", id + 1);
 		sleep(2); // wait a few minutes for dpu_free to finish 
 	}
@@ -114,8 +166,7 @@ int main(int argc, char **argv){
 		exit(0);
 	}
 	
-	bfs(argc, argv);
-	//single_scheduler();
+	single_scheduler();
 
 	return 0;
 }
