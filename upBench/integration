@@ -1,0 +1,18 @@
+apps        |  single  |  full 
+++++++++++++ ++++++++++ +++++++++
+BFS         |    ok    |
+BS          |    ok    |
+GEMV        |       |   
+HST-L       |       |
+HST-S       |       |
+MLP         |       |
+NW          |       |
+RED         |       |
+SCAN-RSS    |       |
+SCAN-SSA    |       |
+SEL         |       |
+SpMV        |       |
+TRNS        |       |
+TS          |       |
+UNI         |       |
+VA          |       |
