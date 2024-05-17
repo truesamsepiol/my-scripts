@@ -126,7 +126,7 @@ void single_scheduler(){
 		}
 		else if(!strcmp(programs[id].program[0], "./NW")){
 			printf("--------------------- Begin NW --------------------- \n");
-			//nw(atoi(programs[id].program[2]));
+			nw(atoi(programs[id].program[2]));
 			printf("--------------------- End   NW --------------------- \n");
 		}
 		else if(!strcmp(programs[id].program[0], "./RED")){
