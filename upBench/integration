@@ -2,17 +2,17 @@ apps        |  single  |  full
 ++++++++++++ ++++++++++ +++++++++
 BFS         |    ok    |
 BS          |    ok    |
-GEMV        |       |   
-HST-L       |       |
-HST-S       |       |
-MLP         |       |
-NW          |       |
-RED         |       |
-SCAN-RSS    |       |
-SCAN-SSA    |       |
-SEL         |       |
-SpMV        |       |
-TRNS        |       |
-TS          |       |
-UNI         |       |
-VA          |       |
+GEMV        |     |   
+HST-L       |    ok    |
+HST-S       |    ok    |
+MLP         |     |
+NW          |    ok    |
+RED         |    ok    |
+SCAN-RSS    |    ok    |
+SCAN-SSA    |    ok    |
+SEL         |     |
+SpMV        |     |
+TRNS        |     |
+TS          |     |
+UNI         |     |
+VA          |     |
