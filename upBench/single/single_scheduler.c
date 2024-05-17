@@ -141,7 +141,7 @@ void single_scheduler(){
 		}
 		else if(!strcmp(programs[id].program[0], "./SCAN-SSA")){
 			printf("--------------------- Begin SCAN-SSA --------------------- \n");
-			//scan_ssa(atoi(programs[id].program[2]));
+			scan_ssa(atoi(programs[id].program[2]));
 			printf("--------------------- End   SCAN-SSA --------------------- \n");
 		}
 		else if(!strcmp(programs[id].program[0], "./SEL")){
