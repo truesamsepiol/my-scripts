@@ -136,7 +136,7 @@ void single_scheduler(){
 		}
 		else if(!strcmp(programs[id].program[0], "./SCAN-RSS")){
 			printf("--------------------- Begin SCAN-RSS --------------------- \n");
-			//scan_rss(atoi(programs[id].program[2]));
+			scan_rss(atoi(programs[id].program[2]));
 			printf("--------------------- End   SCAN-RSS --------------------- \n");
 		}
 		else if(!strcmp(programs[id].program[0], "./SCAN-SSA")){

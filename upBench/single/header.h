@@ -33,3 +33,4 @@ void hst_l(int nr_dpus);
 void hst_s(int nr_dpus);
 void nw(int nr_dpus);
 void red(int nr_dpus);
+void scan_rss(int nr_dpus);
