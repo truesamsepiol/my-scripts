@@ -29,3 +29,4 @@ struct p{
 void bfs(int nr_dpus);
 void bs(int nr_dpus);
 void gemv(int nr_dpus);
+void hst_l(int nr_dpus);

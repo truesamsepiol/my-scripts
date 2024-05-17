@@ -111,7 +111,7 @@ void single_scheduler(){
 		}
 		else if(!strcmp(programs[id].program[0], "./HST-L")){
 			printf("--------------------- Begin HST-L --------------------- \n");
-			//hst_l(atoi(programs[id].program[2]));
+			hst_l(atoi(programs[id].program[2]));
 			printf("--------------------- End   HST-L --------------------- \n");
 		}
 		else if(!strcmp(programs[id].program[0], "./HST-S")){
