@@ -1,6 +1,6 @@
 #!/bin/bash
 
-apps="BFS_app.o BS_app.o GEMV_app.o timer.o HST-L_app.o HST-S_app.o NW_app.o"
+apps="BFS_app.o BS_app.o GEMV_app.o timer.o HST-L_app.o HST-S_app.o NW_app.o RED_app.o"
 
 gcc generate_trace.c -o generate_trace -lm && echo -e '\e[1;32m[ OK ] for generate_trace\e[m' \ &&
 
@@ -19,6 +19,8 @@ make -f HST-L_Makefile &&  echo -e '\e[1;32m[ OK ] for HST-L\e[m' \ &&
 make -f HST-S_Makefile &&  echo -e '\e[1;32m[ OK ] for HST-S\e[m' \ &&
 
 make -f NW_Makefile &&  echo -e '\e[1;32m[ OK ] for NW\e[m' \ &&
+
+make -f RED_Makefile &&  echo -e '\e[1;32m[ OK ] for RED\e[m' \ &&
 
 gcc -c timer.c &&  echo -e '\e[1;32m[ OK ] for timer\e[m' \ &&
 
