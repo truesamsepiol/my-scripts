@@ -17,3 +17,5 @@ make -f GEMV_Makefile &&  echo -e '\e[1;32m[ OK ] for GEMV\e[m'
 gcc -c timer.c &&  echo -e '\e[1;32m[ OK ] for timer\e[m'
 
 gcc -O0 -g --std=c99 -o single_scheduler single_scheduler.c $apps -I/usr/include/dpu -ldpu && echo -e '\e[1;32m[ OK ] for single_scheduler\e[m'
+
+./single_scheduler -f traces

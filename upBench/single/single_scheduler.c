@@ -96,12 +96,12 @@ void single_scheduler(){
 		
 		if(!strcmp(programs[id].program[0], "./BFS")){
 			printf("--------------------- Begin BFS --------------------- \n");
-			//bfs(atoi(programs[id].program[2]));
+			bfs(atoi(programs[id].program[2]));
 			printf("--------------------- End   BFS --------------------- \n");
 		}
 		else if(!strcmp(programs[id].program[0], "./BS")){
 			printf("--------------------- Begin BS --------------------- \n");
-			//bs(atoi(programs[id].program[2]));
+			bs(atoi(programs[id].program[2]));
 			printf("--------------------- End   BS --------------------- \n");
 		}
 		else if(!strcmp(programs[id].program[0], "./GEMV")){
