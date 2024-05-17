@@ -1,6 +1,6 @@
 /**
 * app.c
-* HST-L Host Application Source File
+* HST-S Host Application Source File
 *
 */
 #include <stdio.h>
@@ -14,13 +14,13 @@
 #include <getopt.h>
 #include <assert.h>
 
-#include "../HST-L_support/common.h"
-#include "../HST-L_support/timer.h"
-#include "../HST-L_support/params.h"
+#include "../HST-S_support/common.h"
+#include "../HST-S_support/timer.h"
+#include "../HST-S_support/params.h"
 
 // Define the DPU Binary path as DPU_BINARY here
 #ifndef DPU_BINARY
-#define DPU_BINARY "./HST-L_bin/dpu_code"
+#define DPU_BINARY "./HST-S_bin/dpu_code"
 #endif
 
 #if ENERGY
@@ -74,12 +74,10 @@ static void histogram_host(unsigned int* histo, T* A, unsigned int bins, unsigne
 }
 
 // Main of the Host Application
-void hst_l(int nr_dpus) {
-
-	//EO -> fictif parameters
+void hst_s(int nr_dpus) {
     int argc;
     char **argv;
-    struct Params p = hst_l_input_params(argc, argv);
+    struct Params p = hst_s_input_params(argc, argv);
 
     struct dpu_set_t dpu_set, dpu;
     uint32_t nr_of_dpus;
@@ -102,7 +100,7 @@ void hst_l(int nr_dpus) {
         input_size = p.input_size * nr_of_dpus; // Size of input image
     else if(p.exp == 1)
         input_size = p.input_size; // Size of input image
-	else
+    else
         input_size = p.input_size * dpu_s; // Size of input image
 
     const unsigned int input_size_8bytes = 
@@ -141,14 +139,14 @@ void hst_l(int nr_dpus) {
 
         // Compute output on CPU (performance comparison and verification purposes)
         if(rep >= p.n_warmup)
-            hst_l_start(&timer, 0, rep - p.n_warmup);
+            hst_s_start(&timer, 0, rep - p.n_warmup);
         histogram_host(histo_host, A, p.bins, p.input_size, 1, nr_of_dpus);
         if(rep >= p.n_warmup)
-            hst_l_stop(&timer, 0);
+            hst_s_stop(&timer, 0);
 
         printf("Load input data\n");
         if(rep >= p.n_warmup)
-            hst_l_start(&timer, 1, rep - p.n_warmup);
+            hst_s_start(&timer, 1, rep - p.n_warmup);
         // Input arguments
         unsigned int kernel = 0;
         i = 0;
@@ -175,19 +173,20 @@ void hst_l(int nr_dpus) {
         }
         DPU_ASSERT(dpu_push_xfer(dpu_set, DPU_XFER_TO_DPU, DPU_MRAM_HEAP_POINTER_NAME, 0, input_size_dpu_8bytes * sizeof(T), DPU_XFER_DEFAULT));
         if(rep >= p.n_warmup)
-            hst_l_stop(&timer, 1);
+            hst_s_stop(&timer, 1);
 
         printf("Run program on DPU(s) \n");
         // Run DPU kernel
         if(rep >= p.n_warmup) {
-            hst_l_start(&timer, 2, rep - p.n_warmup);
+            hst_s_start(&timer, 2, rep - p.n_warmup);
             #if ENERGY
             DPU_ASSERT(dpu_probe_start(&probe));
             #endif
         }
+ 
         DPU_ASSERT(dpu_launch(dpu_set, DPU_SYNCHRONOUS));
         if(rep >= p.n_warmup) {
-            hst_l_stop(&timer, 2);
+            hst_s_stop(&timer, 2);
             #if ENERGY
             DPU_ASSERT(dpu_probe_stop(&probe));
             #endif
@@ -208,40 +207,39 @@ void hst_l(int nr_dpus) {
         printf("Retrieve results\n");
         i = 0;
         if(rep >= p.n_warmup)
-            hst_l_start(&timer, 3, rep - p.n_warmup);
+            hst_s_start(&timer, 3, rep - p.n_warmup);
         // PARALLEL RETRIEVE TRANSFER
         DPU_FOREACH(dpu_set, dpu, i) {
             DPU_ASSERT(dpu_prepare_xfer(dpu, histo + p.bins * i));
         }
         DPU_ASSERT(dpu_push_xfer(dpu_set, DPU_XFER_FROM_DPU, DPU_MRAM_HEAP_POINTER_NAME, input_size_dpu_8bytes * sizeof(T), p.bins * sizeof(unsigned int), DPU_XFER_DEFAULT));
-		
+
         // Final histogram merging
         for(i = 1; i < nr_of_dpus; i++){
             for(unsigned int j = 0; j < p.bins; j++){
                 histo[j] += histo[j + i * p.bins];
             }			
-        }		
+        }
         if(rep >= p.n_warmup)
-            hst_l_stop(&timer, 3);
+            hst_s_stop(&timer, 3);
 
     }
 
     // Print timing results
     printf("CPU ");
-    hst_l_print(&timer, 0, p.n_reps);
+    hst_s_print(&timer, 0, p.n_reps);
     printf("CPU-DPU ");
-    hst_l_print(&timer, 1, p.n_reps);
+    hst_s_print(&timer, 1, p.n_reps);
     printf("DPU Kernel ");
-    hst_l_print(&timer, 2, p.n_reps);
+    hst_s_print(&timer, 2, p.n_reps);
     printf("DPU-CPU ");
-    hst_l_print(&timer, 3, p.n_reps);
+    hst_s_print(&timer, 3, p.n_reps);
 
     #if ENERGY
     double energy;
     DPU_ASSERT(dpu_probe_get(&probe, DPU_ENERGY, DPU_AVERAGE, &energy));
     printf("DPU Energy (J): %f\t", energy);
     #endif	
-
 
     // Check output
     bool status = true;
