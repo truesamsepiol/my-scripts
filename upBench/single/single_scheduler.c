@@ -171,7 +171,7 @@ void single_scheduler(){
 		}
 		else if(!strcmp(programs[id].program[0], "./VA")){
 			printf("--------------------- Begin VA --------------------- \n");
-			//va(atoi(programs[id].program[2]));
+			va(atoi(programs[id].program[2]));
 			printf("--------------------- End   VA --------------------- \n");
 		}
 		else{
