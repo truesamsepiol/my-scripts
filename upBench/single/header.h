@@ -39,3 +39,4 @@ void sel(int nr_dpus);
 void spmv(int nr_dpus);
 void trns(int nr_dpus);
 void ts(int nr_dpus);
+void uni(int nr_dpus);
