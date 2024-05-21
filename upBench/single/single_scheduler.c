@@ -146,7 +146,7 @@ void single_scheduler(){
 		}
 		else if(!strcmp(programs[id].program[0], "./SEL")){
 			printf("--------------------- Begin SEL --------------------- \n");
-			//sel(atoi(programs[id].program[2]));
+			sel(atoi(programs[id].program[2]));
 			printf("--------------------- End   SEL --------------------- \n");
 		}
 		else if(!strcmp(programs[id].program[0], "./SpMV")){
