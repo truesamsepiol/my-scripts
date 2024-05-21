@@ -11,11 +11,15 @@ typedef struct {
 
 // Specific information for each DPU
 struct dpu_info_t {
-    uint32_t rows_per_dpu;
-    uint32_t rows_per_dpu_pad;
-    uint32_t prev_rows_dpu;
+  uint32_t rows_per_dpu;
+  uint32_t rows_per_dpu_pad;
+  uint32_t prev_rows_dpu;
 };
 struct dpu_info_t *dpu_info;
+
+#define NUM_LAYERS 3 
+#define max(x, y) (x > y ? x : y)
+#define min(x, y) (x < y ? x : y)
 
 // Transfer size between MRAM and WRAM
 #ifdef BL
@@ -28,7 +32,7 @@ struct dpu_info_t *dpu_info;
 #endif
 
 // Data type
-#define T uint32_t
+#define T int32_t
 
 #ifndef ENERGY
 #define ENERGY 0

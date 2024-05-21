@@ -14,3 +14,5 @@
 ./TS 9 23 309972
 ./UNI 11 14 7
 ./VA 5 7 9
+./factoriel_dpu 5 8 10
+./sum_elt_in_vector_dpu 5 8 20

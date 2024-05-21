@@ -106,7 +106,7 @@ void single_scheduler(){
 		}
 		else if(!strcmp(programs[id].program[0], "./GEMV")){
 			printf("--------------------- Begin GEMV --------------------- \n");
-			//gemv(atoi(programs[id].program[2]));
+			gemv(atoi(programs[id].program[2]));
 			printf("--------------------- End   GEMV --------------------- \n");
 		}
 		else if(!strcmp(programs[id].program[0], "./HST-L")){
@@ -121,7 +121,7 @@ void single_scheduler(){
 		}
 		else if(!strcmp(programs[id].program[0], "./MLP")){
 			printf("--------------------- Begin MPL --------------------- \n");
-			//mpl(atoi(programs[id].program[2]));
+			mpl(atoi(programs[id].program[2]));
 			printf("--------------------- End   MPL --------------------- \n");
 		}
 		else if(!strcmp(programs[id].program[0], "./NW")){

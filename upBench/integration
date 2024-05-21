@@ -2,10 +2,10 @@ apps        |  single  |  full
 ++++++++++++ ++++++++++ +++++++++
 BFS         |    ok    |
 BS          |    ok    |
-GEMV        |     |   
+GEMV        |    ok    |   
 HST-L       |    ok    |
 HST-S       |    ok    |
-MLP         |     |
+MLP         |    ok    |
 NW          |    ok    |
 RED         |    ok    |
 SCAN-RSS    |    ok    |
