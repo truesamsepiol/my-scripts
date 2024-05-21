@@ -1,6 +1,6 @@
 #!/bin/bash
 
-apps="BFS_app.o BS_app.o GEMV_app.o timer.o HST-L_app.o HST-S_app.o NW_app.o RED_app.o SCAN-RSS_app.o SCAN-SSA_app.o SEL_app.o"
+apps="BFS_app.o BS_app.o GEMV_app.o timer.o HST-L_app.o HST-S_app.o NW_app.o RED_app.o SCAN-RSS_app.o SCAN-SSA_app.o SEL_app.o SpMV_app.o"
 
 gcc generate_trace.c -o generate_trace -lm && echo -e '\e[1;32m[ OK ] for generate_trace\e[m' \ &&
 
@@ -27,6 +27,8 @@ make -f SCAN-RSS_Makefile &&  echo -e '\e[1;32m[ OK ] for SCAN-RSS\e[m' \ &&
 make -f SCAN-SSA_Makefile &&  echo -e '\e[1;32m[ OK ] for SCAN-SSA\e[m' \ &&
 
 make -f SEL_Makefile &&  echo -e '\e[1;32m[ OK ] for SEL\e[m' \ &&
+
+make -f SpMV_Makefile &&  echo -e '\e[1;32m[ OK ] for SpMV\e[m' \ &&
 
 gcc -c timer.c &&  echo -e '\e[1;32m[ OK ] for timer\e[m' \ &&
 

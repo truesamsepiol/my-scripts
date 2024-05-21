@@ -11,7 +11,7 @@ RED         |    ok    |
 SCAN-RSS    |    ok    |
 SCAN-SSA    |    ok    |
 SEL         |    ok    |
-SpMV        |     |
+SpMV        |    ok    |
 TRNS        |     |
 TS          |     |
 UNI         |     |

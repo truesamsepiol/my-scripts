@@ -36,3 +36,4 @@ void red(int nr_dpus);
 void scan_rss(int nr_dpus);
 void scan_ssa(int nr_dpus);
 void sel(int nr_dpus);
+void spmv(int nr_dpus);

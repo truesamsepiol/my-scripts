@@ -151,7 +151,7 @@ void single_scheduler(){
 		}
 		else if(!strcmp(programs[id].program[0], "./SpMV")){
 			printf("--------------------- Begin SpMV --------------------- \n");
-			//spmv(atoi(programs[id].program[2]));
+			spmv(atoi(programs[id].program[2]));
 			printf("--------------------- End   SpMV --------------------- \n");
 		}
 		else if(!strcmp(programs[id].program[0], "./TRNS")){
