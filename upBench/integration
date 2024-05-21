@@ -13,6 +13,6 @@ SCAN-SSA    |    ok    |
 SEL         |    ok    |
 SpMV        |    ok    |
 TRNS        |    ok    |
-TS          |     |
+TS          |    ok    |
 UNI         |     |
 VA          |     |
