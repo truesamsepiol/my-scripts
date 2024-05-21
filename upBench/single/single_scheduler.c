@@ -156,7 +156,7 @@ void single_scheduler(){
 		}
 		else if(!strcmp(programs[id].program[0], "./TRNS")){
 			printf("--------------------- Begin TRNS --------------------- \n");
-			//trns(atoi(programs[id].program[2]));
+			trns(atoi(programs[id].program[2]));
 			printf("--------------------- End   TRNS --------------------- \n");
 		}
 		else if(!strcmp(programs[id].program[0], "./TS")){

@@ -48,7 +48,7 @@ void spmv(int nr_dpus) {
     // Allocate DPUs and load binary
     struct dpu_set_t dpu_set, dpu;
     uint32_t numDPUs;
-    DPU_ASSERT(dpu_alloc(NR_DPUS, NULL, &dpu_set));
+    DPU_ASSERT(dpu_alloc(nr_dpus, NULL, &dpu_set));
     DPU_ASSERT(dpu_load(dpu_set, DPU_BINARY, NULL));
     DPU_ASSERT(dpu_get_nr_dpus(dpu_set, &numDPUs));
     PRINT_INFO(p.verbosity >= 1, "Allocated %d DPU(s)", numDPUs);
