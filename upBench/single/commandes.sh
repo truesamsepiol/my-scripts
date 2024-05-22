@@ -44,12 +44,8 @@ gcc -c timer.c &&  echo -e '\e[1;32m[ OK ] for timer\e[m' \ &&
 
 gcc -O0 -g --std=c99 -o single_scheduler single_scheduler.c $apps -lm -I/usr/include/dpu -ldpu && echo -e '\e[1;32m[ OK ] for single_scheduler\e[m' \ &&
 
-echo -e '\e[1;32m[ OK ] for single_scheduler\e[m' \ &&
-
-rm *.o
-
-echo ""
-echo "USAGE: "
-echo "		./generate_trace -f lis_of_applications"
-echo ""
+rm *.o && echo "" \ &&
+echo "USAGE: " \ && 
+echo "		./generate_trace -f lis_of_applications" \ &&
+echo "" \ &&
 echo "		./single_scheduler -f traces"

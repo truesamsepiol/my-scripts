@@ -175,17 +175,10 @@ void single_scheduler(){
 			printf("--------------------- End   VA --------------------- \n");
 		}
 		else{
-
-			DPU_ASSERT(dpu_alloc(atoi(programs[id].program[2]), NULL, &set));
-			DPU_ASSERT(dpu_load(set, programs[id].program[0], NULL));
-			DPU_ASSERT(dpu_launch(set, DPU_SYNCHRONOUS));
-
-			DPU_FOREACH(set, dpu)
-				DPU_ASSERT(dpu_log_read(dpu, stdout));
-			DPU_ASSERT(dpu_free(set));
+			printf("--------------------- UNKNOW this bench for the moment --------------------- \n");
 		}
 		printf("++++++++++++++++ End round %d ++++++++++++++++\n\n", id + 1);
-		sleep(2); // wait a few minutes for dpu_free to finish 
+		sleep(1); // wait a few minutes for dpu_free to finish 
 	}
 
 	printf("\n\n################# END Excution of %d programs #################\n\n", tour);
