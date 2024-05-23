@@ -323,5 +323,7 @@ void bfs(int nr_dpus) {
     free(currentFrontier);
     free(nextFrontier);
     free(nodeLevelReference);
-}
 
+    // EO
+    DPU_ASSERT(dpu_free(dpu_set));
+}

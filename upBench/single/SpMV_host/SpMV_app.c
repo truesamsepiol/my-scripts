@@ -214,4 +214,7 @@ void spmv(int nr_dpus) {
     free(inVector);
     free(outVector);
     free(outVectorReference);
+
+    // EO
+    DPU_ASSERT(dpu_free(dpu_set));
 }
