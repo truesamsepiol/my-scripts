@@ -54,7 +54,7 @@ void usage() {
     p.n_warmup      = 1;
     p.n_reps        = 3;
 
-    /*int opt;
+    int opt;
     while((opt = getopt(argc, argv, "h:i:w:e:")) >= 0) {
       switch(opt) {
         case 'h':
@@ -70,7 +70,7 @@ void usage() {
         	exit(0);
       }
     }
-    assert(NR_DPUS > 0 && "Invalid # of dpus!");*/
+    assert(NR_DPUS > 0 && "Invalid # of dpus!");
 
     return p;
   }
@@ -116,12 +116,12 @@ int64_t binarySearch(DTYPE * input, DTYPE * querys, DTYPE input_size, uint64_t n
 }
 
 
+int argc;
+char ** argv;
 // Main of the Host Application
 void bs(int nr_dpus) {
 
 	// EO -> I add fictif parameter here
-	int argc;
-	char ** argv;
 	struct Params p = input_params_bs(argc, argv);
 	struct dpu_set_t dpu_set, dpu;
 	uint32_t nr_of_dpus;

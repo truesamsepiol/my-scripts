@@ -51,10 +51,10 @@ static void scan_host(T* C, T* A, unsigned int nr_elements) {
     }
 }
 
+int argc;
+char **argv;
 // Main of the Host Application
 void scan_rss(int nr_dpus) {
-    int argc;
-    char **argv;
     struct Params p = scan_rss_input_params(argc, argv);
 
     struct dpu_set_t dpu_set, dpu;

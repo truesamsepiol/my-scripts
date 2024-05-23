@@ -47,10 +47,10 @@ static T reduction_host(T* A, unsigned int nr_elements) {
     return count;
 }
 
+int argc;
+char **argv;
 // Main of the Host Application
 void red(int nr_dpus) {
-    int argc;
-    char **argv;
     struct Params p = red_input_params(argc, argv);
 
     struct dpu_set_t dpu_set, dpu;

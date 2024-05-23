@@ -61,7 +61,7 @@ struct Params input_params(int argc, char **argv) {
     p.n_reps        = 3;
 
     int opt;
-    /*while((opt = getopt(argc, argv, "hm:n:w:e:")) >= 0) {
+    while((opt = getopt(argc, argv, "hm:n:w:e:")) >= 0) {
         switch(opt) {
             case 'h':
                 usage();
@@ -78,7 +78,7 @@ struct Params input_params(int argc, char **argv) {
         }
     }
     assert(NR_DPUS > 0 && "Invalid # of dpus!");
-*/
+
     return p;
 }
 
@@ -112,12 +112,12 @@ static void gemv_host(T* C, T* A, T* B, unsigned int m_size, unsigned int n_size
 	}
 }
 
+char **argv;
+int argc;
 // Main of the Host Application
 void gemv(int nr_dpus) {
 
 	// EO -> I add fictif parameters
-	char **argv;
-	int argc;
 	struct Params p = input_params(argc, argv);
 
 	struct dpu_set_t dpu_set, dpu;

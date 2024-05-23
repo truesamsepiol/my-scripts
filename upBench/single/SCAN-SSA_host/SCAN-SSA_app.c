@@ -51,10 +51,10 @@ static void scan_host(T* C, T* A, unsigned int nr_elements) {
     }
 }
 
+int argc;
+char **argv;
 // Main of the Host Application
-scan_ssa(int nr_dpus) {
-    int argc;
-    char **argv;
+void scan_ssa(int nr_dpus) {
     struct Params p = scan_ssa_input_params(argc, argv);
 
     struct dpu_set_t dpu_set, dpu;
@@ -66,7 +66,7 @@ scan_ssa(int nr_dpus) {
 #endif
 
     // Allocate DPUs and load binary
-    DPU_ASSERT(dpu_alloc(NR_DPUS, NULL, &dpu_set));
+    DPU_ASSERT(dpu_alloc(nr_dpus, NULL, &dpu_set));
     DPU_ASSERT(dpu_load(dpu_set, DPU_BINARY, NULL));
     DPU_ASSERT(dpu_get_nr_dpus(dpu_set, &nr_of_dpus));
     printf("Allocated %d DPU(s)\n", nr_of_dpus);

@@ -29,12 +29,12 @@
 #include <dpu_probe.h>
 #endif
 
+int argc;
+char **argv;
 // Main of the Host Application
 void spmv(int nr_dpus) {
 
     // Process parameters
-    int argc;
-    char **argv;
     struct Params p = spmv_input_params(argc, argv);
 
     // Timing and profiling

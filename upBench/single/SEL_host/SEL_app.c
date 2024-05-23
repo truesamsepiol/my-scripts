@@ -56,10 +56,10 @@ static unsigned int select_host(T* C, T* A, unsigned int nr_elements) {
     return pos;
 }
 
+int argc;
+char **argv;
 // Main of the Host Application
 void sel(int nr_dpus) {
-    int argc;
-    char **argv;
     struct Params p = sel_input_params(argc, argv);
 
     struct dpu_set_t dpu_set, dpu;

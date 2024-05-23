@@ -74,10 +74,10 @@ static void mlp_host(T* C, T** A, T* B, unsigned int m_size, unsigned int n_size
 	}
 }
 
+int argc;
+char **argv;
 // Main of the Host Application
 void mpl(int nr_dpus) {
-	int argc;
-	char **argv;
 	struct Params p = mpl_input_params(argc, argv);
 
 	struct dpu_set_t dpu_set, dpu;
@@ -339,6 +339,4 @@ void mpl(int nr_dpus) {
 #if ENERGY
 	DPU_ASSERT(dpu_probe_deinit(&probe));
 #endif
-
-	return status ? 0 : -1;
 }

@@ -73,12 +73,12 @@ static void histogram_host(unsigned int* histo, T* A, unsigned int bins, unsigne
     }
 }
 
+int argc;
+char **argv;
 // Main of the Host Application
 void hst_l(int nr_dpus) {
 
 	//EO -> fictif parameters
-    int argc;
-    char **argv;
     struct Params p = hst_l_input_params(argc, argv);
 
     struct dpu_set_t dpu_set, dpu;

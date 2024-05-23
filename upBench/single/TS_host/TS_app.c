@@ -117,13 +117,13 @@ static void compute_ts_statistics(unsigned int timeSeriesLength, unsigned int Pr
 	free(AMean_tmp);
 }
 
+int argc;
+char **argv;
 // Main of the Host Application
 void ts(int nr_dpus){
 
 	// Timer declaration
 	Timer timer;
- 	int argc;
-	char **argv;
 	struct Params p = ts_input_params(argc, argv);
 	struct dpu_set_t dpu_set, dpu;
 	uint32_t nr_of_dpus;

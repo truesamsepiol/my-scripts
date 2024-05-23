@@ -38,7 +38,7 @@ void scan_rss(int nr_dpus);
 void scan_ssa(int nr_dpus);
 void sel(int nr_dpus);
 void spmv(int nr_dpus);
-void trns(int nr_dpus);
+void trns(unsigned int nr_dpus);
 void ts(int nr_dpus);
 void uni(int nr_dpus);
 void va(int nr_dpus);

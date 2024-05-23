@@ -27,7 +27,7 @@ static struct Params input_params(int argc, char **argv) {
     p.fileName      = "BFS_data/loc-gowalla_edges.txt";
     p.verbosity     = 1;
     int opt;
-    /*while((opt = getopt(argc, argv, "f:v:h")) >= 0) {
+    while((opt = getopt(argc, argv, "f:v:h")) >= 0) {
         switch(opt) {
             case 'f': p.fileName    = optarg;       break;
             case 'v': p.verbosity   = atoi(optarg); break;
@@ -37,7 +37,7 @@ static struct Params input_params(int argc, char **argv) {
                       usage();
                       exit(0);
         }
-    }*/
+    }
 
     return p;
 }

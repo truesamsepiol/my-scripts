@@ -49,10 +49,10 @@ static void vector_addition_host(T* C, T* A, T* B, unsigned int nr_elements) {
     }
 }
 
+int argc;
+char **argv;
 // Main of the Host Application
 void va(int nr_dpus){
-    int argc;
-    char **argv;
     struct Params p = va_input_params(argc, argv);
 
     struct dpu_set_t dpu_set, dpu;

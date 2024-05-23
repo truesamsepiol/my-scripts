@@ -29,13 +29,14 @@
 
 #define DPU_BINARY "./BFS_bin/dpu_code"
 
+int argc;
+char **argv;
+
 // Main of the Host Application
 void bfs(int nr_dpus) {
 
     // Process parameters
     // EO -> I add fictif parameters;
-    int argc;
-    char **argv;
     struct Params p = input_params(argc, argv);
 
     // Timer and profiling

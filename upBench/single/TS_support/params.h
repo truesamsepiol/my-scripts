@@ -47,7 +47,7 @@ void ts_usage() {
         case 'm': p.input_size_m  = atol(optarg); break;
         default:
         fprintf(stderr, "\nUnrecognized option!\n");
-        usage();
+        ts_usage();
         exit(0);
       }
     }

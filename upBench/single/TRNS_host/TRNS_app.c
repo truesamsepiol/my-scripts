@@ -57,10 +57,10 @@ static void trns_host(T* input, unsigned int A, unsigned int B, unsigned int b){
    free(output);
 }
 
+int argc;
+char **argv;
 // Main of the Host Application
-void trns(int nr_dpus) {
-    int argc;
-    char **argv;
+void trns(unsigned int nr_dpus) {
     struct Params p = trns_input_params(argc, argv);
 
     struct dpu_set_t dpu_set, dpu;
@@ -277,6 +277,4 @@ void trns(int nr_dpus) {
     free(A_backup);
     free(A_result);
     free(done_host);
-	
-    return status ? 0 : -1;
 }

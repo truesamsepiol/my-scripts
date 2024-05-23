@@ -33,7 +33,8 @@ ${CONF}:
 
 ${HOST_TARGET}: ${HOST_SOURCES} ${COMMON_INCLUDES} ${CONF}
 	#$(CC) -o $@ ${HOST_SOURCES} ${HOST_FLAGS}
-	cc -c GEMV_host/GEMV_app.c -Wall -Wextra -g -IGEMV_support -std=c11 -O3 `dpu-pkg-config --cflags --libs dpu`
+	cc -c GEMV_host/GEMV_app.c -Wall -Wextra -g -IGEMV_support -std=c11 -O3 `dpu-pkg-config --cflags --libs dpu` -DNR_TASKLETS=${NR_TASKLETS} -DNR_DPUS=${NR_DPUS} -DBL=${BL}
+
 
 ${DPU_TARGET}: ${DPU_SOURCES} ${COMMON_INCLUDES} ${CONF}
 	dpu-upmem-dpurte-clang ${DPU_FLAGS} -o $@ ${DPU_SOURCES}

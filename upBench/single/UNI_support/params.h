@@ -45,7 +45,7 @@ struct Params uni_input_params(int argc, char **argv) {
         case 'x': p.exp           = atoi(optarg); break;
         default:
             fprintf(stderr, "\nUnrecognized option!\n");
-            usage();
+            uni_usage();
             exit(0);
         }
     }

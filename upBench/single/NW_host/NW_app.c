@@ -179,10 +179,10 @@ static void nw_host(int32_t *input_itemsets, int32_t *reference, uint64_t max_co
     return;
 }
 
+int argc;
+char **argv;
 // Main of the Host Application
 void nw(int nr_dpus) {
-    int argc;
-    char **argv;
     struct Params p = nw_input_params(argc, argv);
     struct dpu_set_t dpu_set, dpu;
     uint32_t nr_of_dpus, max_dpus;
@@ -875,6 +875,4 @@ void nw(int nr_dpus) {
     free(traceback_output);
     free(traceback_output_host);
     DPU_ASSERT(dpu_free(dpu_set));
-    return status ? 0 : -1;
-    return 0;
 }
