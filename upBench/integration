@@ -1,6 +1,6 @@
 apps        |  single  |  full 
 ++++++++++++ ++++++++++ +++++++++
-BFS         |    ok    |
+BFS         |    ok    |    ok 
 BS          |    ok    |
 GEMV        |    ok    |   
 HST-L       |    ok    |

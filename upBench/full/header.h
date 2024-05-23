@@ -32,3 +32,4 @@ struct p{
 
 void sum(int, int);
 void fac(int, int);
+void bfs(int, int);

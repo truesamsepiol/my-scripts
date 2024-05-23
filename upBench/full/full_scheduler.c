@@ -121,7 +121,12 @@ void full_scheduler(){
 				printf("--------------------- Begin load factorial --------------------- \n");
 				fac(start, end);
 				printf("--------------------- End   load factorial --------------------- \n");
+			}else if(!strcmp(programs[i].program[0], "./BFS")){
+				printf("--------------------- Begin load BFS --------------------- \n");
+				bfs(start, end);
+				printf("--------------------- End   load BFS --------------------- \n");
 			}
+
 			else{
 				printf("--------------------- UNKNOW %s for the moment --------------------- \n", programs[i].program[0]);
 				exit(0);
@@ -134,10 +139,6 @@ void full_scheduler(){
 		
 		DPU_ASSERT(dpu_launch(set, DPU_SYNCHRONOUS));
 
-		DPU_FOREACH(set, dpu)
-			DPU_ASSERT(dpu_log_read(dpu, stdout));
-	
-	
 		DPU_ASSERT(dpu_free(set));
 		printf("\n++++++++++++++++ End round %d ++++++++++++++++\n", round + 1);	
 		//i += 1;
