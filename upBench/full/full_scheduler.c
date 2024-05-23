@@ -103,18 +103,35 @@ void full_scheduler(){
 		printf("\n++++++++++++++++ Begin round %d ++++++++++++++++\n", round + 1);	
 		DPU_ASSERT(dpu_alloc(nr_dpus_total, NULL, &set));
 	
-		int sum_size = 0;
-		int nr_dpus  = atoi(programs[i].program[2]);
-		DPU_FOREACH(set, dpu){
-			sum_size += 1;
-			if(sum_size > nr_dpus){
-				i += 1;
-				nr_dpus += atoi(programs[i].program[2]);
-			}
-			DPU_ASSERT(dpu_load(dpu, programs[i].program[0], NULL));
-			// call the good function
-		}
+		//++++++++++++++++ Heart of scheduler :-) ++++++++++++++++
+		int id = 0;
+		DPU_FOREACH(set, dpu, id)
+			sub_set_of_dpus[id] = dpu;
 
+		int end, start = 0;
+		do{
+			end = atoi(programs[i].program[2]) + start - 1;
+
+			if(!strcmp(programs[i].program[0], "./sum_elt_in_vector_dpu")){
+				printf("--------------------- Begin load sum_elt_in_vector --------------------- \n");
+				sum(start, end);
+				printf("--------------------- End   load sum_elt_in_vector --------------------- \n");
+			}
+			else if(!strcmp(programs[i].program[0], "./factoriel_dpu")){
+				printf("--------------------- Begin load factorial --------------------- \n");
+				fac(start, end);
+				printf("--------------------- End   load factorial --------------------- \n");
+			}
+			else{
+				printf("--------------------- UNKNOW %s for the moment --------------------- \n", programs[i].program[0]);
+				exit(0);
+			}
+
+			start = end + 1;
+			i += 1;
+		}while(start < nr_dpus_total);	
+		//++++++++++++++++         end            ++++++++++++++++
+		
 		DPU_ASSERT(dpu_launch(set, DPU_SYNCHRONOUS));
 
 		DPU_FOREACH(set, dpu)
@@ -123,7 +140,7 @@ void full_scheduler(){
 	
 		DPU_ASSERT(dpu_free(set));
 		printf("\n++++++++++++++++ End round %d ++++++++++++++++\n", round + 1);	
-		i += 1;
+		//i += 1;
 		round += 1;
 		sleep(2);
 	}

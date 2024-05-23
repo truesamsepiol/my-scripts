@@ -1,11 +1,22 @@
 #!/bin/bash
 
-gcc generate_trace.c -o generate_trace -lm && echo '[ OK ] for generate_trace'
+apps="fac.o sum.o"
 
-dpu-upmem-dpurte-clang -o factoriel_dpu factoriel.c && echo '[ OK ] for factoriel'
+#gcc generate_trace.c -o generate_trace -lm && echo -e '\e[1;32m[ OK ] for generate_trace\e[m' \ &&
 
-dpu-upmem-dpurte-clang -o sum_elt_in_vector_dpu sum_elt_in_vector.c && echo '[ OK ] for sum_elt_in_vector'
+#dpu-upmem-dpurte-clang -o factoriel_dpu factoriel.c && echo -e '\e[1;32m[ OK ] for factoriel_dpu\e[m' \ &&
 
-make -f BFS_Makefile && echo '[ OK ] for BFS'
+#dpu-upmem-dpurte-clang -o sum_elt_in_vector_dpu sum_elt_in_vector.c && echo -e '\e[1;32m[ OK ] for sum_elt_in_vector\e[m' \ &&
 
-gcc -O0 -g --std=c99 -o full_scheduler full_scheduler.c BFS_app.o -I/usr/include/dpu -ldpu && echo '[ OK ] for full_scheduler'
+cc -c fac.c -Wall -Wextra -g -std=c11 -O3 `dpu-pkg-config --cflags --libs dpu` && echo -e '\e[1;32m[ OK ] for fac\e[m' \ &&
+
+cc -c sum.c -Wall -Wextra -g -std=c11 -O3 `dpu-pkg-config --cflags --libs dpu` && echo -e '\e[1;32m[ OK ] for sum\e[m' \ &&
+
+gcc -O0 -g --std=c99 -o full_scheduler full_scheduler.c $apps -lm -I/usr/include/dpu -ldpu && echo -e '\e[1;32m[ OK ] for full_scheduler\e[m' \ &&
+
+rm *.o && echo "" \ &&
+
+echo "USAGE: " \ && 
+echo "		./generate_trace -f lis_of_applications" \ &&
+echo "" \ &&
+echo "		./full_scheduler -f traces"

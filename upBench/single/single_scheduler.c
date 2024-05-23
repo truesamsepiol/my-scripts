@@ -175,7 +175,7 @@ void single_scheduler(){
 			printf("--------------------- End   VA --------------------- \n");
 		}
 		else{
-			printf("--------------------- UNKNOW this bench for the moment --------------------- \n");
+			printf("--------------------- UNKNOW %s for the moment --------------------- \n", programs[id].program[0]);
 		}
 		printf("++++++++++++++++ End round %d ++++++++++++++++\n\n", id + 1);
 		sleep(1); // wait a few minutes for dpu_free to finish 

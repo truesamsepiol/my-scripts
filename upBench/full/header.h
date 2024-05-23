@@ -14,11 +14,13 @@
 #define MAX_TRACES 10000
 #define NR_PARAMETERS 7
 #define SIZE_OF_COMMAND_PARAMETERS 30
-#define NR_DPUS_MAX 480
+#define NR_DPUS_MAX 20
 
-#define BFS_BINARY "./BFS_bin/dpu_code"
+#define SUM "./sum_elt_in_vector_dpu"
 
 struct dpu_set_t set, dpu;
+
+struct dpu_set_t sub_set_of_dpus[NR_DPUS_MAX];
 
 struct parameter{
 	char *path;
@@ -28,4 +30,5 @@ struct p{
 	char *program[NR_PARAMETERS];
 };
 
-void bfs(int argc, char *argv[]);
+void sum(int, int);
+void fac(int, int);
