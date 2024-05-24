@@ -34,3 +34,4 @@ void bfs(int, int);
 void bs(int, int);
 void gemv(int, int);
 void hst_l(int, int);
+void hst_s(int, int);

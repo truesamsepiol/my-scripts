@@ -145,6 +145,11 @@ void full_scheduler(){
 				hst_l(start, end);
 				printf("--------------------- End   load HST-L --------------------- \n");
 			}
+			else if(!strcmp(programs[i].program[0], "./HST-S")){
+				printf("--------------------- Begin load HST-S --------------------- \n");
+				hst_s(start, end);
+				printf("--------------------- End   load HST-S --------------------- \n");
+			}
 			else{
 				printf("--------------------- UNKNOW %s for the moment --------------------- \n", programs[i].program[0]);
 				exit(0);

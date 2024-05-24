@@ -4,7 +4,7 @@ BFS         |    ok    |    ok
 BS          |    ok    |    ok
 GEMV        |    ok    |    ok 
 HST-L       |    ok    |    ok
-HST-S       |    ok    |
+HST-S       |    ok    |    ok
 MLP         |    ok    |
 NW          |    ok    |
 RED         |    ok    |
