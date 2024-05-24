@@ -1,8 +1,8 @@
 apps        |  single  |  full 
 ++++++++++++ ++++++++++ +++++++++
 BFS         |    ok    |    ok 
-BS          |    ok    |
-GEMV        |    ok    |   
+BS          |    ok    |    ok
+GEMV        |    ok    |    ok 
 HST-L       |    ok    |
 HST-S       |    ok    |
 MLP         |    ok    |

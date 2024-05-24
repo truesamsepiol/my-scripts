@@ -135,6 +135,11 @@ void full_scheduler(){
 				bs(start, end);
 				printf("--------------------- End   load BS --------------------- \n");
 			}
+			else if(!strcmp(programs[i].program[0], "./GEMV")){
+				printf("--------------------- Begin load GEMV --------------------- \n");
+				gemv(start, end);
+				printf("--------------------- End   load GEMV --------------------- \n");
+			}
 			else{
 				printf("--------------------- UNKNOW %s for the moment --------------------- \n", programs[i].program[0]);
 				exit(0);

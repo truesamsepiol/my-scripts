@@ -32,3 +32,4 @@ void sum(int, int);
 void fac(int, int);
 void bfs(int, int);
 void bs(int, int);
+void gemv(int, int);
