@@ -185,6 +185,11 @@ void full_scheduler(){
 				spmv(start, end);
 				printf("--------------------- End   load SpMV --------------------- \n");
 			}
+			else if(!strcmp(programs[i].program[0], "./TRNS")){
+				printf("--------------------- Begin load TRNS --------------------- \n");
+				trns(start, end);
+				printf("--------------------- End   load TRNS --------------------- \n");
+			}
 			else{
 				printf("--------------------- UNKNOW %s for the moment --------------------- \n", programs[i].program[0]);
 				exit(0);

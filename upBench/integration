@@ -12,7 +12,7 @@ SCAN-RSS    |    ok    |    ok
 SCAN-SSA    |    ok    |    ok
 SEL         |    ok    |    ok
 SpMV        |    ok    |    ok
-TRNS        |    ok    |
+TRNS        |    ok    |    ok 
 TS          |    ok    |
 UNI         |    ok    |
 VA          |    ok    |

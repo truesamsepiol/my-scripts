@@ -42,3 +42,4 @@ void scan_rss(int, int);
 void scan_ssa(int, int);
 void sel(int, int);
 void spmv(int, int);
+void trns(int, int);
