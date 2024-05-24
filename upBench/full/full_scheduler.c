@@ -150,6 +150,11 @@ void full_scheduler(){
 				hst_s(start, end);
 				printf("--------------------- End   load HST-S --------------------- \n");
 			}
+			else if(!strcmp(programs[i].program[0], "./MLP")){
+				printf("--------------------- Begin load MLP --------------------- \n");
+				mlp(start, end);
+				printf("--------------------- End   load MLP --------------------- \n");
+			}
 			else{
 				printf("--------------------- UNKNOW %s for the moment --------------------- \n", programs[i].program[0]);
 				exit(0);

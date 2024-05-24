@@ -5,7 +5,7 @@ BS          |    ok    |    ok
 GEMV        |    ok    |    ok 
 HST-L       |    ok    |    ok
 HST-S       |    ok    |    ok
-MLP         |    ok    |
+MLP         |    ok    |    ok
 NW          |    ok    |
 RED         |    ok    |
 SCAN-RSS    |    ok    |
