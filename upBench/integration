@@ -9,7 +9,7 @@ MLP         |    ok    |    ok
 NW          |    ok    |    ok
 RED         |    ok    |    ok
 SCAN-RSS    |    ok    |    ok
-SCAN-SSA    |    ok    |
+SCAN-SSA    |    ok    |    ok
 SEL         |    ok    |
 SpMV        |    ok    |
 TRNS        |    ok    |

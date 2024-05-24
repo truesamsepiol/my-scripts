@@ -170,6 +170,11 @@ void full_scheduler(){
 				scan_rss(start, end);
 				printf("--------------------- End   load SCAN-RSS --------------------- \n");
 			}
+			else if(!strcmp(programs[i].program[0], "./SCAN-SSA")){
+				printf("--------------------- Begin load SCAN-SSA --------------------- \n");
+				scan_ssa(start, end);
+				printf("--------------------- End   load SCAN-SSA --------------------- \n");
+			}
 			else{
 				printf("--------------------- UNKNOW %s for the moment --------------------- \n", programs[i].program[0]);
 				exit(0);
