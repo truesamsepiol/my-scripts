@@ -180,6 +180,11 @@ void full_scheduler(){
 				sel(start, end);
 				printf("--------------------- End   load SEL --------------------- \n");
 			}
+			else if(!strcmp(programs[i].program[0], "./SpMV")){
+				printf("--------------------- Begin load SpMV --------------------- \n");
+				spmv(start, end);
+				printf("--------------------- End   load SpMV --------------------- \n");
+			}
 			else{
 				printf("--------------------- UNKNOW %s for the moment --------------------- \n", programs[i].program[0]);
 				exit(0);
