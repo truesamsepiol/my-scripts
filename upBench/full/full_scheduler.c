@@ -160,6 +160,11 @@ void full_scheduler(){
 				nw(start, end);
 				printf("--------------------- End   load NW --------------------- \n");
 			}
+			else if(!strcmp(programs[i].program[0], "./RED")){
+				printf("--------------------- Begin load RED --------------------- \n");
+				red(start, end);
+				printf("--------------------- End   load RED --------------------- \n");
+			}
 			else{
 				printf("--------------------- UNKNOW %s for the moment --------------------- \n", programs[i].program[0]);
 				exit(0);
