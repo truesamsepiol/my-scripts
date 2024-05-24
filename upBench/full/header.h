@@ -44,3 +44,4 @@ void sel(int, int);
 void spmv(int, int);
 void trns(int, int);
 void ts(int, int);
+void uni(int, int);

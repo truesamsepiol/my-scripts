@@ -195,6 +195,11 @@ void full_scheduler(){
 				ts(start, end);
 				printf("--------------------- End   load TS --------------------- \n");
 			}
+			else if(!strcmp(programs[i].program[0], "./UNI")){
+				printf("--------------------- Begin load UNI --------------------- \n");
+				uni(start, end);
+				printf("--------------------- End   load UNI --------------------- \n");
+			}
 			else{
 				printf("--------------------- UNKNOW %s for the moment --------------------- \n", programs[i].program[0]);
 				exit(0);
