@@ -140,6 +140,11 @@ void full_scheduler(){
 				gemv(start, end);
 				printf("--------------------- End   load GEMV --------------------- \n");
 			}
+			else if(!strcmp(programs[i].program[0], "./HST-L")){
+				printf("--------------------- Begin load HST-L --------------------- \n");
+				hst_l(start, end);
+				printf("--------------------- End   load HST-L --------------------- \n");
+			}
 			else{
 				printf("--------------------- UNKNOW %s for the moment --------------------- \n", programs[i].program[0]);
 				exit(0);

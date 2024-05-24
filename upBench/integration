@@ -3,7 +3,7 @@ apps        |  single  |  full
 BFS         |    ok    |    ok 
 BS          |    ok    |    ok
 GEMV        |    ok    |    ok 
-HST-L       |    ok    |
+HST-L       |    ok    |    ok
 HST-S       |    ok    |
 MLP         |    ok    |
 NW          |    ok    |

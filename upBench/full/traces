@@ -1,5 +1,5 @@
 ./sum_elt_in_vector_dpu 2 6 352774
-./sum_elt_in_vector_dpu 10 14 519616
+./HST-L 10 14 519616
 ./BFS 9 23 427374
 ./factoriel_dpu 9 17 10
 ./factoriel_dpu 10 18 5
