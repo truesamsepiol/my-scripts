@@ -36,3 +36,4 @@ void gemv(int, int);
 void hst_l(int, int);
 void hst_s(int, int);
 void mlp(int, int);
+void nw(int, int);

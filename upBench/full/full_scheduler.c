@@ -155,6 +155,11 @@ void full_scheduler(){
 				mlp(start, end);
 				printf("--------------------- End   load MLP --------------------- \n");
 			}
+			else if(!strcmp(programs[i].program[0], "./NW")){
+				printf("--------------------- Begin load NW --------------------- \n");
+				nw(start, end);
+				printf("--------------------- End   load NW --------------------- \n");
+			}
 			else{
 				printf("--------------------- UNKNOW %s for the moment --------------------- \n", programs[i].program[0]);
 				exit(0);
