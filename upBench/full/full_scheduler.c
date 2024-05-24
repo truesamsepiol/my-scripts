@@ -165,6 +165,11 @@ void full_scheduler(){
 				red(start, end);
 				printf("--------------------- End   load RED --------------------- \n");
 			}
+			else if(!strcmp(programs[i].program[0], "./SCAN-RSS")){
+				printf("--------------------- Begin load SCAN-RSS --------------------- \n");
+				scan_rss(start, end);
+				printf("--------------------- End   load SCAN-RSS --------------------- \n");
+			}
 			else{
 				printf("--------------------- UNKNOW %s for the moment --------------------- \n", programs[i].program[0]);
 				exit(0);
