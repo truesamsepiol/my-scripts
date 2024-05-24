@@ -5,6 +5,7 @@ int tour = 0;
 
 struct p programs[MAX_TRACES];
 
+
 static void usage() {        
     fprintf(stderr,
         "\nUsage:  ./program [options]\n"
@@ -82,9 +83,11 @@ void full_scheduler(){
 
 	parse_argv();
 
+	struct dpu_set_t set, dpu;
+
 	int i               = 0;
 	int j               = 0;
-	int round = 0;
+	int round           = 0;
 	while(j < tour){
 		int nr_dpus_total = 0;
 		while(j < tour){
@@ -121,12 +124,17 @@ void full_scheduler(){
 				printf("--------------------- Begin load factorial --------------------- \n");
 				fac(start, end);
 				printf("--------------------- End   load factorial --------------------- \n");
-			}else if(!strcmp(programs[i].program[0], "./BFS")){
+			}
+			else if(!strcmp(programs[i].program[0], "./BFS")){
 				printf("--------------------- Begin load BFS --------------------- \n");
 				bfs(start, end);
 				printf("--------------------- End   load BFS --------------------- \n");
 			}
-
+			else if(!strcmp(programs[i].program[0], "./BS")){
+				printf("--------------------- Begin load BS --------------------- \n");
+				bs(start, end);
+				printf("--------------------- End   load BS --------------------- \n");
+			}
 			else{
 				printf("--------------------- UNKNOW %s for the moment --------------------- \n", programs[i].program[0]);
 				exit(0);

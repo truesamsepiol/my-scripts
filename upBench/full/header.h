@@ -18,8 +18,6 @@
 
 #define SUM "./sum_elt_in_vector_dpu"
 
-struct dpu_set_t set, dpu;
-
 struct dpu_set_t sub_set_of_dpus[NR_DPUS_MAX];
 
 struct parameter{
@@ -33,3 +31,4 @@ struct p{
 void sum(int, int);
 void fac(int, int);
 void bfs(int, int);
+void bs(int, int);

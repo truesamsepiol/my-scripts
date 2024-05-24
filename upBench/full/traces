@@ -1,6 +1,6 @@
 ./sum_elt_in_vector_dpu 4 14 247615
 ./sum_elt_in_vector_dpu 8 4 304636
-./factoriel_dpu 8 13 4
+./BS 8 13 4
 ./BFS 7 20 363891
 ./sum_elt_in_vector_dpu 4 20 895446
 ./sum_elt_in_vector_dpu 4 16 908192
