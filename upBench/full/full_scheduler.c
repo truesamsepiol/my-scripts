@@ -190,6 +190,11 @@ void full_scheduler(){
 				trns(start, end);
 				printf("--------------------- End   load TRNS --------------------- \n");
 			}
+			else if(!strcmp(programs[i].program[0], "./TS")){
+				printf("--------------------- Begin load TS --------------------- \n");
+				ts(start, end);
+				printf("--------------------- End   load TS --------------------- \n");
+			}
 			else{
 				printf("--------------------- UNKNOW %s for the moment --------------------- \n", programs[i].program[0]);
 				exit(0);

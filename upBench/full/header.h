@@ -43,3 +43,4 @@ void scan_ssa(int, int);
 void sel(int, int);
 void spmv(int, int);
 void trns(int, int);
+void ts(int, int);
