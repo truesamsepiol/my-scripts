@@ -175,6 +175,11 @@ void full_scheduler(){
 				scan_ssa(start, end);
 				printf("--------------------- End   load SCAN-SSA --------------------- \n");
 			}
+			else if(!strcmp(programs[i].program[0], "./SEL")){
+				printf("--------------------- Begin load SEL --------------------- \n");
+				sel(start, end);
+				printf("--------------------- End   load SEL --------------------- \n");
+			}
 			else{
 				printf("--------------------- UNKNOW %s for the moment --------------------- \n", programs[i].program[0]);
 				exit(0);

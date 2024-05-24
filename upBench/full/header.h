@@ -40,3 +40,4 @@ void nw(int, int);
 void red(int, int);
 void scan_rss(int, int);
 void scan_ssa(int, int);
+void sel(int, int);
