@@ -200,6 +200,11 @@ void full_scheduler(){
 				uni(start, end);
 				printf("--------------------- End   load UNI --------------------- \n");
 			}
+			else if(!strcmp(programs[i].program[0], "./VA")){
+				printf("--------------------- Begin load VA --------------------- \n");
+				va(start, end);
+				printf("--------------------- End   load VA --------------------- \n");
+			}
 			else{
 				printf("--------------------- UNKNOW %s for the moment --------------------- \n", programs[i].program[0]);
 				exit(0);

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-apps="fac.o sum.o BFS_app.o BS_app.o GEMV_app.o HST-L_app.o HST-S_app.o MPL_app.o NW_app.o RED_app.o SCAN-RSS_app.o SCAN-SSA_app.o SEL_app.o SpMV_app.o TRNS_app.o TS_app.o UNI_app.o"
+apps="fac.o sum.o BFS_app.o BS_app.o GEMV_app.o HST-L_app.o HST-S_app.o MPL_app.o NW_app.o RED_app.o SCAN-RSS_app.o SCAN-SSA_app.o SEL_app.o SpMV_app.o TRNS_app.o TS_app.o UNI_app.o VA_app.o"
 
 gcc generate_trace.c -o generate_trace -lm && echo -e '\e[1;32m[ OK ] for generate_trace\e[m' \ &&
 
@@ -41,6 +41,8 @@ make -f TRNS_Makefile && echo -e '\e[1;32m[ OK ] for TRNS\e[m' \ &&
 make -f TS_Makefile && echo -e '\e[1;32m[ OK ] for TS\e[m' \ &&
 
 make -f UNI_Makefile && echo -e '\e[1;32m[ OK ] for UNI\e[m' \ &&
+
+make -f VA_Makefile && echo -e '\e[1;32m[ OK ] for VA\e[m' \ &&
 
 gcc -O0 -g --std=c99 -o full_scheduler full_scheduler.c $apps -lm -I/usr/include/dpu -ldpu && echo -e '\e[1;32m[ OK ] for full_scheduler\e[m' \ &&
 
