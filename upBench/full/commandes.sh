@@ -1,5 +1,7 @@
 #!/bin/bash
 
+rm -r *bin*
+
 apps="fac.o sum.o BFS_app.o BS_app.o GEMV_app.o HST-L_app.o HST-S_app.o MPL_app.o NW_app.o RED_app.o SCAN-RSS_app.o SCAN-SSA_app.o SEL_app.o SpMV_app.o TRNS_app.o TS_app.o UNI_app.o VA_app.o"
 
 gcc generate_trace.c -o generate_trace -lm && echo -e '\e[1;32m[ OK ] for generate_trace\e[m' \ &&
