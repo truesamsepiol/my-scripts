@@ -7,9 +7,19 @@
 #include <assert.h>
 #include <getopt.h>
 #include <pthread.h>
+#include <time.h>
 
 #include <dpu.h>
 #include <dpu_log.h>
+#include <dpu_error.h>
+#include <dpu_types.h>
+#include <dpu_runner.h>
+#include <dpu_management.h>
+#include <dpu_target_macros.h>
+#include <dpu_program.h>
+#include <dpu_management.h>
+#include <dpu_config.h>
+
 
 #define MAX_TRACES 10000
 #define NR_PARAMETERS 7
@@ -18,6 +28,11 @@
 
 #define SUM "./sum_elt_in_vector_dpu"
 
+#define MICROSECONDES 1000000 
+
+time_t start_time;
+
+struct dpu_set_t set, dpu;
 struct dpu_set_t sub_set_of_dpus[NR_DPUS_MAX];
 
 struct parameter{

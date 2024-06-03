@@ -5,7 +5,6 @@ int tour = 0;
 
 struct p programs[MAX_TRACES];
 
-
 static void usage() {        
     fprintf(stderr,
         "\nUsage:  ./program [options]\n"
@@ -77,14 +76,40 @@ void parse_argv(){
 	}
 }
 
+void *check_dpus_running(void *arg){
+	while(true){
+
+		int nr_dpus_are_running = 0;
+		printf("\n++++++++++++++++ Begin checking ++++++++++++++++\n");
+		DPU_FOREACH(set, dpu){
+			bool dpu_is_running = false;
+			bool dpu_is_fault   = false;
+
+			dpu_error_t status = dpu_poll_dpu(dpu.dpu, &dpu_is_running, &dpu_is_fault);
+
+			if(dpu_is_running == true)
+				nr_dpus_are_running += 1;
+		}
+		time_t end_time;
+		time(&end_time);
+		printf("%lds, %d/%d are running\n", (end_time - start_time), nr_dpus_are_running, NR_DPUS_MAX);
+		printf("++++++++++++++++ End   checking ++++++++++++++++\n");
+
+		usleep(MICROSECONDES);
+		if(nr_dpus_are_running == 0)
+			break;
+	}
+	pthread_exit(EXIT_SUCCESS);
+}
+
+
 void full_scheduler(){
 
 	printf("\n\n################# start full scheduler #################\n\n");
 
 	parse_argv();
-
-	struct dpu_set_t set, dpu;
-
+	
+	time(&start_time);	
 	int i               = 0;
 	int j               = 0;
 	int round           = 0;
@@ -105,6 +130,7 @@ void full_scheduler(){
 		}
 		printf("\n++++++++++++++++ Begin round %d ++++++++++++++++\n", round + 1);	
 		DPU_ASSERT(dpu_alloc(nr_dpus_total, NULL, &set));
+		printf("total dpus allocated %d\n", nr_dpus_total);
 	
 		//++++++++++++++++ Heart of scheduler :-) ++++++++++++++++
 		int id = 0;
@@ -215,11 +241,17 @@ void full_scheduler(){
 		}while(start < nr_dpus_total);	
 		//++++++++++++++++         end            ++++++++++++++++
 		
-		DPU_ASSERT(dpu_launch(set, DPU_SYNCHRONOUS));
+		DPU_ASSERT(dpu_launch(set, DPU_ASYNCHRONOUS));
+
+		pthread_t thread;
+		pthread_create(&thread, NULL, check_dpus_running, NULL);
+		
+		DPU_ASSERT(dpu_sync(set));
+		
+		pthread_join(thread, NULL);
 
 		DPU_ASSERT(dpu_free(set));
 		printf("\n++++++++++++++++ End round %d ++++++++++++++++\n", round + 1);	
-		//i += 1;
 		round += 1;
 		sleep(2);
 	}

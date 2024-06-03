@@ -46,7 +46,7 @@ make -f UNI_Makefile && echo -e '\e[1;32m[ OK ] for UNI\e[m' \ &&
 
 make -f VA_Makefile && echo -e '\e[1;32m[ OK ] for VA\e[m' \ &&
 
-gcc -O0 -g --std=c99 -o full_scheduler full_scheduler.c $apps -lm -I/usr/include/dpu -ldpu && echo -e '\e[1;32m[ OK ] for full_scheduler\e[m' \ &&
+gcc -O0 -g --std=c99 -o full_scheduler full_scheduler.c $apps -lm -I/usr/include/dpu -ldpu -lpthread && echo -e '\e[1;32m[ OK ] for full_scheduler\e[m' \ &&
 
 rm *.o && echo "" \ &&
 
