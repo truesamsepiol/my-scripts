@@ -80,6 +80,8 @@ int argc;
 char **argv;
 // Main of the Host Application
 void mpl(int nr_dpus) {
+
+    	pthread_t thread;
 	struct Params p = mpl_input_params(argc, argv);
 
 	//struct dpu_set_t dpu_set, dpu;

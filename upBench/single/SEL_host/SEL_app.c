@@ -62,6 +62,8 @@ int argc;
 char **argv;
 // Main of the Host Application
 void sel(int nr_dpus) {
+
+    pthread_t thread;
     struct Params p = sel_input_params(argc, argv);
 
     //struct dpu_set_t dpu_set, dpu;

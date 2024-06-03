@@ -55,6 +55,8 @@ static void scan_host(T* C, T* A, unsigned int nr_elements) {
 
 // Main of the Host Application
 void scan_ssa(int nr_dpus) {
+
+    pthread_t thread;
     int argc;
     char **argv;
     struct Params p = scan_ssa_input_params(argc, argv);

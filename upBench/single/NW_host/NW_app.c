@@ -185,6 +185,8 @@ int argc;
 char **argv;
 // Main of the Host Application
 void nw(int nr_dpus) {
+
+    pthread_t thread;
     struct Params p = nw_input_params(argc, argv);
     //struct dpu_set_t dpu_set, dpu;
     uint32_t nr_of_dpus, max_dpus;

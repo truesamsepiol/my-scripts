@@ -119,6 +119,8 @@ int argc;
 // Main of the Host Application
 void gemv(int nr_dpus) {
 
+    	pthread_t thread;
+
 	// EO -> I add fictif parameters
 	struct Params p = input_params(argc, argv);
 

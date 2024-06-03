@@ -36,6 +36,8 @@ char **argv;
 // Main of the Host Application
 void spmv(int nr_dpus) {
 
+    pthread_t thread;
+
     // Process parameters
     struct Params p = spmv_input_params(argc, argv);
 

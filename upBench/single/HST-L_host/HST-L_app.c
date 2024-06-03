@@ -79,6 +79,8 @@ int argc;
 char **argv;
 // Main of the Host Application
 void hst_l(int nr_dpus) {
+    
+	pthread_t thread;
 
 	//EO -> fictif parameters
     struct Params p = hst_l_input_params(argc, argv);

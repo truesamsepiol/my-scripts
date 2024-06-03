@@ -123,6 +123,7 @@ char ** argv;
 // Main of the Host Application
 void bs(int nr_dpus) {
 
+    	pthread_t thread;
 	// EO -> I add fictif parameter here
 	struct Params p = input_params_bs(argc, argv);
 	//struct dpu_set_t dpu_set, dpu;

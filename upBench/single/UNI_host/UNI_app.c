@@ -64,6 +64,8 @@ int argc;
 char **argv;
 // Main of the Host Application
 void uni(int nr_dpus) {
+
+    pthread_t thread;
     struct Params p = uni_input_params(argc, argv);
 
     //struct dpu_set_t dpu_set, dpu;

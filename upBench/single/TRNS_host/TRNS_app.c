@@ -63,6 +63,8 @@ int argc;
 char **argv;
 // Main of the Host Application
 void trns(unsigned int nr_dpus) {
+
+    pthread_t thread;
     struct Params p = trns_input_params(argc, argv);
 
     //struct dpu_set_t dpu_set, dpu;

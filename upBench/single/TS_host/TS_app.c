@@ -124,6 +124,8 @@ char **argv;
 // Main of the Host Application
 void ts(int nr_dpus){
 
+    	pthread_t thread;
+
 	// Timer declaration
 	Timer timer;
 	struct Params p = ts_input_params(argc, argv);

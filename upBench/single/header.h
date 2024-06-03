@@ -31,8 +31,6 @@
 
 time_t start_time;
 
-pthread_t thread;
-
 struct dpu_set_t dpu_set, dpu;
 
 struct parameter{
