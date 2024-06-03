@@ -20,6 +20,8 @@
 #include "../BFS_support/timer.h"
 #include "../BFS_support/utils.h"
 
+#include "../header.h"
+
 #ifndef ENERGY
 #define ENERGY 0
 #endif
@@ -49,7 +51,7 @@ void bfs(int nr_dpus) {
     #endif
 
     // Allocate DPUs and load binary
-    struct dpu_set_t dpu_set, dpu;
+    //struct dpu_set_t dpu_set, dpu;
     uint32_t numDPUs;
     DPU_ASSERT(dpu_alloc(nr_dpus, NULL, &dpu_set));
     DPU_ASSERT(dpu_load(dpu_set, DPU_BINARY, NULL));
@@ -167,7 +169,10 @@ void bfs(int nr_dpus) {
         // Run all DPUs
         PRINT_INFO(p.verbosity >= 1, "    Booting DPUs");
         startTimer(&timer);
-        DPU_ASSERT(dpu_launch(dpu_set, DPU_SYNCHRONOUS));
+        DPU_ASSERT(dpu_launch(dpu_set, DPU_ASYNCHRONOUS));
+
+        pthread_create(&thread, NULL, check_dpus_running, NULL);
+
         stopTimer(&timer);
         dpuTime += getElapsedTime(timer);
         PRINT_INFO(p.verbosity >= 2, "    Level DPU Time: %f ms", getElapsedTime(timer)*1e3);
@@ -325,5 +330,9 @@ void bfs(int nr_dpus) {
     free(nodeLevelReference);
 
     // EO
+    DPU_ASSERT(dpu_sync(dpu_set));
+    
+    pthread_join(thread, NULL);
+
     DPU_ASSERT(dpu_free(dpu_set));
 }

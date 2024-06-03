@@ -29,7 +29,7 @@ struct Params nw_input_params(int argc, char **argv) {
     struct Params p;
     p.n_warmup      = 1;
     p.n_reps        = 3;
-    p.max_rows      = 256;
+    p.max_rows      = 512;
     p.penalty       = 1;
 
     int opt;

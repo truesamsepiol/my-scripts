@@ -17,6 +17,8 @@
 #include "../RED_support/timer.h"
 #include "../RED_support/params.h"
 
+#include "../header.h"
+
 // Define the DPU Binary path as DPU_BINARY here
 #ifndef DPU_BINARY
 #define DPU_BINARY "./RED_bin/dpu_code"
@@ -53,7 +55,7 @@ char **argv;
 void red(int nr_dpus) {
     struct Params p = red_input_params(argc, argv);
 
-    struct dpu_set_t dpu_set, dpu;
+    //struct dpu_set_t dpu_set, dpu;
     uint32_t nr_of_dpus;
     
 #if ENERGY
@@ -139,7 +141,9 @@ void red(int nr_dpus) {
             #endif
         }
  
-        DPU_ASSERT(dpu_launch(dpu_set, DPU_SYNCHRONOUS));
+        DPU_ASSERT(dpu_launch(dpu_set, DPU_ASYNCHRONOUS));
+        pthread_create(&thread, NULL, check_dpus_running, NULL);
+
         if(rep >= p.n_warmup) {
             red_stop(&timer, 2);
             #if ENERGY
@@ -254,6 +258,9 @@ void red(int nr_dpus) {
         printf("[" ANSI_COLOR_RED "ERROR" ANSI_COLOR_RESET "] Outputs differ!\n");
     }
 
+    DPU_ASSERT(dpu_sync(dpu_set));
+
+    pthread_join(thread, NULL);
     // Deallocation
     free(A);
     DPU_ASSERT(dpu_free(dpu_set));

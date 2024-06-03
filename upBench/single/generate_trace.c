@@ -8,7 +8,7 @@
 #include <assert.h>
 #include <time.h>
 
-#define MAX_DPUS_PER_RANK 10
+#define MAX_DPUS_PER_RANK 20
 #define MAX_TASKLETS 24
 #define SIZE_MAX_APP_NAME 256
 #define MAX_APPS 1024

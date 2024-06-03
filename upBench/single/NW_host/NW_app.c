@@ -17,6 +17,8 @@
 #include "../NW_support/timer.h"
 #include "../NW_support/params.h"
 
+#include "../header.h"
+
 #if ENERGY
 #include <dpu_probe.h>
 #endif
@@ -184,7 +186,7 @@ char **argv;
 // Main of the Host Application
 void nw(int nr_dpus) {
     struct Params p = nw_input_params(argc, argv);
-    struct dpu_set_t dpu_set, dpu;
+    //struct dpu_set_t dpu_set, dpu;
     uint32_t nr_of_dpus, max_dpus;
 
 #if ENERGY
@@ -480,7 +482,8 @@ void nw(int nr_dpus) {
                 }
             }
             // Launch kernel on DPUs
-            DPU_ASSERT(dpu_launch(dpu_set, DPU_SYNCHRONOUS));
+            DPU_ASSERT(dpu_launch(dpu_set, DPU_ASYNCHRONOUS));
+
             if (rep >= p.n_warmup) {
                 nw_stop(&timer, 3);
                 // Timer for longest diagonal
@@ -574,6 +577,7 @@ void nw(int nr_dpus) {
         }
 
 
+        pthread_create(&thread, NULL, check_dpus_running, NULL);
         // Bottom-right computation on DPUs
         for (unsigned int blk = 2; blk <= (max_cols-1)/BL; blk++) {
 #if DYNAMIC
@@ -728,7 +732,7 @@ void nw(int nr_dpus) {
             if (rep >= p.n_warmup)
                 nw_start(&timer, 3, rep - p.n_warmup + blk - 1); // Do not re-initialize the counter
             // Launch kernel on DPUs
-            DPU_ASSERT(dpu_launch(dpu_set, DPU_SYNCHRONOUS));
+            DPU_ASSERT(dpu_launch(dpu_set, DPU_ASYNCHRONOUS));
             if (rep >= p.n_warmup)
                 nw_stop(&timer, 3);
 #if ENERGY
@@ -868,6 +872,10 @@ void nw(int nr_dpus) {
     } else {
         printf("[" ANSI_COLOR_RED "ERROR" ANSI_COLOR_RESET "] Outputs differ!\n");
     }
+
+    DPU_ASSERT(dpu_sync(dpu_set));
+
+    pthread_join(thread, NULL);
 
     free(input_itemsets_host);
     free(input_itemsets);

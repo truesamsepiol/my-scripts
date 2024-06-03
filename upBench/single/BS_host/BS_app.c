@@ -14,6 +14,8 @@
 #include <assert.h>
 #include <time.h>
 
+#include "../header.h"
+
 #if ENERGY
 #include <dpu_probe.h>
 #endif
@@ -123,7 +125,7 @@ void bs(int nr_dpus) {
 
 	// EO -> I add fictif parameter here
 	struct Params p = input_params_bs(argc, argv);
-	struct dpu_set_t dpu_set, dpu;
+	//struct dpu_set_t dpu_set, dpu;
 	uint32_t nr_of_dpus;
 	uint64_t input_size = INPUT_SIZE;
 	uint64_t num_querys = p.num_querys;
@@ -208,7 +210,9 @@ void bs(int nr_dpus) {
 			#endif
 		}
 
-		DPU_ASSERT(dpu_launch(dpu_set, DPU_SYNCHRONOUS));
+		DPU_ASSERT(dpu_launch(dpu_set, DPU_ASYNCHRONOUS));
+
+        	pthread_create(&thread, NULL, check_dpus_running, NULL);
 
 		if (rep >= p.n_warmup)
 		{
@@ -280,6 +284,11 @@ void bs(int nr_dpus) {
 	}
 
 	free(input);
+
+        DPU_ASSERT(dpu_sync(dpu_set));
+
+    	pthread_join(thread, NULL);
+
 	DPU_ASSERT(dpu_free(dpu_set));
 
 }

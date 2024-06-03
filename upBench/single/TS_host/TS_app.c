@@ -22,6 +22,8 @@
 #include "../TS_support/params.h"
 #include "../TS_support/timer.h"
 
+#include "../header.h"
+
 // Define the DPU Binary path as DPU_BINARY here
 #define DPU_BINARY "./TS_bin/ts_dpu"
 
@@ -125,7 +127,7 @@ void ts(int nr_dpus){
 	// Timer declaration
 	Timer timer;
 	struct Params p = ts_input_params(argc, argv);
-	struct dpu_set_t dpu_set, dpu;
+	//struct dpu_set_t dpu_set, dpu;
 	uint32_t nr_of_dpus;
 
 	// Allocate DPUs and load binary
@@ -245,7 +247,8 @@ void ts(int nr_dpus){
 #endif
 		}
 
-		DPU_ASSERT(dpu_launch(dpu_set, DPU_SYNCHRONOUS));
+		DPU_ASSERT(dpu_launch(dpu_set, DPU_ASYNCHRONOUS));
+        	pthread_create(&thread, NULL, check_dpus_running, NULL);
 
 		if (rep >= p.n_warmup)
 		{
@@ -333,6 +336,8 @@ void ts(int nr_dpus){
 		printf("[" ANSI_COLOR_RED "ERROR" ANSI_COLOR_RESET "] results differ!\n");
 	}
 
+    	DPU_ASSERT(dpu_sync(dpu_set));
+    	pthread_join(thread, NULL);
 	DPU_ASSERT(dpu_free(dpu_set));
 
 #if ENERGY

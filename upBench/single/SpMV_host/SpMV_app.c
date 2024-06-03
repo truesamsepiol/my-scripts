@@ -20,6 +20,8 @@
 #include "../SpMV_support/timer.h"
 #include "../SpMV_support/utils.h"
 
+#include "../header.h"
+
 #define DPU_BINARY "./SpMV_bin/dpu_code"
 
 #ifndef ENERGY
@@ -46,7 +48,7 @@ void spmv(int nr_dpus) {
     #endif
 
     // Allocate DPUs and load binary
-    struct dpu_set_t dpu_set, dpu;
+    //struct dpu_set_t dpu_set, dpu;
     uint32_t numDPUs;
     DPU_ASSERT(dpu_alloc(nr_dpus, NULL, &dpu_set));
     DPU_ASSERT(dpu_load(dpu_set, DPU_BINARY, NULL));
@@ -146,7 +148,8 @@ void spmv(int nr_dpus) {
     #if ENERGY
     DPU_ASSERT(dpu_probe_start(&probe));
     #endif
-    DPU_ASSERT(dpu_launch(dpu_set, DPU_SYNCHRONOUS));
+    DPU_ASSERT(dpu_launch(dpu_set, DPU_ASYNCHRONOUS));
+    pthread_create(&thread, NULL, check_dpus_running, NULL);
     #if ENERGY
     DPU_ASSERT(dpu_probe_stop(&probe));
     double energy;
@@ -208,6 +211,8 @@ void spmv(int nr_dpus) {
         }
     }
 
+    DPU_ASSERT(dpu_sync(dpu_set));
+    pthread_join(thread, NULL);
     // Deallocate data structures
     freeCOOMatrix(cooMatrix);
     freeCSRMatrix(csrMatrix);

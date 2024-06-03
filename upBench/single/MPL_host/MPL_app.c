@@ -22,6 +22,8 @@
 #include "../MPL_support/timer.h"
 #include "../MPL_support/params.h"
 
+#include "../header.h"
+
 // Define the DPU Binary path as DPU_BINARY here
 #ifndef DPU_BINARY
 #define DPU_BINARY "./MPL_bin/mlp_dpu"
@@ -80,7 +82,7 @@ char **argv;
 void mpl(int nr_dpus) {
 	struct Params p = mpl_input_params(argc, argv);
 
-	struct dpu_set_t dpu_set, dpu;
+	//struct dpu_set_t dpu_set, dpu;
 	uint32_t nr_of_dpus;
 
 	// Allocate DPUs and load binary
@@ -197,7 +199,9 @@ void mpl(int nr_dpus) {
 #endif
 		}
 
-		DPU_ASSERT(dpu_launch(dpu_set, DPU_SYNCHRONOUS));
+		DPU_ASSERT(dpu_launch(dpu_set, DPU_ASYNCHRONOUS));
+        
+		pthread_create(&thread, NULL, check_dpus_running, NULL);
 
 		if (rep >= p.n_warmup)
 		{
@@ -251,7 +255,7 @@ void mpl(int nr_dpus) {
 #endif
 			}
 
-			DPU_ASSERT(dpu_launch(dpu_set, DPU_SYNCHRONOUS));
+			DPU_ASSERT(dpu_launch(dpu_set, DPU_ASYNCHRONOUS));
 
 			if (rep >= p.n_warmup)
 			{
@@ -327,6 +331,9 @@ void mpl(int nr_dpus) {
 		printf("[" ANSI_COLOR_RED "ERROR" ANSI_COLOR_RESET "] Outputs differ!\n");
 	}
 
+        DPU_ASSERT(dpu_sync(dpu_set));
+
+    	pthread_join(thread, NULL);
 	// Deallocation
 	for(i = 0; i < NUM_LAYERS; i++)
 		free(A[i]);

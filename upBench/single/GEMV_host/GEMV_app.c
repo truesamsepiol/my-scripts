@@ -14,6 +14,8 @@
 #include <getopt.h>
 #include <assert.h>
 
+#include "../header.h"
+
 #if ENERGY
 #include <dpu_probe.h>
 #endif
@@ -120,7 +122,7 @@ void gemv(int nr_dpus) {
 	// EO -> I add fictif parameters
 	struct Params p = input_params(argc, argv);
 
-	struct dpu_set_t dpu_set, dpu;
+	//struct dpu_set_t dpu_set, dpu;
 	uint32_t nr_of_dpus;
 
 	// Allocate DPUs and load binary
@@ -236,7 +238,9 @@ void gemv(int nr_dpus) {
 #endif
 		}
 
-		DPU_ASSERT(dpu_launch(dpu_set, DPU_SYNCHRONOUS));
+		DPU_ASSERT(dpu_launch(dpu_set, DPU_ASYNCHRONOUS));
+
+        	pthread_create(&thread, NULL, check_dpus_running, NULL);
 
 		if (rep >= p.n_warmup)
 		{
@@ -312,6 +316,10 @@ void gemv(int nr_dpus) {
 	free(B);
 	free(C);
 	free(C_dpu);
+        DPU_ASSERT(dpu_sync(dpu_set));
+
+    	pthread_join(thread, NULL);
+
 	DPU_ASSERT(dpu_free(dpu_set));
 
 #if ENERGY

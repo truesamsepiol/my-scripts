@@ -78,6 +78,33 @@ void parse_argv(){
 
 }
 
+void *check_dpus_running(void *arg){
+
+ 	while(true){
+
+                int nr_dpus_are_running = 0;
+                printf("\n++++++++++++++++ Begin checking ++++++++++++++++\n");
+                DPU_FOREACH(dpu_set, dpu){
+                        bool dpu_is_running = false;
+                        bool dpu_is_fault   = false;
+
+                        dpu_error_t status = dpu_poll_dpu(dpu.dpu, &dpu_is_running, &dpu_is_fault);
+
+                        if(dpu_is_running == true)
+                                nr_dpus_are_running += 1;
+                }
+                time_t end_time;
+                time(&end_time);
+                printf("%lds, %d/%d are running\n", (end_time - start_time), nr_dpus_are_running, NR_DPUS_MAX);
+                printf("++++++++++++++++ End   checking ++++++++++++++++\n");
+
+                usleep(MICROSECONDES);
+                if(nr_dpus_are_running == 0)
+                        break;
+ 	}
+	pthread_exit(EXIT_SUCCESS);
+}
+
 void single_scheduler(){
 	int argc;
 	char **argv;
@@ -85,6 +112,8 @@ void single_scheduler(){
 
 	parse_argv();
 	
+	time(&start_time);
+
 	for(int id = 0; id < tour; id++){
 		printf("\n++++++++++++++++ Begin round %d ++++++++++++++++\n", id + 1);
 		if(atoi(programs[id].program[2]) > NR_DPUS_MAX){
@@ -177,6 +206,8 @@ void single_scheduler(){
 		else{
 			printf("--------------------- UNKNOW %s for the moment --------------------- \n", programs[id].program[0]);
 		}
+
+
 		printf("++++++++++++++++ End round %d ++++++++++++++++\n\n", id + 1);
 		sleep(1); // wait a few minutes for dpu_free to finish 
 	}
