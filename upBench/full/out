@@ -1,0 +1,1064 @@
+
+
+################# start full scheduler #################
+
+
+++++++++++++++++ Begin round 1 ++++++++++++++++
+total dpus allocated 16
+--------------------- Begin load BFS --------------------- 
+[0;32mINFO:[0m    Allocated 14 DPU(s)
+[0;32mINFO:[0m    Reading graph BFS_data/loc-gowalla_edges.txt
+[0;32mINFO:[0m        Graph has 196608 nodes and 1900654 edges
+[0;32mINFO:[0m    Assigning 14080 nodes per DPU
+--------------------- End   load BFS --------------------- 
+--------------------- Begin load BS --------------------- 
+--------------------- End   load BS --------------------- 
+
+++++++++++++++++ Begin checking ++++++++++++++++
+0s, 15/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1s, 0/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ End round 1 ++++++++++++++++
+
+++++++++++++++++ Begin round 2 ++++++++++++++++
+total dpus allocated 10
+--------------------- Begin load GEMV --------------------- 
+--------------------- End   load GEMV --------------------- 
+
+++++++++++++++++ Begin checking ++++++++++++++++
+5s, 10/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+6s, 10/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+7s, 10/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+8s, 10/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+9s, 10/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+10s, 10/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+11s, 10/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+12s, 10/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+13s, 10/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+14s, 10/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+15s, 10/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+16s, 10/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+17s, 10/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+18s, 10/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+19s, 10/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+20s, 10/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+21s, 10/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+22s, 10/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+23s, 10/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+24s, 10/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+25s, 10/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+26s, 10/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+27s, 10/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+28s, 10/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+29s, 9/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+30s, 7/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+31s, 2/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+32s, 1/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+33s, 0/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ End round 2 ++++++++++++++++
+
+++++++++++++++++ Begin round 3 ++++++++++++++++
+total dpus allocated 15
+--------------------- Begin load HST-L --------------------- 
+Allocated 15 DPU(s)
+NR_TASKLETS	16	BL	8	input_size	23592960
+Load input data
+Run program on DPU(s) 
+--------------------- End   load HST-L --------------------- 
+
+++++++++++++++++ Begin checking ++++++++++++++++
+36s, 14/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+37s, 15/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+38s, 15/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+39s, 15/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+40s, 15/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+41s, 15/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+42s, 15/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+43s, 15/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+44s, 15/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+45s, 15/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+46s, 15/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+47s, 15/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+48s, 15/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+49s, 15/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+50s, 15/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+51s, 15/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+52s, 15/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+53s, 15/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+54s, 15/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+55s, 15/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+56s, 15/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+57s, 15/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+58s, 15/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+59s, 15/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+60s, 15/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+61s, 15/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+63s, 15/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+64s, 15/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+65s, 15/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+66s, 15/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+67s, 15/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+68s, 15/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+69s, 15/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+70s, 15/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+71s, 15/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+72s, 15/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+73s, 15/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+74s, 15/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+75s, 15/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+76s, 15/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+77s, 15/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+78s, 15/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+79s, 15/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+80s, 15/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+81s, 15/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+82s, 15/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+83s, 15/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+84s, 15/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+85s, 13/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+86s, 12/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+87s, 10/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+88s, 6/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+89s, 0/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ End round 3 ++++++++++++++++
+
+++++++++++++++++ Begin round 4 ++++++++++++++++
+total dpus allocated 15
+--------------------- Begin load HST-S --------------------- 
+Allocated 15 DPU(s)
+NR_TASKLETS	16	BL	10	input_size	23592960
+Load input data
+Run program on DPU(s) 
+--------------------- End   load HST-S --------------------- 
+
+++++++++++++++++ Begin checking ++++++++++++++++
+92s, 15/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+93s, 15/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+94s, 15/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+95s, 15/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+96s, 15/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+97s, 15/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+98s, 15/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+99s, 15/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+100s, 15/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+101s, 15/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+102s, 15/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+103s, 15/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+104s, 15/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+105s, 14/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+106s, 10/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+107s, 0/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ End round 4 ++++++++++++++++
+
+++++++++++++++++ Begin round 5 ++++++++++++++++
+total dpus allocated 15
+--------------------- Begin load MLP --------------------- 
+--------------------- End   load MLP --------------------- 
+--------------------- Begin load NW --------------------- 
+Allocated 6 DPU(s)
+Allocated 13 TASKLET(s) per DPU
+Max size 256
+--------------------- End   load NW --------------------- 
+
+++++++++++++++++ Begin checking ++++++++++++++++
+110s, 9/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+111s, 8/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+112s, 0/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ End round 5 ++++++++++++++++
+
+++++++++++++++++ Begin round 6 ++++++++++++++++
+total dpus allocated 17
+--------------------- Begin load RED --------------------- 
+Allocated 6 DPU(s)
+nr_elements	39321600	NR_TASKLETS	16	BL	10
+Load input data
+Run program on DPU(s) 
+--------------------- End   load RED --------------------- 
+--------------------- Begin load SCAN-RSS --------------------- 
+Allocated 11 DPU(s)
+nr_elements	43253760	NR_TASKLETS	16	BL	10
+Load input data
+Run program on DPU(s) 
+--------------------- End   load SCAN-RSS --------------------- 
+
+++++++++++++++++ Begin checking ++++++++++++++++
+117s, 14/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+118s, 17/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+119s, 17/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+120s, 17/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+121s, 17/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+122s, 9/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+123s, 6/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+124s, 6/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+125s, 6/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+126s, 5/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+127s, 0/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ End round 6 ++++++++++++++++
+
+++++++++++++++++ Begin round 7 ++++++++++++++++
+total dpus allocated 20
+--------------------- Begin load SCAN-SSA --------------------- 
+Allocated 11 DPU(s)
+nr_elements	43253760	NR_TASKLETS	16	BL	10
+Load input data
+Run program on DPU(s) 
+--------------------- End   load SCAN-SSA --------------------- 
+--------------------- Begin load SEL --------------------- 
+Allocated 8 DPU(s)
+nr_elements	31457280	NR_TASKLETS	16	BL	10
+Load input data
+--------------------- End   load SEL --------------------- 
+--------------------- Begin load SpMV --------------------- 
+[0;32mINFO:[0m    Allocated 1 DPU(s)
+[0;32mINFO:[0m    Reading matrix SpMV_data/bcsstk30.mtx
+[0;32mINFO:[0m        28924 rows, 28924 columns, 1036208 nonzeros
+[0;32mINFO:[0m    Assigning 28924 rows per DPU
+[0;32mINFO:[0m    Copying data to DPUs
+[0;32mINFO:[0m        CPU-DPU Time: 3.587000 ms
+[0;32mINFO:[0m    Booting DPUs
+--------------------- End   load SpMV --------------------- 
+
+++++++++++++++++ Begin checking ++++++++++++++++
+131s, 13/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+132s, 20/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+133s, 20/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+134s, 20/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+135s, 20/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+136s, 20/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+137s, 20/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+138s, 20/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+139s, 19/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+140s, 18/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+141s, 18/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+142s, 12/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+143s, 8/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+144s, 1/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+145s, 1/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+146s, 1/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+147s, 1/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+148s, 1/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+149s, 1/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+150s, 1/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+151s, 1/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+152s, 1/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+153s, 1/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+154s, 1/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+155s, 1/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+156s, 1/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+157s, 1/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+158s, 1/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+159s, 1/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+160s, 1/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+161s, 0/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ End round 7 ++++++++++++++++
+
+++++++++++++++++ Begin round 8 ++++++++++++++++
+total dpus allocated 11
+--------------------- Begin load TRNS --------------------- 
+nr_elements	17301504	NR_TASKLETS	16
+M_	12288, m	16, N_	11, n	8
+Allocated 11 DPU(s)
+Load input data (step 1)
+Run step 2 on DPU(s) 
+--------------------- End   load TRNS --------------------- 
+
+++++++++++++++++ Begin checking ++++++++++++++++
+194s, 11/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+195s, 11/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+196s, 11/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+197s, 11/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+198s, 11/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+199s, 11/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+200s, 11/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+201s, 11/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+202s, 11/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+203s, 11/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+204s, 11/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+205s, 11/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+206s, 11/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+207s, 11/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+208s, 11/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+209s, 11/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+210s, 10/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+211s, 10/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+212s, 10/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+213s, 9/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+214s, 5/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+215s, 0/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ End round 8 ++++++++++++++++
+
+++++++++++++++++ Begin round 9 ++++++++++++++++
+total dpus allocated 16
+--------------------- Begin load TS --------------------- 
+--------------------- End   load TS --------------------- 
+
+++++++++++++++++ Begin checking ++++++++++++++++
+218s, 10/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+219s, 16/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+220s, 16/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+221s, 16/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+222s, 16/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+223s, 16/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+224s, 16/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+225s, 16/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+226s, 15/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+227s, 12/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+228s, 0/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ End round 9 ++++++++++++++++
+
+++++++++++++++++ Begin round 10 ++++++++++++++++
+total dpus allocated 20
+--------------------- Begin load UNI --------------------- 
+Allocated 7 DPU(s)
+nr_elements	27525120	NR_TASKLETS	16	BL	10
+Load input data
+Run program on DPU(s) 
+--------------------- End   load UNI --------------------- 
+--------------------- Begin load VA --------------------- 
+Allocated 8 DPU(s)
+nr_elements	20971520	NR_TASKLETS	16	BL	10
+Load input data
+--------------------- End   load VA --------------------- 
+--------------------- Begin load BFS --------------------- 
+[0;32mINFO:[0m    Allocated 3 DPU(s)
+[0;32mINFO:[0m    Reading graph BFS_data/loc-gowalla_edges.txt
+[0;32mINFO:[0m        Graph has 196608 nodes and 1900654 edges
+[0;32mINFO:[0m    Assigning 65536 nodes per DPU
+--------------------- End   load BFS --------------------- 
+--------------------- Begin load BFS --------------------- 
+[0;32mINFO:[0m    Allocated 2 DPU(s)
+[0;32mINFO:[0m    Reading graph BFS_data/loc-gowalla_edges.txt
+[0;32mINFO:[0m        Graph has 196608 nodes and 1900654 edges
+[0;32mINFO:[0m    Assigning 98304 nodes per DPU
+--------------------- End   load BFS --------------------- 
+
+++++++++++++++++ Begin checking ++++++++++++++++
+232s, 18/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+233s, 15/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+234s, 15/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+235s, 15/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+236s, 15/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+237s, 15/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+238s, 13/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+239s, 9/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+240s, 0/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ End round 10 ++++++++++++++++
+
+++++++++++++++++ Begin round 11 ++++++++++++++++
+total dpus allocated 18
+--------------------- Begin load GEMV --------------------- 
+--------------------- End   load GEMV --------------------- 
+--------------------- Begin load BFS --------------------- 
+[0;32mINFO:[0m    Allocated 5 DPU(s)
+[0;32mINFO:[0m    Reading graph BFS_data/loc-gowalla_edges.txt
+[0;32mINFO:[0m        Graph has 196608 nodes and 1900654 edges
+[0;32mINFO:[0m    Assigning 39360 nodes per DPU
+--------------------- End   load BFS --------------------- 
+--------------------- Begin load BS --------------------- 
+--------------------- End   load BS --------------------- 
+--------------------- Begin load BFS --------------------- 
+[0;32mINFO:[0m    Allocated 6 DPU(s)
+[0;32mINFO:[0m    Reading graph BFS_data/loc-gowalla_edges.txt
+[0;32mINFO:[0m        Graph has 196608 nodes and 1900654 edges
+[0;32mINFO:[0m    Assigning 32768 nodes per DPU
+--------------------- End   load BFS --------------------- 
+
+++++++++++++++++ Begin checking ++++++++++++++++
+245s, 14/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+246s, 6/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+247s, 6/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+248s, 6/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+249s, 6/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+250s, 6/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+251s, 6/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+252s, 6/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+253s, 6/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+254s, 6/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+255s, 6/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+256s, 6/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+257s, 6/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+258s, 6/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+259s, 6/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+260s, 6/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+261s, 6/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+262s, 6/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+263s, 6/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+264s, 6/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+265s, 6/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+266s, 6/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+267s, 6/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+268s, 6/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+269s, 6/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+270s, 6/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+271s, 6/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+272s, 6/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+273s, 6/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+274s, 6/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+275s, 6/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+276s, 5/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+277s, 4/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+278s, 4/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+279s, 1/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+280s, 0/20 are running
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ End round 11 ++++++++++++++++
+
+
+################# END Excution of 22 programs #################
+

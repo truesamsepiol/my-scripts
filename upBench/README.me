@@ -2,16 +2,26 @@
 
 I write a single and full scheduler for manage upmem apps.
 
+#author
+Eric OKALA (alias samsepiol)
+
 ## Usage
 
 Pour executer un scheduler vous devez lui fournir des traces que vous avez généré au préalable grace au générateur de trace que vous trouvez dans les dossiers single et full
 
 ```bash
-./generate_trace -h
+./generate_trace -h 
 
-./full_scheduler -h
+./single_scheduler -f traces > out
 
-./single_scheduler -h
+./full_scheduler -f traces > out
 ```
 
 Si jamais vous modifiez du code, vous pouvez vous servir du script commandes.sh pour tout recompiler. 
+
+## Extract metric
+
+Pour extraire les metrics lancher le script 
+```bash
+./extraction.sh
+```

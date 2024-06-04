@@ -53,4 +53,4 @@ rm *.o && echo "" \ &&
 echo "USAGE: " \ && 
 echo "		./generate_trace -f lis_of_applications" \ &&
 echo "" \ &&
-echo "		./full_scheduler -f traces"
+echo "		./full_scheduler -f traces > out"

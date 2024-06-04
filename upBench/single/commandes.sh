@@ -50,4 +50,4 @@ rm *.o && echo "" \ &&
 echo "USAGE: " \ && 
 echo "		./generate_trace -f lis_of_applications" \ &&
 echo "" \ &&
-echo "		./single_scheduler -f traces"
+echo "		./single_scheduler -f traces > out"
