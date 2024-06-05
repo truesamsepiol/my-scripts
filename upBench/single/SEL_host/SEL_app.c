@@ -47,7 +47,7 @@ static void read_input(T* A, unsigned int nr_elements, unsigned int nr_elements_
 }
 
 // Compute output in the host
-static unsigned int select_host(T* C, T* A, unsigned int nr_elements) {
+/*static unsigned int select_host(T* C, T* A, unsigned int nr_elements) {
     unsigned int pos = 0;
     for (unsigned int i = 0; i < nr_elements; i++) {
         if(!pred(A[i])) {
@@ -56,7 +56,7 @@ static unsigned int select_host(T* C, T* A, unsigned int nr_elements) {
         }
     }
     return pos;
-}
+}*/
 
 int argc;
 char **argv;
@@ -81,8 +81,8 @@ void sel(int nr_dpus) {
     printf("Allocated %d DPU(s)\n", nr_of_dpus);
 
     unsigned int i = 0;
-    uint32_t accum = 0;
-    uint32_t total_count = 0;
+    //uint32_t accum = 0;
+    //uint32_t total_count = 0;
 
     const unsigned int input_size = p.exp == 0 ? p.input_size * nr_of_dpus : p.input_size; // Total input size (weak or strong scaling)
     const unsigned int input_size_dpu_ = divceil(input_size, nr_of_dpus); // Input size per DPU (max.)
@@ -94,29 +94,29 @@ void sel(int nr_dpus) {
     C = malloc(input_size_dpu_round * nr_of_dpus * sizeof(T));
     C2 = malloc(input_size_dpu_round * nr_of_dpus * sizeof(T));
     T *bufferA = A;
-    T *bufferC = C2;
+    //T *bufferC = C2;
 
     // Create an input file with arbitrary data
     read_input(A, input_size, input_size_dpu_round * nr_of_dpus);
 
     // Timer declaration
-    Timer timer;
+    //Timer timer;
 
     printf("NR_TASKLETS\t%d\tBL\t%d\n", NR_TASKLETS, BL);
 
     // Loop over main kernel
-    for(int rep = 0; rep < p.n_warmup + p.n_reps; rep++) {
+    //for(int rep = 0; rep < p.n_warmup + p.n_reps; rep++) {
 
         // Compute output on CPU (performance comparison and verification purposes)
-        if(rep >= p.n_warmup)
+        /*if(rep >= p.n_warmup)
             sel_start(&timer, 0, rep - p.n_warmup);
         total_count = select_host(C, A, input_size);
         if(rep >= p.n_warmup)
-            sel_stop(&timer, 0);
+            sel_stop(&timer, 0);*/
 
         printf("Load input data\n");
-        if(rep >= p.n_warmup)
-            sel_start(&timer, 1, rep - p.n_warmup);
+        /*if(rep >= p.n_warmup)
+            sel_start(&timer, 1, rep - p.n_warmup);*/
         // Input arguments
         const unsigned int input_size_dpu = input_size_dpu_round;
         unsigned int kernel = 0;
@@ -131,7 +131,7 @@ void sel(int nr_dpus) {
             DPU_ASSERT(dpu_prepare_xfer(dpu, bufferA + input_size_dpu * i));
         }
         DPU_ASSERT(dpu_push_xfer(dpu_set, DPU_XFER_TO_DPU, DPU_MRAM_HEAP_POINTER_NAME, 0, input_size_dpu * sizeof(T), DPU_XFER_DEFAULT));
-        if(rep >= p.n_warmup)
+        /*if(rep >= p.n_warmup)
             sel_stop(&timer, 1);
 
         printf("Run program on DPU(s) \n");
@@ -141,10 +141,18 @@ void sel(int nr_dpus) {
             #if ENERGY
             DPU_ASSERT(dpu_probe_start(&probe));
             #endif
-        }
+        }*/
         DPU_ASSERT(dpu_launch(dpu_set, DPU_ASYNCHRONOUS));
-        pthread_create(&thread, NULL, check_dpus_running, NULL);
-        if(rep >= p.n_warmup) {
+        
+	pthread_create(&thread, NULL, check_dpus_running, NULL);
+    	
+	DPU_ASSERT(dpu_sync(dpu_set));
+    	
+	pthread_join(thread, NULL);
+    	
+	DPU_ASSERT(dpu_free(dpu_set));
+
+        /*if(rep >= p.n_warmup) {
             sel_stop(&timer, 2);
             #if ENERGY
             DPU_ASSERT(dpu_probe_stop(&probe));
@@ -257,5 +265,5 @@ void sel(int nr_dpus) {
     free(A);
     free(C);
     free(C2);
-    DPU_ASSERT(dpu_free(dpu_set));
+    DPU_ASSERT(dpu_free(dpu_set));*/
 }

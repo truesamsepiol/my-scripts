@@ -88,29 +88,29 @@ void va(int nr_dpus){
     C2 = malloc(input_size_dpu_8bytes * nr_of_dpus * sizeof(T));
     T *bufferA = A;
     T *bufferB = B;
-    T *bufferC = C2;
+    //T *bufferC = C2;
 
     // Create an input file with arbitrary data
     read_input(A, B, input_size);
 
     // Timer declaration
-    Timer timer;
+    //Timer timer;
 
     printf("NR_TASKLETS\t%d\tBL\t%d\n", NR_TASKLETS, BL);
 
     // Loop over main kernel
-    for(int rep = 0; rep < p.n_warmup + p.n_reps; rep++) {
+    //for(int rep = 0; rep < p.n_warmup + p.n_reps; rep++) {
 
         // Compute output on CPU (performance comparison and verification purposes)
-        if(rep >= p.n_warmup)
-            va_start(&timer, 0, rep - p.n_warmup);
+        //if(rep >= p.n_warmup)
+            //va_start(&timer, 0, rep - p.n_warmup);
         vector_addition_host(C, A, B, input_size);
-        if(rep >= p.n_warmup)
-            va_stop(&timer, 0);
+        //if(rep >= p.n_warmup)
+            //va_stop(&timer, 0);
 
         printf("Load input data\n");
-        if(rep >= p.n_warmup)
-            va_start(&timer, 1, rep - p.n_warmup);
+        //if(rep >= p.n_warmup)
+            //va_start(&timer, 1, rep - p.n_warmup);
         // Input arguments
         unsigned int kernel = 0;
         dpu_arguments_t input_arguments[nr_dpus];
@@ -139,7 +139,7 @@ void va(int nr_dpus){
             DPU_ASSERT(dpu_prepare_xfer(dpu, bufferB + input_size_dpu_8bytes * i));
         }
         DPU_ASSERT(dpu_push_xfer(dpu_set, DPU_XFER_TO_DPU, DPU_MRAM_HEAP_POINTER_NAME, input_size_dpu_8bytes * sizeof(T), input_size_dpu_8bytes * sizeof(T), DPU_XFER_DEFAULT));
-        if(rep >= p.n_warmup)
+        /*if(rep >= p.n_warmup)
             va_stop(&timer, 1);
 
         printf("Run program on DPU(s) \n");
@@ -149,10 +149,18 @@ void va(int nr_dpus){
             #if ENERGY
             DPU_ASSERT(dpu_probe_start(&probe));
             #endif
-        }
+        }*/
         DPU_ASSERT(dpu_launch(dpu_set, DPU_ASYNCHRONOUS));
-        pthread_create(&thread, NULL, check_dpus_running, NULL);
-        if(rep >= p.n_warmup) {
+        
+	pthread_create(&thread, NULL, check_dpus_running, NULL);
+    	
+	DPU_ASSERT(dpu_sync(dpu_set));
+    	
+	pthread_join(thread, NULL);
+    	
+	DPU_ASSERT(dpu_free(dpu_set));
+
+        /*if(rep >= p.n_warmup) {
             va_stop(&timer, 2);
             #if ENERGY
             DPU_ASSERT(dpu_probe_stop(&probe));
@@ -224,5 +232,5 @@ void va(int nr_dpus){
     free(B);
     free(C);
     free(C2);
-    DPU_ASSERT(dpu_free(dpu_set));
+    DPU_ASSERT(dpu_free(dpu_set));*/
 }

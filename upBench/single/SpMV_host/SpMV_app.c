@@ -68,7 +68,7 @@ void spmv(int nr_dpus) {
     struct Nonzero* nonzeros = csrMatrix.nonzeros;
     float* inVector = malloc(ROUND_UP_TO_MULTIPLE_OF_8(numCols*sizeof(float)));
     initVector(inVector, numCols);
-    float* outVector = malloc(ROUND_UP_TO_MULTIPLE_OF_8(numRows*sizeof(float)));
+    //float* outVector = malloc(ROUND_UP_TO_MULTIPLE_OF_8(numRows*sizeof(float)));
 
     // Partition data structure across DPUs
     uint32_t numRowsPerDPU = ROUND_UP_TO_MULTIPLE_OF_2((numRows - 1)/numDPUs + 1);
@@ -150,9 +150,18 @@ void spmv(int nr_dpus) {
     #if ENERGY
     DPU_ASSERT(dpu_probe_start(&probe));
     #endif
+    
     DPU_ASSERT(dpu_launch(dpu_set, DPU_ASYNCHRONOUS));
+    
     pthread_create(&thread, NULL, check_dpus_running, NULL);
-    #if ENERGY
+    
+    DPU_ASSERT(dpu_sync(dpu_set));
+    
+    pthread_join(thread, NULL);
+    
+    DPU_ASSERT(dpu_free(dpu_set));
+    
+    /*#if ENERGY
     DPU_ASSERT(dpu_probe_stop(&probe));
     double energy;
     DPU_ASSERT(dpu_probe_get(&probe, DPU_ENERGY, DPU_AVERAGE, &energy));
@@ -223,5 +232,5 @@ void spmv(int nr_dpus) {
     free(outVectorReference);
 
     // EO
-    DPU_ASSERT(dpu_free(dpu_set));
+    DPU_ASSERT(dpu_free(dpu_set));*/
 }

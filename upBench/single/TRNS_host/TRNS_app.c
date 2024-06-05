@@ -94,31 +94,31 @@ void trns(unsigned int nr_dpus) {
     memcpy(A_backup, A_host, M_ * m * N_ * n * sizeof(T));
 
     // Timer declaration
-    Timer timer;
+    //Timer timer;
 
     printf("NR_TASKLETS\t%d\n", NR_TASKLETS);
     printf("M_\t%u, m\t%u, N_\t%u, n\t%u\n", M_, m, N_, n);
 
     // Loop over main kernel
-    for(int rep = 0; rep < p.n_warmup + p.n_reps; rep++) {
+    //for(int rep = 0; rep < p.n_warmup + p.n_reps; rep++) {
 
-        int timer_fix = 0;
+        //int timer_fix = 0;
         // Compute output on CPU (performance comparison and verification purposes)
         memcpy(A_host, A_backup, M_ * m * N_ * n * sizeof(T));
-        if(rep >= p.n_warmup)
-            trns_start(&timer, 0, rep - p.n_warmup + timer_fix);
+        /*if(rep >= p.n_warmup)
+            trns_start(&timer, 0, rep - p.n_warmup + timer_fix);*/
         trns_host(A_host, M_ * m, N_ * n, 1);
-        if(rep >= p.n_warmup)
-            trns_stop(&timer, 0);
+        /*if(rep >= p.n_warmup)
+            trns_stop(&timer, 0);*/
 
         unsigned int curr_dpu = 0;
-        unsigned int active_dpus;
-        unsigned int active_dpus_before = 0;
-        unsigned int first_round = 1;
+        unsigned int active_dpus = nr_dpus;
+        //unsigned int active_dpus_before = 0;
+        //unsigned int first_round = 1;
 
-        while(curr_dpu < N_){
+        //while(curr_dpu < N_){
             // Allocate DPUs and load binary
-            if((N_ - curr_dpu) > nr_dpus){
+            /*if((N_ - curr_dpu) > nr_dpus){
                 active_dpus = nr_dpus;
             } else {
                 active_dpus = (N_ - curr_dpu);
@@ -129,16 +129,16 @@ void trns(unsigned int nr_dpus) {
                 DPU_ASSERT(dpu_load(dpu_set, DPU_BINARY, NULL));
                 DPU_ASSERT(dpu_get_nr_dpus(dpu_set, &nr_of_dpus));
                 printf("Allocated %d DPU(s)\n", nr_of_dpus);
-            } else if (first_round){
+            } else if (first_round){*/
                 DPU_ASSERT(dpu_alloc(active_dpus, NULL, &dpu_set));
                 DPU_ASSERT(dpu_load(dpu_set, DPU_BINARY, NULL));
                 DPU_ASSERT(dpu_get_nr_dpus(dpu_set, &nr_of_dpus));
                 printf("Allocated %d DPU(s)\n", nr_of_dpus);
-            }
+            //}
 
             printf("Load input data (step 1)\n");
-            if(rep >= p.n_warmup)
-                trns_start(&timer, 1, rep - p.n_warmup + timer_fix);
+            /*if(rep >= p.n_warmup)
+                trns_start(&timer, 1, rep - p.n_warmup + timer_fix);*/
             // Load input matrix (step 1)
             for(unsigned int j = 0; j < M_ * m; j++){
                 unsigned int i = 0;
@@ -148,8 +148,8 @@ void trns(unsigned int nr_dpus) {
                 }
                 DPU_ASSERT(dpu_push_xfer(dpu_set, DPU_XFER_TO_DPU, DPU_MRAM_HEAP_POINTER_NAME, sizeof(T) * j * n, sizeof(T) * n, DPU_XFER_DEFAULT));
             }
-            if(rep >= p.n_warmup)
-                trns_stop(&timer, 1);
+            /*if(rep >= p.n_warmup)
+                trns_stop(&timer, 1);*/
             // Reset done array (for step 3)
             DPU_FOREACH(dpu_set, dpu) {
                 DPU_ASSERT(dpu_prepare_xfer(dpu, done_host));
@@ -164,15 +164,23 @@ void trns(unsigned int nr_dpus) {
 	        DPU_ASSERT(dpu_push_xfer(dpu_set, DPU_XFER_TO_DPU, "DPU_INPUT_ARGUMENTS", 0, sizeof(input_arguments), DPU_XFER_DEFAULT));
             printf("Run step 2 on DPU(s) \n");
             // Run DPU kernel
-            if(rep >= p.n_warmup){
+            /*if(rep >= p.n_warmup){
                 trns_start(&timer, 2, rep - p.n_warmup + timer_fix);
 #if ENERGY
                 DPU_ASSERT(dpu_probe_start(&probe));
 #endif
-            }
+            }*/
             DPU_ASSERT(dpu_launch(dpu_set, DPU_ASYNCHRONOUS));
-            pthread_create(&thread, NULL, check_dpus_running, NULL);
-            if(rep >= p.n_warmup){
+            
+	    pthread_create(&thread, NULL, check_dpus_running, NULL);
+    	    
+	    DPU_ASSERT(dpu_sync(dpu_set));
+    	    
+	    pthread_join(thread, NULL);
+            
+	    DPU_ASSERT(dpu_free(dpu_set));
+
+            /*if(rep >= p.n_warmup){
                 trns_stop(&timer, 2);
 #if ENERGY
                 DPU_ASSERT(dpu_probe_stop(&probe));
@@ -283,5 +291,5 @@ void trns(unsigned int nr_dpus) {
     free(A_host);
     free(A_backup);
     free(A_result);
-    free(done_host);
+    free(done_host);*/
 }

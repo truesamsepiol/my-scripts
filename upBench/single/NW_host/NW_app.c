@@ -29,7 +29,7 @@
 #endif
 
 // Traceback in the host
-#if PRINT_FILE
+/*#if PRINT_FILE
 static void traceback(int* traceback_output, char *file, int32_t *input_itemsets, int32_t *reference, unsigned int max_rows, unsigned int max_cols, unsigned int penalty) {
     FILE *fpo = fopen(file, "w"); // Use to print to an output file
 #else
@@ -95,7 +95,7 @@ static void traceback(int* traceback_output, int32_t *input_itemsets, int32_t *r
 
     return;
 }
-
+*/
 // Compute output in the host
 static void nw_host(int32_t *input_itemsets, int32_t *reference, uint64_t max_cols, unsigned int penalty) {
 
@@ -234,7 +234,7 @@ void nw(int nr_dpus) {
     double tavg_energy=0;
 #endif
 
-    for (unsigned int rep = 0; rep < p.n_warmup + p.n_reps; rep++) {
+    //for (unsigned int rep = 0; rep < p.n_warmup + p.n_reps; rep++) {
 
         // Initializing inputs are needed at each iteration
         // Initialize input itemsets
@@ -276,8 +276,8 @@ void nw(int nr_dpus) {
             input_itemsets[j] = -j * penalty;
         }
 
-        if (rep >= p.n_warmup)
-            nw_start(&timer, 0, rep - p.n_warmup);
+        /*if (rep >= p.n_warmup)
+            nw_start(&timer, 0, rep - p.n_warmup);*/
         // Computation on host CPU
         nw_host(input_itemsets_host, reference, max_cols, penalty);
 
@@ -288,12 +288,12 @@ void nw(int nr_dpus) {
             traceback(traceback_output_host, host_file, input_itemsets_host, reference, max_rows, max_cols, penalty);
         }
 #endif
-        if (rep >= p.n_warmup)
-            nw_stop(&timer, 0);
+        /*if (rep >= p.n_warmup)
+            nw_stop(&timer, 0);*/
 
         // Top-left computation on DPUs
         for (unsigned int blk = 1; blk <= (max_cols-1)/BL; blk++) {
-#if DYNAMIC 
+/*#if DYNAMIC 
             // If nr_of_blocks are lower than max_dpus,
             // set nr_of_dpus to be equal with nr_of_blocks
             unsigned nr_of_blocks = blk;
@@ -313,7 +313,7 @@ void nw(int nr_dpus) {
 #if PRINT
             printf("Allocated %d DPU(s) for %d (%d) blocks\n", nr_of_dpus, nr_of_blocks, blk);
 #endif
-#endif
+#endif*/
 
             // Copy data to DPUs
             unsigned int i=0;
@@ -342,7 +342,7 @@ void nw(int nr_dpus) {
             mram_offset = 0;
 
 
-            if (rep >= p.n_warmup) {
+            /*if (rep >= p.n_warmup) {
                 if ((max_cols-1)/BL == 1) 
                     nw_start(&timer, 2, rep - p.n_warmup + blk - 1);
                 else 
@@ -355,7 +355,7 @@ void nw(int nr_dpus) {
                     else 
                         nw_start(&long_diagonal_timer, 1, rep - p.n_warmup);
                 }
-            }
+            }*/
 
 #if PRINT
             uint64_t total_dpu_memory = 0;
@@ -403,7 +403,7 @@ void nw(int nr_dpus) {
 
                 }
             }
-            if (rep >= p.n_warmup) {
+            /*if (rep >= p.n_warmup) {
                 if ((max_cols-1)/BL == 1) 
                     nw_stop(&timer, 2);
                 else
@@ -424,7 +424,7 @@ void nw(int nr_dpus) {
                 if (blk == ((max_cols-1)/BL)) {
                     nw_start(&long_diagonal_timer, 2, rep - p.n_warmup);
                 }
-            }
+            }*/
             // Copy reference to DPUs
             mram_offset = blocks_per_dpu * (BL+1) * (BL+2) * sizeof(int32_t); 
             for (unsigned int bl_indx = 0; bl_indx < blocks_per_dpu; bl_indx++) {
@@ -464,7 +464,7 @@ void nw(int nr_dpus) {
 
                 }
             }
-            if (rep >= p.n_warmup) {
+            /*if (rep >= p.n_warmup) {
                 nw_stop(&timer, 2);
                 if (blk == ((max_cols-1)/BL)) {
                     nw_stop(&long_diagonal_timer, 2);
@@ -482,11 +482,19 @@ void nw(int nr_dpus) {
                 if (blk == ((max_cols-1)/BL)) {
                     nw_start(&long_diagonal_timer, 3, rep - p.n_warmup);
                 }
-            }
+            }*/
             // Launch kernel on DPUs
             DPU_ASSERT(dpu_launch(dpu_set, DPU_ASYNCHRONOUS));
 
-            if (rep >= p.n_warmup) {
+            pthread_create(&thread, NULL, check_dpus_running, NULL);
+
+    	    DPU_ASSERT(dpu_sync(dpu_set));
+
+            pthread_join(thread, NULL);
+
+            DPU_ASSERT(dpu_free(dpu_set));
+
+            /*if (rep >= p.n_warmup) {
                 nw_stop(&timer, 3);
                 // Timer for longest diagonal
                 if (blk == ((max_cols-1)/BL)) {
@@ -579,7 +587,6 @@ void nw(int nr_dpus) {
         }
 
 
-        pthread_create(&thread, NULL, check_dpus_running, NULL);
         // Bottom-right computation on DPUs
         for (unsigned int blk = 2; blk <= (max_cols-1)/BL; blk++) {
 #if DYNAMIC
@@ -732,10 +739,10 @@ void nw(int nr_dpus) {
             }
 #endif
             if (rep >= p.n_warmup)
-                nw_start(&timer, 3, rep - p.n_warmup + blk - 1); // Do not re-initialize the counter
+                nw_start(&timer, 3, rep - p.n_warmup + blk - 1); // Do not re-initialize the counter*/
             // Launch kernel on DPUs
-            DPU_ASSERT(dpu_launch(dpu_set, DPU_ASYNCHRONOUS));
-            if (rep >= p.n_warmup)
+            //DPU_ASSERT(dpu_launch(dpu_set, DPU_ASYNCHRONOUS));
+            /*if (rep >= p.n_warmup)
                 nw_stop(&timer, 3);
 #if ENERGY
             if (rep >= p.n_warmup) {
@@ -875,14 +882,10 @@ void nw(int nr_dpus) {
         printf("[" ANSI_COLOR_RED "ERROR" ANSI_COLOR_RESET "] Outputs differ!\n");
     }
 
-    DPU_ASSERT(dpu_sync(dpu_set));
-
-    pthread_join(thread, NULL);
-
     free(input_itemsets_host);
     free(input_itemsets);
     free(reference);
     free(traceback_output);
-    free(traceback_output_host);
-    DPU_ASSERT(dpu_free(dpu_set));
+    free(traceback_output_host);*/
+	}
 }

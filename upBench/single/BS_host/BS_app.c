@@ -167,12 +167,12 @@ void bs(int nr_dpus) {
 	uint64_t slice_per_dpu          = num_querys / nr_of_dpus;
 	dpu_arguments_t input_arguments = {input_size, slice_per_dpu, 0};
 
-	for (unsigned int rep = 0; rep < p.n_warmup + p.n_reps; rep++) {
+//	for (unsigned int rep = 0; rep < p.n_warmup + p.n_reps; rep++) {
 		// Perform input transfers
 		uint64_t i = 0;
 
-		if (rep >= p.n_warmup)
-		start(&timer, 1, rep - p.n_warmup);
+/*		if (rep >= p.n_warmup)
+		start(&timer, 1, rep - p.n_warmup);*/
 
 		DPU_FOREACH(dpu_set, dpu, i)
 		{
@@ -199,7 +199,7 @@ void bs(int nr_dpus) {
 
 		DPU_ASSERT(dpu_push_xfer(dpu_set, DPU_XFER_TO_DPU, DPU_MRAM_HEAP_POINTER_NAME, input_size * sizeof(DTYPE), slice_per_dpu * sizeof(DTYPE), DPU_XFER_DEFAULT));
 
-		if (rep >= p.n_warmup)
+		/*if (rep >= p.n_warmup)
 		stop(&timer, 1);
 
 		// Run kernel on DPUs
@@ -209,13 +209,19 @@ void bs(int nr_dpus) {
 			#if ENERGY
 			DPU_ASSERT(dpu_probe_start(&probe));
 			#endif
-		}
+		}*/
 
 		DPU_ASSERT(dpu_launch(dpu_set, DPU_ASYNCHRONOUS));
 
         	pthread_create(&thread, NULL, check_dpus_running, NULL);
 
-		if (rep >= p.n_warmup)
+        	DPU_ASSERT(dpu_sync(dpu_set));
+
+    		pthread_join(thread, NULL);
+
+		DPU_ASSERT(dpu_free(dpu_set));
+
+	/*	if (rep >= p.n_warmup)
 		{
 			stop(&timer, 2);
 			#if ENERGY
@@ -284,12 +290,6 @@ void bs(int nr_dpus) {
 		printf("[" ANSI_COLOR_RED "ERROR" ANSI_COLOR_RESET "] results differ!\n");
 	}
 
-	free(input);
-
-        DPU_ASSERT(dpu_sync(dpu_set));
-
-    	pthread_join(thread, NULL);
-
-	DPU_ASSERT(dpu_free(dpu_set));
+	free(input);*/
 
 }

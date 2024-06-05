@@ -33,8 +33,8 @@ static DTYPE tSeries[1 << 26];
 static DTYPE query  [1 << 15];
 static DTYPE AMean  [1 << 26];
 static DTYPE ASigma [1 << 26];
-static DTYPE minHost;
-static DTYPE minHostIdx;
+//static DTYPE minHost;
+//static DTYPE minHostIdx;
 
 // Create input arrays
 static DTYPE *create_test_file(unsigned int ts_elements, unsigned int query_elements) {
@@ -54,7 +54,7 @@ static DTYPE *create_test_file(unsigned int ts_elements, unsigned int query_elem
 }
 
 // Compute output in the host
-static void streamp(DTYPE* tSeries, DTYPE* AMean, DTYPE* ASigma, int ProfileLength,
+/*static void streamp(DTYPE* tSeries, DTYPE* AMean, DTYPE* ASigma, int ProfileLength,
 		DTYPE* query, int queryLength, DTYPE queryMean, DTYPE queryStdDeviation)
 {
 	DTYPE distance;
@@ -79,7 +79,7 @@ static void streamp(DTYPE* tSeries, DTYPE* AMean, DTYPE* ASigma, int ProfileLeng
 			minHostIdx = subseq;
 		}
 	}
-}
+}*/
 
 static void compute_ts_statistics(unsigned int timeSeriesLength, unsigned int ProfileLength, unsigned int queryLength)
 {
@@ -127,7 +127,7 @@ void ts(int nr_dpus){
     	pthread_t thread;
 
 	// Timer declaration
-	Timer timer;
+	//Timer timer;
 	struct Params p = ts_input_params(argc, argv);
 	//struct dpu_set_t dpu_set, dpu;
 	uint32_t nr_of_dpus;
@@ -181,16 +181,16 @@ void ts(int nr_dpus){
 	dpu_arguments_t input_arguments = {ts_size, query_length, query_mean, query_std, slice_per_dpu, 0, kernel};
 	uint32_t mem_offset;
 
-	dpu_result_t result;
-	result.minValue = INT32_MAX;
-	result.minIndex = 0;
-	result.maxValue = 0;
-	result.maxIndex = 0;
+	//dpu_result_t result;
+	//result.minValue = INT32_MAX;
+	//result.minIndex = 0;
+	//result.maxValue = 0;
+	//result.maxIndex = 0;
 
-	for (int rep = 0; rep < p.n_warmup + p.n_reps; rep++) {
+	//for (int rep = 0; rep < p.n_warmup + p.n_reps; rep++) {
 
-		if (rep >= p.n_warmup)
-			ts_start(&timer, 1, rep - p.n_warmup);
+		/*if (rep >= p.n_warmup)
+			ts_start(&timer, 1, rep - p.n_warmup);*/
 		uint32_t i = 0;
 
 		DPU_FOREACH(dpu_set, dpu) {
@@ -237,7 +237,7 @@ void ts(int nr_dpus){
 
 		DPU_ASSERT(dpu_push_xfer(dpu_set, DPU_XFER_TO_DPU, DPU_MRAM_HEAP_POINTER_NAME, mem_offset, (slice_per_dpu + query_length)*sizeof(DTYPE), DPU_XFER_DEFAULT));
 
-		if (rep >= p.n_warmup)
+		/*if (rep >= p.n_warmup)
 			ts_stop(&timer, 1);
 
 		// Run kernel on DPUs
@@ -247,12 +247,19 @@ void ts(int nr_dpus){
 #if ENERGY
 			DPU_ASSERT(dpu_probe_start(&probe));
 #endif
-		}
+		}*/
 
 		DPU_ASSERT(dpu_launch(dpu_set, DPU_ASYNCHRONOUS));
-        	pthread_create(&thread, NULL, check_dpus_running, NULL);
 
-		if (rep >= p.n_warmup)
+		pthread_create(&thread, NULL, check_dpus_running, NULL);
+    		
+		DPU_ASSERT(dpu_sync(dpu_set));
+    		
+		pthread_join(thread, NULL);
+		
+		DPU_ASSERT(dpu_free(dpu_set));
+
+		/*if (rep >= p.n_warmup)
 		{
 			ts_stop(&timer, 2);
 #if ENERGY
@@ -344,5 +351,5 @@ void ts(int nr_dpus){
 
 #if ENERGY
 	DPU_ASSERT(dpu_probe_deinit(&probe));
-#endif
+#endif*/
 }

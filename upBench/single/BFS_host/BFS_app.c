@@ -156,6 +156,8 @@ void bfs(int nr_dpus) {
         ++dpuIdx;
 
     }
+
+    /* EO --> No interesting for the rest
     PRINT_INFO(p.verbosity >= 1, "    CPU-DPU Time: %f ms", loadTime*1e3);
 
     // Iterate until next frontier is empty
@@ -169,12 +171,18 @@ void bfs(int nr_dpus) {
 	#endif
         // Run all DPUs
         PRINT_INFO(p.verbosity >= 1, "    Booting DPUs");
-        startTimer(&timer);
+        startTimer(&timer);*/
         DPU_ASSERT(dpu_launch(dpu_set, DPU_ASYNCHRONOUS));
 
         pthread_create(&thread, NULL, check_dpus_running, NULL);
 
-        stopTimer(&timer);
+    	DPU_ASSERT(dpu_sync(dpu_set));
+    
+    	pthread_join(thread, NULL);
+
+    	DPU_ASSERT(dpu_free(dpu_set));
+
+        /*stopTimer(&timer);
         dpuTime += getElapsedTime(timer);
         PRINT_INFO(p.verbosity >= 2, "    Level DPU Time: %f ms", getElapsedTime(timer)*1e3);
 	#if ENERGY
@@ -330,10 +338,5 @@ void bfs(int nr_dpus) {
     free(nextFrontier);
     free(nodeLevelReference);
 
-    // EO
-    DPU_ASSERT(dpu_sync(dpu_set));
-    
-    pthread_join(thread, NULL);
-
-    DPU_ASSERT(dpu_free(dpu_set));
+    // EO*/
 }

@@ -200,12 +200,12 @@ void gemv(int nr_dpus) {
 	start(&timer, 0, 0);
 	gemv_host(C, A, B, m_size, n_size);
 	stop(&timer, 0);
-	for (unsigned int rep = 0; rep < p.n_warmup + p.n_reps; rep++) {
+	//for (unsigned int rep = 0; rep < p.n_warmup + p.n_reps; rep++) {
 
 
 
-		if (rep >= p.n_warmup)
-			start(&timer, 1, rep - p.n_warmup);
+		/*if (rep >= p.n_warmup)
+			start(&timer, 1, rep - p.n_warmup);*/
 		// Input arguments
 		i = 0;
 		DPU_FOREACH(dpu_set, dpu, i) {
@@ -228,7 +228,7 @@ void gemv(int nr_dpus) {
 		}
 		DPU_ASSERT(dpu_push_xfer(dpu_set, DPU_XFER_TO_DPU, DPU_MRAM_HEAP_POINTER_NAME, max_rows_per_dpu * n_size_pad * sizeof(T) , n_size_pad * sizeof(T), DPU_XFER_DEFAULT));
 
-		if (rep >= p.n_warmup)
+		/*if (rep >= p.n_warmup)
 			stop(&timer, 1);
 
 		// Run kernel on DPUs
@@ -238,13 +238,19 @@ void gemv(int nr_dpus) {
 #if ENERGY
 			DPU_ASSERT(dpu_probe_start(&probe));
 #endif
-		}
+		}*/
 
 		DPU_ASSERT(dpu_launch(dpu_set, DPU_ASYNCHRONOUS));
 
         	pthread_create(&thread, NULL, check_dpus_running, NULL);
 
-		if (rep >= p.n_warmup)
+        	DPU_ASSERT(dpu_sync(dpu_set));
+
+    		pthread_join(thread, NULL);
+
+		DPU_ASSERT(dpu_free(dpu_set));
+
+		/*if (rep >= p.n_warmup)
 		{
 			stop(&timer, 2);
 #if ENERGY
@@ -317,14 +323,9 @@ void gemv(int nr_dpus) {
 	free(A);
 	free(B);
 	free(C);
-	free(C_dpu);
-        DPU_ASSERT(dpu_sync(dpu_set));
+	free(C_dpu);*/
 
-    	pthread_join(thread, NULL);
-
-	DPU_ASSERT(dpu_free(dpu_set));
-
-#if ENERGY
+/*#if ENERGY
 	DPU_ASSERT(dpu_probe_deinit(&probe));
-#endif
+#endif*/
 }

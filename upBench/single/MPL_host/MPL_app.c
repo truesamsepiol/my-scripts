@@ -165,9 +165,9 @@ void mpl(int nr_dpus) {
 	mlp_host(C, A, B_host, m_size, n_size);
 	mpl_stop(&timer, 0);
 
-	for (unsigned int rep = 0; rep < p.n_warmup + p.n_reps; rep++) {
-		if (rep >= p.n_warmup)
-			mpl_start(&timer, 1, rep - p.n_warmup);
+	//for (unsigned int rep = 0; rep < p.n_warmup + p.n_reps; rep++) {
+		/*if (rep >= p.n_warmup)
+			mpl_start(&timer, 1, rep - p.n_warmup);*/
 		// Input arguments
 		i = 0;
 		// Copy input arguments to DPU
@@ -189,7 +189,7 @@ void mpl(int nr_dpus) {
 			DPU_ASSERT(dpu_prepare_xfer(dpu, B));
 		}
 		DPU_ASSERT(dpu_push_xfer(dpu_set, DPU_XFER_TO_DPU, DPU_MRAM_HEAP_POINTER_NAME, max_rows_per_dpu * n_size_pad * sizeof(T) , n_size_pad * sizeof(T), DPU_XFER_DEFAULT));
-		if (rep >= p.n_warmup)
+		/*if (rep >= p.n_warmup)
 			mpl_stop(&timer, 1);
 
 		// Run kernel on DPUs
@@ -199,13 +199,19 @@ void mpl(int nr_dpus) {
 #if ENERGY
 			DPU_ASSERT(dpu_probe_start(&probe));
 #endif
-		}
+		}*/
 
 		DPU_ASSERT(dpu_launch(dpu_set, DPU_ASYNCHRONOUS));
         
 		pthread_create(&thread, NULL, check_dpus_running, NULL);
 
-		if (rep >= p.n_warmup)
+	        DPU_ASSERT(dpu_sync(dpu_set));
+	
+    		pthread_join(thread, NULL);
+		
+		DPU_ASSERT(dpu_free(dpu_set));
+
+		/*if (rep >= p.n_warmup)
 		{
 			mpl_stop(&timer, 2);
 #if ENERGY
@@ -332,10 +338,6 @@ void mpl(int nr_dpus) {
 	} else {
 		printf("[" ANSI_COLOR_RED "ERROR" ANSI_COLOR_RESET "] Outputs differ!\n");
 	}
-
-        DPU_ASSERT(dpu_sync(dpu_set));
-
-    	pthread_join(thread, NULL);
 	// Deallocation
 	for(i = 0; i < NUM_LAYERS; i++)
 		free(A[i]);
@@ -343,9 +345,8 @@ void mpl(int nr_dpus) {
 	free(B);
 	free(C);
 	free(C_dpu);
-	DPU_ASSERT(dpu_free(dpu_set));
 
 #if ENERGY
 	DPU_ASSERT(dpu_probe_deinit(&probe));
-#endif
+#endif*/
 }

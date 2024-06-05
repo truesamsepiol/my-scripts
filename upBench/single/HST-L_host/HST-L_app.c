@@ -139,20 +139,20 @@ void hst_l(int nr_dpus) {
     printf("NR_TASKLETS\t%d\tBL\t%d\tinput_size\t%u\n", NR_TASKLETS, BL, input_size);
 
     // Loop over main kernel
-    for(int rep = 0; rep < p.n_warmup + p.n_reps; rep++) {
+    //for(int rep = 0; rep < p.n_warmup + p.n_reps; rep++) {
         memset(histo_host, 0, p.bins * sizeof(unsigned int));
         memset(histo, 0, nr_of_dpus * p.bins * sizeof(unsigned int));
 
         // Compute output on CPU (performance comparison and verification purposes)
-        if(rep >= p.n_warmup)
-            hst_l_start(&timer, 0, rep - p.n_warmup);
+        /*if(rep >= p.n_warmup)
+            hst_l_start(&timer, 0, rep - p.n_warmup);*/
         histogram_host(histo_host, A, p.bins, p.input_size, 1, nr_of_dpus);
-        if(rep >= p.n_warmup)
-            hst_l_stop(&timer, 0);
+        /*if(rep >= p.n_warmup)
+            hst_l_stop(&timer, 0);*/
 
         printf("Load input data\n");
-        if(rep >= p.n_warmup)
-            hst_l_start(&timer, 1, rep - p.n_warmup);
+        /*if(rep >= p.n_warmup)
+            hst_l_start(&timer, 1, rep - p.n_warmup);*/
         // Input arguments
         unsigned int kernel = 0;
         i = 0;
@@ -178,22 +178,28 @@ void hst_l(int nr_dpus) {
             DPU_ASSERT(dpu_prepare_xfer(dpu, bufferA + input_size_dpu_8bytes * i));
         }
         DPU_ASSERT(dpu_push_xfer(dpu_set, DPU_XFER_TO_DPU, DPU_MRAM_HEAP_POINTER_NAME, 0, input_size_dpu_8bytes * sizeof(T), DPU_XFER_DEFAULT));
-        if(rep >= p.n_warmup)
-            hst_l_stop(&timer, 1);
+        /*if(rep >= p.n_warmup)
+            hst_l_stop(&timer, 1);*/
 
         printf("Run program on DPU(s) \n");
         // Run DPU kernel
-        if(rep >= p.n_warmup) {
+        /*if(rep >= p.n_warmup) {
             hst_l_start(&timer, 2, rep - p.n_warmup);
             #if ENERGY
             DPU_ASSERT(dpu_probe_start(&probe));
             #endif
-        }
+        }*/
         DPU_ASSERT(dpu_launch(dpu_set, DPU_ASYNCHRONOUS));
 
         pthread_create(&thread, NULL, check_dpus_running, NULL);
 
-        if(rep >= p.n_warmup) {
+    	DPU_ASSERT(dpu_sync(dpu_set));
+
+    	pthread_join(thread, NULL);
+
+    	DPU_ASSERT(dpu_free(dpu_set));
+
+        /*if(rep >= p.n_warmup) {
             hst_l_stop(&timer, 2);
             #if ENERGY
             DPU_ASSERT(dpu_probe_stop(&probe));
@@ -288,10 +294,5 @@ void hst_l(int nr_dpus) {
     // Deallocation
     free(A);
     free(histo_host);
-    free(histo);
-    DPU_ASSERT(dpu_sync(dpu_set));
-
-    pthread_join(thread, NULL);
-
-    DPU_ASSERT(dpu_free(dpu_set));
+    free(histo);*/
 }

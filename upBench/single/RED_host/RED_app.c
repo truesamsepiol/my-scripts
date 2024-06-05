@@ -41,13 +41,13 @@ static void read_input(T* A, unsigned int nr_elements) {
 }
 
 // Compute output in the host
-static T reduction_host(T* A, unsigned int nr_elements) {
+/*static T reduction_host(T* A, unsigned int nr_elements) {
     T count = 0;
     for (unsigned int i = 0; i < nr_elements; i++) {
         count += A[i];
     }
     return count;
-}
+}*/
 
 int argc;
 char **argv;
@@ -87,31 +87,31 @@ void red(int nr_dpus) {
     // Input/output allocation
     A = malloc(input_size_dpu_8bytes * nr_of_dpus * sizeof(T));
     T *bufferA = A;
-    T count = 0;
-    T count_host = 0;
+    /*T count = 0;
+    T count_host = 0;*/
 
     // Create an input file with arbitrary data
     read_input(A, input_size);
 
     // Timer declaration
-    Timer timer;
+    //Timer timer;
 
     printf("NR_TASKLETS\t%d\tBL\t%d\n", NR_TASKLETS, BL);
 
     // Loop over main kernel
-    for(int rep = 0; rep < p.n_warmup + p.n_reps; rep++) {
+    //for(int rep = 0; rep < p.n_warmup + p.n_reps; rep++) {
 
         // Compute output on CPU (performance comparison and verification purposes)
-        if(rep >= p.n_warmup)
+        /*if(rep >= p.n_warmup)
             red_start(&timer, 0, rep - p.n_warmup);
         count_host = reduction_host(A, input_size);
         if(rep >= p.n_warmup)
-            red_stop(&timer, 0);
+            red_stop(&timer, 0);*/
 
         printf("Load input data\n");
-        if(rep >= p.n_warmup)
-            red_start(&timer, 1, rep - p.n_warmup);
-        count = 0;
+        /*if(rep >= p.n_warmup)
+            red_start(&timer, 1, rep - p.n_warmup);*/
+        //count = 0;
         // Input arguments
         unsigned int kernel = 0;
         dpu_arguments_t input_arguments[nr_dpus];
@@ -131,22 +131,29 @@ void red(int nr_dpus) {
             DPU_ASSERT(dpu_prepare_xfer(dpu, bufferA + input_size_dpu_8bytes * i));
         }
         DPU_ASSERT(dpu_push_xfer(dpu_set, DPU_XFER_TO_DPU, DPU_MRAM_HEAP_POINTER_NAME, 0, input_size_dpu_8bytes * sizeof(T), DPU_XFER_DEFAULT));
-        if(rep >= p.n_warmup)
-            red_stop(&timer, 1);
+        /*if(rep >= p.n_warmup)
+            red_stop(&timer, 1);*/
 
         printf("Run program on DPU(s) \n");
         // Run DPU kernel
-        if(rep >= p.n_warmup) {
+        /*if(rep >= p.n_warmup) {
             red_start(&timer, 2, rep - p.n_warmup);
             #if ENERGY
             DPU_ASSERT(dpu_probe_start(&probe));
             #endif
-        }
+        }*/
  
         DPU_ASSERT(dpu_launch(dpu_set, DPU_ASYNCHRONOUS));
+
         pthread_create(&thread, NULL, check_dpus_running, NULL);
 
-        if(rep >= p.n_warmup) {
+    	DPU_ASSERT(dpu_sync(dpu_set));
+
+    	pthread_join(thread, NULL);
+
+    	DPU_ASSERT(dpu_free(dpu_set));
+
+        /*if(rep >= p.n_warmup) {
             red_stop(&timer, 2);
             #if ENERGY
             DPU_ASSERT(dpu_probe_stop(&probe));
@@ -265,5 +272,5 @@ void red(int nr_dpus) {
     pthread_join(thread, NULL);
     // Deallocation
     free(A);
-    DPU_ASSERT(dpu_free(dpu_set));
+    DPU_ASSERT(dpu_free(dpu_set));*/
 }
