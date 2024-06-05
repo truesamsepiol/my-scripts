@@ -95,7 +95,7 @@ void *check_dpus_running(void *arg){
                 }
                 time_t end_time;
                 time(&end_time);
-                printf("%lds, %d/%d are running\n", (end_time - start_time), nr_dpus_are_running, NR_DPUS_MAX);
+                printf("%lds, %d/%d are running %d are wasted\n", (end_time - start_time), nr_dpus_are_running, NR_DPUS_MAX, NR_DPUS_MAX - nr_dpus_are_running);
                 printf("++++++++++++++++ End   checking ++++++++++++++++\n");
 
                 usleep(MICROSECONDES);
