@@ -71,8 +71,8 @@ def build_graphe():
     
     fig1 = plt.figure()
     plt.grid(True)
-    plt.plot(xFull, yFull, linewidth=1, marker=".", label=labelFull)
-    plt.plot(xSingle, ySingle, linewidth=1, marker=".", label=labelSingle)
+    plt.plot(xFull, yFull, linewidth=2, marker="", label=labelFull)
+    plt.plot(xSingle, ySingle, linewidth=2, marker="", label=labelSingle)
     plt.xlabel(uniteX, labelpad=4.0, fontsize='small', fontweight='bold')
     plt.ylabel(uniteY, labelpad=4.0, fontsize='small', fontweight='bold')
     plt.title("# DPUs used")
@@ -84,8 +84,8 @@ def build_graphe():
 
     fig2 = plt.figure()
     plt.grid(True)
-    plt.plot(xFull, zFull, linewidth=1, marker=".", label=labelFull)
-    plt.plot(xSingle, zSingle, linewidth=1, marker=".", label=labelSingle)
+    plt.plot(xFull, zFull, linewidth=2, marker="", label=labelFull)
+    plt.plot(xSingle, zSingle, linewidth=2, marker="", label=labelSingle)
     plt.xlabel(uniteX, labelpad=4.0, fontsize='small', fontweight='bold')
     plt.ylabel(uniteY, labelpad=4.0, fontsize='small', fontweight='bold')
     plt.title("# DPUs wasted")
