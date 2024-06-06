@@ -51,11 +51,11 @@ def bluid_coordonate(file_name, xAxis, yAxis, zAxis):
 def build_graphe():
     xSingle = [i for i in range(max_time + 1)]
     ySingle = [0 for i in range(max_time + 1)]
-    zSingle = [i for i in range(max_time + 1)]
+    zSingle = [20 for i in range(max_time + 1)]
 
     xFull   = [i for i in range(max_time + 1)]
     yFull   = [0 for i in range(max_time + 1)]
-    zFull   = [i for i in range(max_time + 1)]
+    zFull   = [20 for i in range(max_time + 1)]
 
     for i in range(len(y1)):
         yFull[x1[i]] = y1[i]
@@ -69,25 +69,13 @@ def build_graphe():
     for i in range(len(z2)):
         zSingle[x2[i]] = z2[i]
     
-    """plt.grid(True)
-    plt.plot(xFull, yFull, linewidth=1, marker=".", label=labelFull)
-    plt.plot(xSingle, ySingle, linewidth=1, marker=".", label=labelSingle)
-    plt.xlabel(uniteX, labelpad=4.0, fontsize='small', fontweight='bold')
-    plt.ylabel(uniteY, labelpad=4.0, fontsize='small', fontweight='bold')
-    plt.legend()
-   
-    plt.xticks(np.arange(0, max_time + 1, 75))
-    plt.yticks(np.arange(0, max_dpus + 1, 2))
-
-    file_name  = "evalutaion_of_single_vs_full.pdf"
-    plt.savefig(file_name, dpi='figure', format="pdf", bbox_inches="tight", pad_inches=0.1)"""
-
     fig1 = plt.figure()
     plt.grid(True)
     plt.plot(xFull, yFull, linewidth=1, marker=".", label=labelFull)
     plt.plot(xSingle, ySingle, linewidth=1, marker=".", label=labelSingle)
     plt.xlabel(uniteX, labelpad=4.0, fontsize='small', fontweight='bold')
     plt.ylabel(uniteY, labelpad=4.0, fontsize='small', fontweight='bold')
+    plt.title("# DPUs used")
     plt.legend()
    
     plt.xticks(np.arange(0, max_time + 1, 75))
@@ -96,10 +84,11 @@ def build_graphe():
 
     fig2 = plt.figure()
     plt.grid(True)
-    plt.plot(xFull, yFull, linewidth=1, marker=".", label=labelFull)
-    plt.plot(xSingle, ySingle, linewidth=1, marker=".", label=labelSingle)
+    plt.plot(xFull, zFull, linewidth=1, marker=".", label=labelFull)
+    plt.plot(xSingle, zSingle, linewidth=1, marker=".", label=labelSingle)
     plt.xlabel(uniteX, labelpad=4.0, fontsize='small', fontweight='bold')
     plt.ylabel(uniteY, labelpad=4.0, fontsize='small', fontweight='bold')
+    plt.title("# DPUs wasted")
     plt.legend()
    
     plt.xticks(np.arange(0, max_time + 1, 75))
@@ -111,7 +100,7 @@ def build_graphe():
     fig_nums = plt.get_fignums()
     figs = [plt.figure(n) for n in fig_nums]
     for fig in figs:
-        fig.savefig(pp, dpi='figure', format='pdf', bbox_inches="tight", pad_inches=0.1)
+        fig.savefig(pp, dpi='figure', format='pdf', bbox_inches="tight", pad_inches=0.5)
     pp.close()
 
    
