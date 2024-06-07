@@ -138,97 +138,136 @@ void full_scheduler(){
 			sub_set_of_dpus[id] = dpu;
 
 		int end, start = 0;
+		pthread_t threads[NR_DPUS_MAX];
+		struct args threads_args[NR_DPUS_MAX];
+		int nr_max_threads = 0;
 		do{
 			end = atoi(programs[i].program[2]) + start - 1;
 
 			if(!strcmp(programs[i].program[0], "./sum_elt_in_vector_dpu")){
 				printf("--------------------- Begin load sum_elt_in_vector --------------------- \n");
-				sum(start, end);
+				threads_args[nr_max_threads].start = start;
+				threads_args[nr_max_threads].end   = end;
+				pthread_create(&threads[nr_max_threads], NULL, sum, (void *) &threads_args[nr_max_threads]);
 				printf("--------------------- End   load sum_elt_in_vector --------------------- \n");
 			}
 			else if(!strcmp(programs[i].program[0], "./factoriel_dpu")){
 				printf("--------------------- Begin load factorial --------------------- \n");
-				fac(start, end);
+				threads_args[nr_max_threads].start = start;
+				threads_args[nr_max_threads].end   = end;
+				pthread_create(&threads[nr_max_threads], NULL, fac, (void *) &threads_args[nr_max_threads]);
 				printf("--------------------- End   load factorial --------------------- \n");
 			}
 			else if(!strcmp(programs[i].program[0], "./BFS")){
 				printf("--------------------- Begin load BFS --------------------- \n");
-				bfs(start, end);
+				threads_args[nr_max_threads].start = start;
+				threads_args[nr_max_threads].end   = end;
+				pthread_create(&threads[nr_max_threads], NULL, bfs, (void *) &threads_args[nr_max_threads]);
 				printf("--------------------- End   load BFS --------------------- \n");
 			}
 			else if(!strcmp(programs[i].program[0], "./BS")){
 				printf("--------------------- Begin load BS --------------------- \n");
-				bs(start, end);
+				threads_args[nr_max_threads].start = start;
+				threads_args[nr_max_threads].end   = end;
+				pthread_create(&threads[nr_max_threads], NULL, bs, (void *) &threads_args[nr_max_threads]);
 				printf("--------------------- End   load BS --------------------- \n");
 			}
 			else if(!strcmp(programs[i].program[0], "./GEMV")){
 				printf("--------------------- Begin load GEMV --------------------- \n");
-				gemv(start, end);
+				threads_args[nr_max_threads].start = start;
+				threads_args[nr_max_threads].end   = end;
+				pthread_create(&threads[nr_max_threads], NULL, gemv, (void *) &threads_args[nr_max_threads]);
 				printf("--------------------- End   load GEMV --------------------- \n");
 			}
 			else if(!strcmp(programs[i].program[0], "./HST-L")){
 				printf("--------------------- Begin load HST-L --------------------- \n");
-				hst_l(start, end);
+				threads_args[nr_max_threads].start = start;
+				threads_args[nr_max_threads].end   = end;
+				pthread_create(&threads[nr_max_threads], NULL, hst_l, (void *) &threads_args[nr_max_threads]);
 				printf("--------------------- End   load HST-L --------------------- \n");
 			}
 			else if(!strcmp(programs[i].program[0], "./HST-S")){
 				printf("--------------------- Begin load HST-S --------------------- \n");
-				hst_s(start, end);
+				threads_args[nr_max_threads].start = start;
+				threads_args[nr_max_threads].end   = end;
+				pthread_create(&threads[nr_max_threads], NULL, hst_s, (void *) &threads_args[nr_max_threads]);
 				printf("--------------------- End   load HST-S --------------------- \n");
 			}
 			else if(!strcmp(programs[i].program[0], "./MLP")){
 				printf("--------------------- Begin load MLP --------------------- \n");
-				mlp(start, end);
+				threads_args[nr_max_threads].start = start;
+				threads_args[nr_max_threads].end   = end;
+				pthread_create(&threads[nr_max_threads], NULL, mlp, (void *) &threads_args[nr_max_threads]);
 				printf("--------------------- End   load MLP --------------------- \n");
 			}
 			else if(!strcmp(programs[i].program[0], "./NW")){
 				printf("--------------------- Begin load NW --------------------- \n");
-				nw(start, end);
+				threads_args[nr_max_threads].start = start;
+				threads_args[nr_max_threads].end   = end;
+				pthread_create(&threads[nr_max_threads], NULL, nw, (void *) &threads_args[nr_max_threads]);
 				printf("--------------------- End   load NW --------------------- \n");
 			}
 			else if(!strcmp(programs[i].program[0], "./RED")){
 				printf("--------------------- Begin load RED --------------------- \n");
-				red(start, end);
+				threads_args[nr_max_threads].start = start;
+				threads_args[nr_max_threads].end   = end;
+				pthread_create(&threads[nr_max_threads], NULL, red, (void *) &threads_args[nr_max_threads]);
 				printf("--------------------- End   load RED --------------------- \n");
 			}
 			else if(!strcmp(programs[i].program[0], "./SCAN-RSS")){
 				printf("--------------------- Begin load SCAN-RSS --------------------- \n");
-				scan_rss(start, end);
+				threads_args[nr_max_threads].start = start;
+				threads_args[nr_max_threads].end   = end;
+				pthread_create(&threads[nr_max_threads], NULL, scan_rss, (void *) &threads_args[nr_max_threads]);
 				printf("--------------------- End   load SCAN-RSS --------------------- \n");
 			}
 			else if(!strcmp(programs[i].program[0], "./SCAN-SSA")){
 				printf("--------------------- Begin load SCAN-SSA --------------------- \n");
-				scan_ssa(start, end);
+				threads_args[nr_max_threads].start = start;
+				threads_args[nr_max_threads].end   = end;
+				pthread_create(&threads[nr_max_threads], NULL, scan_ssa, (void *) &threads_args[nr_max_threads]);
 				printf("--------------------- End   load SCAN-SSA --------------------- \n");
 			}
 			else if(!strcmp(programs[i].program[0], "./SEL")){
 				printf("--------------------- Begin load SEL --------------------- \n");
-				sel(start, end);
+				threads_args[nr_max_threads].start = start;
+				threads_args[nr_max_threads].end   = end;
+				pthread_create(&threads[nr_max_threads], NULL, sel, (void *) &threads_args[nr_max_threads]);
 				printf("--------------------- End   load SEL --------------------- \n");
 			}
 			else if(!strcmp(programs[i].program[0], "./SpMV")){
 				printf("--------------------- Begin load SpMV --------------------- \n");
-				spmv(start, end);
+				threads_args[nr_max_threads].start = start;
+				threads_args[nr_max_threads].end   = end;
+				pthread_create(&threads[nr_max_threads], NULL, spmv, (void *) &threads_args[nr_max_threads]);
 				printf("--------------------- End   load SpMV --------------------- \n");
 			}
 			else if(!strcmp(programs[i].program[0], "./TRNS")){
 				printf("--------------------- Begin load TRNS --------------------- \n");
-				trns(start, end);
+				threads_args[nr_max_threads].start = start;
+				threads_args[nr_max_threads].end   = end;
+				pthread_create(&threads[nr_max_threads], NULL, trns, (void *) &threads_args[nr_max_threads]);
 				printf("--------------------- End   load TRNS --------------------- \n");
 			}
 			else if(!strcmp(programs[i].program[0], "./TS")){
 				printf("--------------------- Begin load TS --------------------- \n");
-				ts(start, end);
+				threads_args[nr_max_threads].start = start;
+				threads_args[nr_max_threads].end   = end;
+				pthread_create(&threads[nr_max_threads], NULL, ts, (void *) &threads_args[nr_max_threads]);
 				printf("--------------------- End   load TS --------------------- \n");
 			}
 			else if(!strcmp(programs[i].program[0], "./UNI")){
 				printf("--------------------- Begin load UNI --------------------- \n");
-				uni(start, end);
+				threads_args[nr_max_threads].start = start;
+				threads_args[nr_max_threads].end   = end;
+				pthread_create(&threads[nr_max_threads], NULL, uni, (void *) &threads_args[nr_max_threads]);
 				printf("--------------------- End   load UNI --------------------- \n");
 			}
 			else if(!strcmp(programs[i].program[0], "./VA")){
 				printf("--------------------- Begin load VA --------------------- \n");
-				va(start, end);
+				threads_args[nr_max_threads].start = start;
+				threads_args[nr_max_threads].end   = end;
+				pthread_create(&threads[nr_max_threads], NULL, va, (void *) &threads_args[nr_max_threads]);
 				printf("--------------------- End   load VA --------------------- \n");
 			}
 			else{
@@ -238,9 +277,12 @@ void full_scheduler(){
 
 			start = end + 1;
 			i += 1;
+			nr_max_threads += 1;
 		}while(start < nr_dpus_total);	
 		//++++++++++++++++         end            ++++++++++++++++
-		
+		for(int tid = 0; tid < nr_max_threads; tid++)
+			pthread_join(threads[tid], NULL);
+
 		DPU_ASSERT(dpu_launch(set, DPU_ASYNCHRONOUS));
 
 		pthread_t thread;
@@ -253,7 +295,7 @@ void full_scheduler(){
 		DPU_ASSERT(dpu_free(set));
 		printf("\n++++++++++++++++ End round %d ++++++++++++++++\n", round + 1);	
 		round += 1;
-		sleep(1);
+		sleep(2);
 	}
 
 	printf("\n\n################# END Excution of %d programs #################\n\n", tour);

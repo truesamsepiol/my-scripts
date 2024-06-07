@@ -183,7 +183,11 @@ static void nw_host(int32_t *input_itemsets, int32_t *reference, uint64_t max_co
 int argc;
 char **argv;
 // Main of the Host Application
-void nw(int start, int end) {
+void *nw(void *args) {
+
+    struct args *tmp = (struct args *)args;
+    int start = tmp->start;
+    int end   = tmp->end;
     struct Params p = nw_input_params(argc, argv);
     //struct dpu_set_t dpu_set, dpu;
     uint32_t nr_of_dpus; //, max_dpus;

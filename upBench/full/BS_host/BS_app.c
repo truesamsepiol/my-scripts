@@ -121,7 +121,11 @@ int64_t binarySearch(DTYPE * input, DTYPE * querys, DTYPE input_size, uint64_t n
 int argc;
 char ** argv;
 // Main of the Host Application
-void bs(int start, int end) {
+void *bs(void *args) {
+
+    	struct args *tmp = (struct args *)args;
+    	int start = tmp->start;
+    	int end   = tmp->end;
 
 	// EO -> I add fictif parameter here
 	struct Params p = input_params_bs(argc, argv);

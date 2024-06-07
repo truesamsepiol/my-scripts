@@ -67,7 +67,11 @@ static void gemv_host(T* C, T* A, T* B, unsigned int m_size, unsigned int n_size
 char **argv;
 int argc;
 // Main of the Host Application
-void gemv(int start, int end) {
+void *gemv(void *args) {
+
+    	struct args *tmp = (struct args *)args;
+    	int start = tmp->start;
+    	int end   = tmp->end;
 
 	// EO -> I add fictif parameters
 	struct Params p = gemv_input_params(argc, argv);

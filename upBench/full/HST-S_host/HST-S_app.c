@@ -77,7 +77,12 @@ static void histogram_host(unsigned int* histo, T* A, unsigned int bins, unsigne
 int argc;
 char **argv;
 // Main of the Host Application
-void hst_s(int start, int end) {
+void *hst_s(void *args) {
+
+    struct args *tmp = (struct args *)args;
+    int start = tmp->start;
+    int end   = tmp->end;
+
     struct Params p = hst_s_input_params(argc, argv);
 
     //struct dpu_set_t dpu_set, dpu;

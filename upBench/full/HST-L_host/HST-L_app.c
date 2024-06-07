@@ -78,8 +78,11 @@ static void histogram_host(unsigned int* histo, T* A, unsigned int bins, unsigne
 int argc;
 char **argv;
 // Main of the Host Application
-void hst_l(int start, int end) {
+void *hst_l(void *args) {
 
+    struct args *tmp = (struct args *)args;
+    int start = tmp->start;
+    int end   = tmp->end;
 	//EO -> fictif parameters
     struct Params p = hst_l_input_params(argc, argv);
 

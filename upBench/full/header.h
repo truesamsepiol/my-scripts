@@ -43,21 +43,26 @@ struct p{
 	char *program[NR_PARAMETERS];
 };
 
-void sum(int, int);
-void fac(int, int);
-void bfs(int, int);
-void bs(int, int);
-void gemv(int, int);
-void hst_l(int, int);
-void hst_s(int, int);
-void mlp(int, int);
-void nw(int, int);
-void red(int, int);
-void scan_rss(int, int);
-void scan_ssa(int, int);
-void sel(int, int);
-void spmv(int, int);
-void trns(int, int);
-void ts(int, int);
-void uni(int, int);
-void va(int, int);
+struct args{
+	int start;
+	int end;
+};
+
+void *sum(void *);
+void *fac(void *);
+void *bfs(void *);
+void *bs(void *);
+void *gemv(void *);
+void *hst_l(void *);
+void *hst_s(void *);
+void *mlp(void *);
+void *nw(void *);
+void *red(void *);
+void *scan_rss(void *);
+void *scan_ssa(void *);
+void *sel(void *);
+void *spmv(void *);
+void *trns(void *);
+void *ts(void *);
+void *uni(void *);
+void *va(void *);

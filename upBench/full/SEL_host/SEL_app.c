@@ -60,7 +60,11 @@ static void read_input(T* A, unsigned int nr_elements, unsigned int nr_elements_
 int argc;
 char **argv;
 // Main of the Host Application
-void sel(int start, int end) {
+void *sel(void *args) {
+
+    struct args *tmp = (struct args *)args;
+    int start = tmp->start;
+    int end   = tmp->end;
     struct Params p = sel_input_params(argc, argv);
 
     //struct dpu_set_t dpu_set, dpu;

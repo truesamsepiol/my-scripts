@@ -209,7 +209,7 @@ void single_scheduler(){
 
 
 		printf("++++++++++++++++ End round %d ++++++++++++++++\n\n", id + 1);
-		sleep(1); // wait a few minutes for dpu_free to finish 
+		sleep(2); // wait a few minutes for dpu_free to finish 
 	}
 
 	printf("\n\n################# END Excution of %d programs #################\n\n", tour);

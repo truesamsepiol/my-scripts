@@ -61,7 +61,11 @@ static void trns_host(T* input, unsigned int A, unsigned int B, unsigned int b){
 int argc;
 char **argv;
 // Main of the Host Application
-void trns(int start, int end) {
+void *trns(void *args) {
+
+    struct args *tmp = (struct args *)args;
+    int start = tmp->start;
+    int end   = tmp->end;
     struct Params p = trns_input_params(argc, argv);
 
     //struct dpu_set_t dpu_set, dpu;

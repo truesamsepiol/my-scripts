@@ -55,7 +55,11 @@ static void scan_host(T* C, T* A, unsigned int nr_elements) {
 int argc;
 char **argv;
 // Main of the Host Application
-void scan_ssa(int start, int end) {
+void *scan_ssa(void *args) {
+
+    struct args *tmp = (struct args *)args;
+    int start = tmp->start;
+    int end   = tmp->end;
     struct Params p = scan_ssa_input_params(argc, argv);
 
     //struct dpu_set_t dpu_set, dpu;

@@ -51,7 +51,11 @@ static void read_input(T* A, unsigned int nr_elements) {
 int argc;
 char **argv;
 // Main of the Host Application
-void red(int start, int end) {
+void *red(void *args) {
+
+    struct args *tmp = (struct args *)args;
+    int start = tmp->start;
+    int end   = tmp->end;
     struct Params p = red_input_params(argc, argv);
 
     //struct dpu_set_t dpu_set, dpu;

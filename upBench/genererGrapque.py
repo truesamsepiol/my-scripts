@@ -78,7 +78,7 @@ def build_graphe():
     plt.title("# DPUs used")
     plt.legend()
    
-    plt.xticks(np.arange(0, max_time + 1, 75))
+    plt.xticks(np.arange(0, max_time + 1, 50))
     plt.yticks(np.arange(0, max_dpus + 1, 2))
 
 

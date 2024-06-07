@@ -34,8 +34,10 @@
 int argc;
 char **argv;
 // Main of the Host Application
-void bfs(int start, int end) {
-
+void *bfs(void *args) {
+    struct args *tmp = (struct args *)args;
+    int start = tmp->start;
+    int end   = tmp->end;
     // Process parameters
     // EO -> I add fictif parameters;
     struct Params p = bfs_input_params(argc, argv);

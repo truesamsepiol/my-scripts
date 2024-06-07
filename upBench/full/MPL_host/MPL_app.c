@@ -78,7 +78,11 @@ static void mlp_host(T* C, T** A, T* B, unsigned int m_size, unsigned int n_size
 int argc;
 char **argv;
 // Main of the Host Application
-void mlp(int start, int end) {
+void *mlp(void *args) {
+
+    	struct args *tmp = (struct args *)args;
+    	int start = tmp->start;
+    	int end   = tmp->end;
 	struct Params p = mpl_input_params(argc, argv);
 
 	//struct dpu_set_t dpu_set, dpu;

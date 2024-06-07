@@ -33,8 +33,11 @@
 int argc;
 char **argv;
 // Main of the Host Application
-void spmv(int start, int end) {
+void *spmv(void *args) {
 
+    struct args *tmp = (struct args *)args;
+    int start = tmp->start;
+    int end   = tmp->end;
     // Process parameters
     struct Params p = spmv_input_params(argc, argv);
 

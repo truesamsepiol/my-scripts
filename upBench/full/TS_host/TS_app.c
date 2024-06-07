@@ -122,8 +122,11 @@ static void compute_ts_statistics(unsigned int timeSeriesLength, unsigned int Pr
 int argc;
 char **argv;
 // Main of the Host Application
-void ts(int start, int end){
+void *ts(void *args){
 
+    	struct args *tmp = (struct args *)args;
+    	int start = tmp->start;
+    	int end   = tmp->end;
 	// Timer declaration
 	//Timer timer;
 	struct Params p = ts_input_params(argc, argv);
