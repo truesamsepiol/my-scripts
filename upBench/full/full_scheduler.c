@@ -253,7 +253,7 @@ void full_scheduler(){
 		DPU_ASSERT(dpu_free(set));
 		printf("\n++++++++++++++++ End round %d ++++++++++++++++\n", round + 1);	
 		round += 1;
-		sleep(2);
+		sleep(1);
 	}
 
 	printf("\n\n################# END Excution of %d programs #################\n\n", tour);
