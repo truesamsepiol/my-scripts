@@ -23,12 +23,8 @@ static void gemv_usage() {
             "\n");
 }
 
-struct Params gemv_input_params(int argc, char **argv) {
+struct Params gemv_input_params(int argc, char **argv, int nr_dpus) {
     struct Params p;
-    p.m_size        = 8192;
-    p.n_size        = 8192;
-    p.n_warmup      = 1;
-    p.n_reps        = 3;
 
     int opt;
     while((opt = getopt(argc, argv, "hm:n:w:e:")) >= 0) {
@@ -47,6 +43,10 @@ struct Params gemv_input_params(int argc, char **argv) {
                       exit(0);
         }
     }
+    p.m_size        = 1024 * nr_dpus;
+    p.n_size        = 2048;
+    p.n_warmup      = 1;
+    p.n_reps        = 3;
     assert(NR_DPUS > 0 && "Invalid # of dpus!");
     return p;
 }

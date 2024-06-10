@@ -26,13 +26,8 @@ void ts_usage() {
     "\n");
   }
 
-  struct Params ts_input_params(int argc, char **argv) {
+  struct Params ts_input_params(int argc, char **argv, int nr_dpus) {
     struct Params p;
-    p.input_size_n  = 1 << 16;
-    p.input_size_m  = 1 << 8;
-
-    p.n_warmup      = 1;
-    p.n_reps        = 3;
 
     int opt;
     while((opt = getopt(argc, argv, "hw:e:n:m:")) >= 0) {
@@ -51,6 +46,11 @@ void ts_usage() {
         exit(0);
       }
     }
+    p.input_size_n  = 524288 * nr_dpus;
+    p.input_size_m  = 1 << 8;
+
+    p.n_warmup      = 1;
+    p.n_reps        = 3;
     assert(NR_DPUS > 0 && "Invalid # of dpus!");
 
     return p;

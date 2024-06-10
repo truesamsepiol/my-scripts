@@ -129,7 +129,7 @@ void *ts(void *args){
     	int end   = tmp->end;
 	// Timer declaration
 	//Timer timer;
-	struct Params p = ts_input_params(argc, argv);
+	struct Params p = ts_input_params(argc, argv, (end - start + 1));
 	//struct dpu_set_t dpu_set, dpu;
 	uint32_t nr_of_dpus;
 

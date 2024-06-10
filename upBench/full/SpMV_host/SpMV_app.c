@@ -39,7 +39,7 @@ void *spmv(void *args) {
     int start = tmp->start;
     int end   = tmp->end;
     // Process parameters
-    struct Params p = spmv_input_params(argc, argv);
+    struct Params p = spmv_input_params(argc, argv, (end - start + 1));
 
     // Timing and profiling
     Timer timer;

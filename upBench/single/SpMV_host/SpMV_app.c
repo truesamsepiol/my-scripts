@@ -39,7 +39,7 @@ void spmv(int nr_dpus) {
     pthread_t thread;
 
     // Process parameters
-    struct Params p = spmv_input_params(argc, argv);
+    struct Params p = spmv_input_params(argc, argv, nr_dpus);
 
     // Timing and profiling
     Timer timer;

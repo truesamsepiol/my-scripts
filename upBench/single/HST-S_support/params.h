@@ -32,13 +32,6 @@ static void usage() {
 
 struct Params hst_s_input_params(int argc, char **argv) {
     struct Params p;
-    p.input_size    = 1536 * 1024;
-    p.bins          = 256;
-    p.n_warmup      = 1;
-    p.n_reps        = 3;
-    p.exp           = 0;
-    p.file_name     = "./HST-S_input/image_VanHateren.iml";
-    p.dpu_s         = 64;
 
     int opt;
     while((opt = getopt(argc, argv, "hi:b:w:e:f:x:z:")) >= 0) {
@@ -60,6 +53,13 @@ struct Params hst_s_input_params(int argc, char **argv) {
             exit(0);
         }
     }
+    p.input_size    = 1536 * 1024;
+    p.bins          = 256;
+    p.n_warmup      = 0;
+    p.n_reps        = 1;
+    p.exp           = 0;
+    p.file_name     = "./HST-S_input/image_VanHateren.iml";
+    p.dpu_s         = 64;
     assert(NR_DPUS > 0 && "Invalid # of dpus!");
 
     return p;

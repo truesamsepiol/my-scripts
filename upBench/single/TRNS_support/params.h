@@ -33,13 +33,6 @@ static void usage() {
 
 struct Params trns_input_params(int argc, char **argv) {
     struct Params p;
-    p.M_            = 12288;
-    p.m             = 16;
-    p.N_            = 1;
-    p.n             = 8;
-    p.n_warmup      = 1;
-    p.n_reps        = 3;
-    p.exp           = 0;
 
     int opt;
     while((opt = getopt(argc, argv, "hw:e:x:m:n:o:p:")) >= 0) {
@@ -61,6 +54,13 @@ struct Params trns_input_params(int argc, char **argv) {
             exit(0);
         }
     }
+    p.M_            = 12288;
+    p.m             = 16;
+    p.N_            = 1;
+    p.n             = 8;
+    p.n_warmup      = 0;
+    p.n_reps        = 1;
+    p.exp           = 0;
     assert(NR_DPUS > 0 && "Invalid # of dpus!");
 
     return p;

@@ -55,12 +55,8 @@ static void usage() {
             "\n");
 }
 
-struct Params input_params(int argc, char **argv) {
+struct Params input_params(int argc, char **argv, int nr_dpus) {
     struct Params p;
-    p.m_size        = 2048;
-    p.n_size        = 2048;
-    p.n_warmup      = 1;
-    p.n_reps        = 3;
 
     int opt;
     while((opt = getopt(argc, argv, "hm:n:w:e:")) >= 0) {
@@ -79,6 +75,10 @@ struct Params input_params(int argc, char **argv) {
                       exit(0);
         }
     }
+    p.m_size        = 1024 * nr_dpus;
+    p.n_size        = 2048;
+    p.n_warmup      = 1;
+    p.n_reps        = 3;
     assert(NR_DPUS > 0 && "Invalid # of dpus!");
 
     return p;
@@ -122,7 +122,7 @@ void gemv(int nr_dpus) {
     	pthread_t thread;
 
 	// EO -> I add fictif parameters
-	struct Params p = input_params(argc, argv);
+	struct Params p = input_params(argc, argv, nr_dpus);
 
 	//struct dpu_set_t dpu_set, dpu;
 	uint32_t nr_of_dpus;

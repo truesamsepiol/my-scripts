@@ -27,10 +27,6 @@ static void usage() {
 
 struct Params sel_input_params(int argc, char **argv) {
     struct Params p;
-    p.input_size    = 3932160;
-    p.n_warmup      = 1;
-    p.n_reps        = 3;
-    p.exp           = 0;
 
     int opt;
     while((opt = getopt(argc, argv, "hi:w:e:x:")) >= 0) {
@@ -49,6 +45,10 @@ struct Params sel_input_params(int argc, char **argv) {
             exit(0);
         }
     }
+    p.input_size    = 3932160;
+    p.n_warmup      = 0;
+    p.n_reps        = 1;
+    p.exp           = 0;
     assert(NR_DPUS > 0 && "Invalid # of dpus!");
 
     return p;

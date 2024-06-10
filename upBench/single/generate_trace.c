@@ -8,7 +8,6 @@
 #include <assert.h>
 #include <time.h>
 
-#define MAX_DPUS_PER_RANK 20
 #define MAX_TASKLETS 24
 #define SIZE_MAX_APP_NAME 256
 #define MAX_APPS 1024
@@ -25,6 +24,9 @@ struct parameter{
 
 unsigned int max_data_per_apps[MAX_APPS];
 char apps_name[MAX_APPS][SIZE_MAX_APP_NAME];
+int NR_DPUS[3] = {1, 4, 16}; // in test environment
+//int NR_DPUS[4] = {1, 4, 16, 64}; in production environement for weak scaling Dataset
+//int NR_DPUS[4] = {256, 512, 1024, 2048} for strong scaling Dataset
 
 static void usage() {                                                                                    
     fprintf(stderr,
@@ -165,7 +167,7 @@ void generate_file(){
     srand(time(NULL));
     for(int line = 0; line < setting.nr_line; line++){
 	    int zipf_app     = zipf(setting.alpha, nr_apps);
-	    int zipf_dpu     = (int)rand() % (int)MAX_DPUS_PER_RANK + 1;
+	    int zipf_dpu     = NR_DPUS[(int)rand() % (int)3];
 	    int zipf_tasklet = (int)rand() % (int)MAX_TASKLETS + 1;
 	    int zipf_data    = (int)rand() % (int) max_data_per_apps[zipf_app] + 1;
 

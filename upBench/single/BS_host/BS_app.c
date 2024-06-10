@@ -34,7 +34,7 @@ typedef struct Params {
 
 void usage();
 
-struct Params input_params_bs(int argc, char **argv);
+struct Params nr_dpusinput_params_bs(int argc, char **argv, int nr_dpus);
 
 void usage() {
   fprintf(stderr,
@@ -50,11 +50,8 @@ void usage() {
     "\n");
   }
 
-  struct Params input_params_bs(int argc, char **argv) {
+  struct Params input_params_bs(int argc, char **argv, int nr_dpus) {
     struct Params p;
-    p.num_querys    = PROBLEM_SIZE;
-    p.n_warmup      = 1;
-    p.n_reps        = 3;
 
     int opt;
     while((opt = getopt(argc, argv, "h:i:w:e:")) >= 0) {
@@ -72,6 +69,9 @@ void usage() {
         	exit(0);
       }
     }
+    p.num_querys    = 262144 * nr_dpus;
+    p.n_warmup      = 1;
+    p.n_reps        = 3;
     assert(NR_DPUS > 0 && "Invalid # of dpus!");
 
     return p;
@@ -125,7 +125,7 @@ void bs(int nr_dpus) {
 
     	pthread_t thread;
 	// EO -> I add fictif parameter here
-	struct Params p = input_params_bs(argc, argv);
+	struct Params p = input_params_bs(argc, argv, nr_dpus);
 	//struct dpu_set_t dpu_set, dpu;
 	uint32_t nr_of_dpus;
 	uint64_t input_size = INPUT_SIZE;

@@ -25,13 +25,8 @@ static void usage() {
             "\n");
 }
 
-struct Params nw_input_params(int argc, char **argv) {
+struct Params nw_input_params(int argc, char **argv, int nr_dpus) {
     struct Params p;
-    p.n_warmup      = 1;
-    p.n_reps        = 3;
-    p.max_rows      = 256;
-    p.penalty       = 1;
-
     int opt;
     while((opt = getopt(argc, argv, "hw:e:n:p:")) >= 0) {
         switch(opt) {
@@ -49,6 +44,20 @@ struct Params nw_input_params(int argc, char **argv) {
                       exit(0);
         }
     }
+    p.n_warmup      = 0;
+    p.n_reps        = 1;
+    p.penalty       = 1;
+
+    if(nr_dpus == 1)
+	    p.max_rows = 512;
+    else if(nr_dpus == 4)
+	    p.max_rows = 2048;
+    else if(nr_dpus == 16)
+	    p.max_rows = 8192;
+    else
+	    p.max_rows = 32768;
+
+
     assert(NR_DPUS > 0 && "Invalid # of dpus!");
 
     return p;

@@ -128,7 +128,7 @@ void ts(int nr_dpus){
 
 	// Timer declaration
 	//Timer timer;
-	struct Params p = ts_input_params(argc, argv);
+	struct Params p = ts_input_params(argc, argv, nr_dpus);
 	//struct dpu_set_t dpu_set, dpu;
 	uint32_t nr_of_dpus;
 

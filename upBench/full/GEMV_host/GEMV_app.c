@@ -74,7 +74,7 @@ void *gemv(void *args) {
     	int end   = tmp->end;
 
 	// EO -> I add fictif parameters
-	struct Params p = gemv_input_params(argc, argv);
+	struct Params p = gemv_input_params(argc, argv, (end - start + 1));
 
 	//struct dpu_set_t dpu_set, dpu;
 	uint32_t nr_of_dpus;

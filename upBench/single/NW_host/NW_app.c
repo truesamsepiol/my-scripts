@@ -187,7 +187,7 @@ char **argv;
 void nw(int nr_dpus) {
 
     pthread_t thread;
-    struct Params p = nw_input_params(argc, argv);
+    struct Params p = nw_input_params(argc, argv, nr_dpus);
     //struct dpu_set_t dpu_set, dpu;
     uint32_t nr_of_dpus, max_dpus;
 
@@ -205,7 +205,6 @@ void nw(int nr_dpus) {
 #if DYNAMIC
     max_dpus = nr_of_dpus;
 #endif
-
     uint64_t max_rows = p.max_rows + 1;
     uint64_t max_cols = p.max_rows + 1;
     unsigned int penalty = p.penalty;

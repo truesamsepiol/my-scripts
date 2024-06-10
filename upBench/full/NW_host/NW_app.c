@@ -188,7 +188,7 @@ void *nw(void *args) {
     struct args *tmp = (struct args *)args;
     int start = tmp->start;
     int end   = tmp->end;
-    struct Params p = nw_input_params(argc, argv);
+    struct Params p = nw_input_params(argc, argv, (end - start + 1));
     //struct dpu_set_t dpu_set, dpu;
     uint32_t nr_of_dpus; //, max_dpus;
 

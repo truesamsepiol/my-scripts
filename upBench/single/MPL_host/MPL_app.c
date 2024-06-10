@@ -82,7 +82,7 @@ char **argv;
 void mpl(int nr_dpus) {
 
     	pthread_t thread;
-	struct Params p = mpl_input_params(argc, argv);
+	struct Params p = mpl_input_params(argc, argv, nr_dpus);
 
 	//struct dpu_set_t dpu_set, dpu;
 	uint32_t nr_of_dpus;
