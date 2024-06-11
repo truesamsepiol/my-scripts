@@ -4,28 +4,5276 @@
 
 
 ++++++++++++++++ Begin round 1 ++++++++++++++++
-total dpus allocated 17
---------------------- Begin load BFS --------------------- 
---------------------- End   load BFS --------------------- 
+total dpus allocated 16
 --------------------- Begin load BFS --------------------- 
 --------------------- End   load BFS --------------------- 
 
 ++++++++++++++++ Begin checking ++++++++++++++++
-0s, 15/20 are running 5 are wasted
+1s, 15/20 are running 5 are wasted
 ++++++++++++++++ End   checking ++++++++++++++++
 
 ++++++++++++++++ Begin checking ++++++++++++++++
-1s, 0/20 are running 20 are wasted
+2s, 0/20 are running 20 are wasted
 ++++++++++++++++ End   checking ++++++++++++++++
 
 ++++++++++++++++ End round 1 ++++++++++++++++
 
 ++++++++++++++++ Begin round 2 ++++++++++++++++
-total dpus allocated 20
---------------------- Begin load NW --------------------- 
---------------------- End   load NW --------------------- 
+total dpus allocated 16
+--------------------- Begin load BS --------------------- 
+--------------------- End   load BS --------------------- 
+
+++++++++++++++++ Begin checking ++++++++++++++++
+5s, 15/20 are running 5 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+6s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+7s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+8s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+9s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+10s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+11s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+12s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+13s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+14s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+15s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+16s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+17s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+18s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+19s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+20s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+21s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+22s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+23s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+24s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+25s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+26s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+27s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+28s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+29s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+30s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+31s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+32s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+33s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+34s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+35s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+36s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+37s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+38s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+39s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+40s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+41s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+42s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+43s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+44s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+45s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+46s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+47s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+48s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+49s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+50s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+51s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+52s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+53s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+54s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+55s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+56s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+57s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+58s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+59s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+60s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+61s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+62s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+63s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+64s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+65s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+66s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+67s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+68s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+69s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+70s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+71s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+72s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+73s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+74s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+75s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+76s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+77s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+78s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+79s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+80s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+81s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+82s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+83s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+84s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+85s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+86s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+87s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+88s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+90s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+91s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+92s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+93s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+94s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+95s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+96s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+97s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+98s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+99s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+100s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+101s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+102s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+103s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+104s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+105s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+106s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+107s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+108s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+109s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+110s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+111s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+112s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+113s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+114s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+115s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+116s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+117s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+118s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+119s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+120s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+121s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+122s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+123s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+124s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+125s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+126s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+127s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+128s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+129s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+130s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+131s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+132s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+133s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+134s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+135s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+136s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+137s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+138s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+139s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+140s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+141s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+142s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+143s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+144s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+145s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+146s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+147s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+148s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+149s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+150s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+151s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+152s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+153s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+154s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+155s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+156s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+157s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+158s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+159s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+160s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+161s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+162s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+163s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+164s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+165s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+166s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+167s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+168s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+169s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+170s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+171s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+172s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+173s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+174s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+175s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+176s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+177s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+178s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+179s, 15/20 are running 5 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+180s, 15/20 are running 5 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+181s, 15/20 are running 5 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+182s, 14/20 are running 6 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+183s, 14/20 are running 6 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+184s, 14/20 are running 6 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+185s, 14/20 are running 6 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+186s, 13/20 are running 7 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+187s, 13/20 are running 7 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+188s, 13/20 are running 7 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+189s, 13/20 are running 7 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+190s, 13/20 are running 7 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+191s, 13/20 are running 7 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+192s, 13/20 are running 7 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+193s, 13/20 are running 7 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+194s, 13/20 are running 7 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+195s, 13/20 are running 7 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+196s, 13/20 are running 7 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+197s, 13/20 are running 7 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+198s, 13/20 are running 7 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+199s, 13/20 are running 7 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+200s, 13/20 are running 7 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+201s, 13/20 are running 7 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+202s, 13/20 are running 7 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+203s, 12/20 are running 8 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+204s, 12/20 are running 8 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+205s, 12/20 are running 8 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+206s, 12/20 are running 8 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+207s, 12/20 are running 8 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+208s, 12/20 are running 8 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+209s, 12/20 are running 8 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+210s, 12/20 are running 8 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+211s, 12/20 are running 8 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+212s, 12/20 are running 8 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+213s, 12/20 are running 8 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+214s, 11/20 are running 9 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+215s, 11/20 are running 9 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+216s, 11/20 are running 9 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+217s, 10/20 are running 10 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+218s, 10/20 are running 10 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+219s, 9/20 are running 11 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+220s, 9/20 are running 11 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+221s, 9/20 are running 11 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+222s, 9/20 are running 11 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+223s, 9/20 are running 11 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+224s, 9/20 are running 11 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+225s, 9/20 are running 11 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+226s, 9/20 are running 11 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+227s, 9/20 are running 11 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+228s, 9/20 are running 11 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+229s, 9/20 are running 11 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+230s, 9/20 are running 11 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+231s, 9/20 are running 11 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+232s, 9/20 are running 11 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+233s, 9/20 are running 11 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+234s, 9/20 are running 11 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+235s, 9/20 are running 11 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+236s, 9/20 are running 11 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+237s, 9/20 are running 11 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+238s, 9/20 are running 11 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+239s, 9/20 are running 11 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+240s, 9/20 are running 11 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+241s, 9/20 are running 11 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+242s, 9/20 are running 11 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+243s, 9/20 are running 11 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+244s, 9/20 are running 11 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+245s, 9/20 are running 11 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+246s, 9/20 are running 11 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+247s, 9/20 are running 11 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+248s, 9/20 are running 11 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+249s, 9/20 are running 11 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+250s, 9/20 are running 11 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+251s, 9/20 are running 11 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+252s, 9/20 are running 11 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+253s, 9/20 are running 11 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+254s, 9/20 are running 11 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+255s, 9/20 are running 11 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+256s, 9/20 are running 11 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+257s, 9/20 are running 11 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+258s, 9/20 are running 11 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+259s, 9/20 are running 11 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+260s, 9/20 are running 11 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+261s, 9/20 are running 11 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+262s, 9/20 are running 11 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+263s, 9/20 are running 11 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+264s, 9/20 are running 11 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+265s, 9/20 are running 11 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+266s, 9/20 are running 11 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+267s, 9/20 are running 11 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+268s, 9/20 are running 11 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+269s, 9/20 are running 11 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+270s, 9/20 are running 11 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+271s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+272s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+273s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+274s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+275s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+276s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+277s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+278s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+279s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+280s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+281s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+282s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+283s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+284s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+285s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+286s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+287s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+288s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+289s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+290s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+291s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+292s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+293s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+294s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+295s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+296s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+297s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+298s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+299s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+300s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+301s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+303s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+304s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+305s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+306s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+307s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+308s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+309s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+310s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+311s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+312s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+313s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+314s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+315s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+316s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+317s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+318s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+319s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+320s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+321s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+322s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+323s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+324s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+325s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+326s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+327s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+328s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+329s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+330s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+331s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+332s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+333s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+334s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+335s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+336s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+337s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+338s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+339s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+340s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+341s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+342s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+343s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+344s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+345s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+346s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+347s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+348s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+349s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+350s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+351s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+352s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+353s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+354s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+355s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+356s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+357s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+358s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+359s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+360s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+361s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+362s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+363s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+364s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+365s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+366s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+367s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+368s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+369s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+370s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+371s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+372s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+373s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+374s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+375s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+376s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+377s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+378s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+379s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+380s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+381s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+382s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+383s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+384s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+385s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+386s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+387s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+388s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+389s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+390s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+391s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+392s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+393s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+394s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+395s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+396s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+397s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+398s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+399s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+400s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+401s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+402s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+403s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+404s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+405s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+406s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+407s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+408s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+409s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+410s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+411s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+412s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+413s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+414s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+415s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+416s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+417s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+418s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+419s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+420s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+421s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+422s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+423s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+424s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+425s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+426s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+427s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+428s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+429s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+430s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+431s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+432s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+433s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+434s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+435s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+436s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+437s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+438s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+439s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+440s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+441s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+442s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+443s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+444s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+445s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+446s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+447s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+448s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+449s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+450s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+451s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+452s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+453s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+454s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+455s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+456s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+457s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+458s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+459s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+460s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+461s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+462s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+463s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+464s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+465s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+466s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+467s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+468s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+469s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+470s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+471s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+472s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+473s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+474s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+475s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+476s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+477s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+478s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+479s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+480s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+481s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+482s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+483s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+484s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+485s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+486s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+487s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+488s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+489s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+490s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+491s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+492s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+493s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+494s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+495s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+496s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+497s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+498s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+499s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+500s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+501s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+502s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+503s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+504s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+505s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+506s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+507s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+508s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+509s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+510s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+511s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+512s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+513s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+514s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+515s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+516s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+517s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+518s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+519s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+520s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+521s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+522s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+523s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+524s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+525s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+526s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+527s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+528s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+529s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+530s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+531s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+532s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+533s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+534s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+535s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+536s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+537s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+538s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+539s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+540s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+541s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+542s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+543s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+544s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+545s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+546s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+547s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+548s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+549s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+550s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+551s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+552s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+553s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+554s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+555s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+556s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+557s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+558s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+559s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+560s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+561s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+562s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+563s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+564s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+565s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+566s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+567s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+568s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+569s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+570s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+571s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+572s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+573s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+574s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+575s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+576s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+577s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+578s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+579s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+580s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+581s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+582s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+583s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+584s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+585s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+586s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+587s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+588s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+589s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+590s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+591s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+592s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+593s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+594s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+595s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+596s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+597s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+598s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+599s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+600s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+601s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+602s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+603s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+604s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+605s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+606s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+607s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+608s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+609s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+610s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+611s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+612s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+613s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+614s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+615s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+616s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+617s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+618s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+619s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+620s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+621s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+622s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+623s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+624s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+625s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+626s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+627s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+628s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+629s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+630s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+631s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+632s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+633s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+634s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+635s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+636s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+637s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+638s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+639s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+640s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+641s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+642s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+643s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+644s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+645s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+646s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+647s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+648s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+649s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+650s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+651s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+652s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+653s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+654s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+655s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+656s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+657s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+658s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+659s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+660s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+661s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+662s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+663s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+664s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+665s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+666s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+667s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+668s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+669s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+670s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+671s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+672s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+673s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+674s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+675s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+676s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+677s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+678s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+679s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+680s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+681s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+682s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+683s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+684s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+685s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+686s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+687s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+688s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+689s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+690s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+691s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+692s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+693s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+694s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+695s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+696s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+697s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+698s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+699s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+700s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+701s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+702s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+703s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+704s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+705s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+706s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+707s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+708s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+709s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+710s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+711s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+712s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+713s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+714s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+715s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+716s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+717s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+718s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+719s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+720s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+721s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+722s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+723s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+724s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+725s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+726s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+727s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+728s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+729s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+730s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+731s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+732s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+733s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+734s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+735s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+736s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+737s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+738s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+739s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+740s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+741s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+742s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+743s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+744s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+745s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+746s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+748s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+749s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+750s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+751s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+752s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+753s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+754s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+755s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+756s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+757s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+758s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+759s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+760s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+761s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+762s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+763s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+764s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+765s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+766s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+767s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+768s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+769s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+770s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+771s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+772s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+773s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+774s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+775s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+776s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+777s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+778s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+779s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+780s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+781s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+782s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+783s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+784s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+785s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+786s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+787s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+788s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+789s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+790s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+791s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+792s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+793s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+794s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+795s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+796s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+797s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+798s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+799s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+800s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+801s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+802s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+803s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+804s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+805s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+806s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+807s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+808s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+809s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+810s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+811s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+812s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+813s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+814s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+815s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+816s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+817s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+818s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+819s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+820s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+821s, 7/20 are running 13 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+822s, 7/20 are running 13 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+823s, 7/20 are running 13 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+824s, 7/20 are running 13 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+825s, 7/20 are running 13 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+826s, 7/20 are running 13 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+827s, 6/20 are running 14 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+828s, 6/20 are running 14 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+829s, 6/20 are running 14 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+830s, 6/20 are running 14 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+831s, 6/20 are running 14 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+832s, 6/20 are running 14 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+833s, 6/20 are running 14 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+834s, 6/20 are running 14 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+835s, 6/20 are running 14 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+836s, 6/20 are running 14 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+837s, 6/20 are running 14 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+838s, 6/20 are running 14 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+839s, 6/20 are running 14 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+840s, 6/20 are running 14 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+841s, 6/20 are running 14 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+842s, 6/20 are running 14 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+843s, 6/20 are running 14 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+844s, 6/20 are running 14 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+845s, 6/20 are running 14 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+846s, 6/20 are running 14 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+847s, 6/20 are running 14 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+848s, 5/20 are running 15 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+849s, 5/20 are running 15 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+850s, 5/20 are running 15 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+851s, 4/20 are running 16 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+852s, 4/20 are running 16 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+853s, 4/20 are running 16 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+854s, 4/20 are running 16 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+855s, 4/20 are running 16 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+856s, 4/20 are running 16 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+857s, 4/20 are running 16 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+858s, 4/20 are running 16 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+859s, 3/20 are running 17 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+860s, 3/20 are running 17 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+861s, 3/20 are running 17 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+862s, 3/20 are running 17 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+863s, 3/20 are running 17 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+864s, 3/20 are running 17 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+865s, 3/20 are running 17 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+866s, 3/20 are running 17 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+867s, 3/20 are running 17 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+868s, 3/20 are running 17 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+869s, 3/20 are running 17 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+870s, 3/20 are running 17 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+871s, 3/20 are running 17 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+872s, 3/20 are running 17 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+873s, 3/20 are running 17 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+874s, 3/20 are running 17 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+875s, 3/20 are running 17 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+876s, 2/20 are running 18 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+877s, 2/20 are running 18 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+878s, 2/20 are running 18 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+879s, 2/20 are running 18 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+880s, 2/20 are running 18 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+881s, 2/20 are running 18 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+882s, 2/20 are running 18 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+883s, 2/20 are running 18 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+884s, 2/20 are running 18 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+885s, 2/20 are running 18 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+886s, 2/20 are running 18 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+887s, 2/20 are running 18 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+888s, 2/20 are running 18 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+889s, 2/20 are running 18 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+890s, 2/20 are running 18 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+891s, 2/20 are running 18 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+892s, 1/20 are running 19 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+893s, 1/20 are running 19 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+894s, 1/20 are running 19 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+895s, 1/20 are running 19 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+896s, 1/20 are running 19 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+897s, 0/20 are running 20 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ End round 2 ++++++++++++++++
+
+++++++++++++++++ Begin round 3 ++++++++++++++++
+total dpus allocated 16
 --------------------- Begin load GEMV --------------------- 
 --------------------- End   load GEMV --------------------- 
-Allocated 4 DPU(s)
+
+++++++++++++++++ Begin checking ++++++++++++++++
+900s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+901s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+902s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+903s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+904s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+905s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+906s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+907s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+908s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+909s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+910s, 14/20 are running 6 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+911s, 13/20 are running 7 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+912s, 13/20 are running 7 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+913s, 13/20 are running 7 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+914s, 11/20 are running 9 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+915s, 9/20 are running 11 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+916s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+917s, 1/20 are running 19 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+918s, 0/20 are running 20 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ End round 3 ++++++++++++++++
+
+++++++++++++++++ Begin round 4 ++++++++++++++++
+total dpus allocated 16
+--------------------- Begin load HST-L --------------------- 
+--------------------- End   load HST-L --------------------- 
+Allocated 16 DPU(s)
+NR_TASKLETS	16	BL	8	input_size	25165824
+Load input data
+Run program on DPU(s) 
+
+++++++++++++++++ Begin checking ++++++++++++++++
+922s, 15/20 are running 5 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+923s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+924s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+925s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+926s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+927s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+928s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+929s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+930s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+931s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+932s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+933s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+934s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+935s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+936s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+937s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+938s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+939s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+940s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+941s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+942s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+943s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+944s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+945s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+946s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+947s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+948s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+949s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+950s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+951s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+952s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+953s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+954s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+955s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+956s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+957s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+958s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+959s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+960s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+961s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+962s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+963s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+964s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+965s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+966s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+967s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+968s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+969s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+970s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+971s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+972s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+973s, 15/20 are running 5 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+974s, 15/20 are running 5 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+975s, 15/20 are running 5 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+976s, 15/20 are running 5 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+977s, 15/20 are running 5 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+978s, 15/20 are running 5 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+979s, 15/20 are running 5 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+980s, 15/20 are running 5 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+981s, 15/20 are running 5 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+982s, 15/20 are running 5 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+983s, 15/20 are running 5 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+984s, 15/20 are running 5 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+985s, 15/20 are running 5 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+986s, 15/20 are running 5 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+987s, 14/20 are running 6 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+988s, 14/20 are running 6 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+989s, 14/20 are running 6 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+990s, 14/20 are running 6 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+991s, 13/20 are running 7 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+992s, 10/20 are running 10 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+993s, 3/20 are running 17 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+994s, 0/20 are running 20 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ End round 4 ++++++++++++++++
+
+++++++++++++++++ Begin round 5 ++++++++++++++++
+total dpus allocated 16
+--------------------- Begin load HST-S --------------------- 
+--------------------- End   load HST-S --------------------- 
+Allocated 16 DPU(s)
+NR_TASKLETS	16	BL	10	input_size	25165824
+Load input data
+Run program on DPU(s) 
+
+++++++++++++++++ Begin checking ++++++++++++++++
+997s, 12/20 are running 8 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+998s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+999s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1000s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1001s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1002s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1003s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1004s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1005s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1006s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1007s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1008s, 15/20 are running 5 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1009s, 14/20 are running 6 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1010s, 11/20 are running 9 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1011s, 7/20 are running 13 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1012s, 0/20 are running 20 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ End round 5 ++++++++++++++++
+
+++++++++++++++++ Begin round 6 ++++++++++++++++
+total dpus allocated 16
+--------------------- Begin load MLP --------------------- 
+--------------------- End   load MLP --------------------- 
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1015s, 14/20 are running 6 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1016s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1017s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1018s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1019s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1020s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1021s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1022s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1023s, 14/20 are running 6 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1024s, 11/20 are running 9 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1025s, 6/20 are running 14 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1026s, 0/20 are running 20 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ End round 6 ++++++++++++++++
+
+++++++++++++++++ Begin round 7 ++++++++++++++++
+total dpus allocated 16
+--------------------- Begin load NW --------------------- 
+--------------------- End   load NW --------------------- 
+Allocated 16 DPU(s)
 Allocated 13 TASKLET(s) per DPU
-Max size 32768
+Max size 8192
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1034s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1035s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1036s, 1/20 are running 19 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1037s, 0/20 are running 20 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ End round 7 ++++++++++++++++
+
+++++++++++++++++ Begin round 8 ++++++++++++++++
+total dpus allocated 16
+--------------------- Begin load RED --------------------- 
+--------------------- End   load RED --------------------- 
+Allocated 16 DPU(s)
+nr_elements	104857600	NR_TASKLETS	16	BL	10
+Load input data
+Run program on DPU(s) 
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1042s, 12/20 are running 8 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1043s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1044s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1045s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1046s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1047s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1048s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1049s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1050s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1051s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1052s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1053s, 14/20 are running 6 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1054s, 14/20 are running 6 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1055s, 14/20 are running 6 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1056s, 14/20 are running 6 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1057s, 14/20 are running 6 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1058s, 12/20 are running 8 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1059s, 11/20 are running 9 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1060s, 11/20 are running 9 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1061s, 6/20 are running 14 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1062s, 0/20 are running 20 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ End round 8 ++++++++++++++++
+
+++++++++++++++++ Begin round 9 ++++++++++++++++
+total dpus allocated 16
+--------------------- Begin load SCAN-RSS --------------------- 
+--------------------- End   load SCAN-RSS --------------------- 
+Allocated 16 DPU(s)
+nr_elements	62914560	NR_TASKLETS	16	BL	10
+Load input data
+Run program on DPU(s) 
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1067s, 13/20 are running 7 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1068s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1069s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1070s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1071s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1072s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1073s, 15/20 are running 5 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1074s, 0/20 are running 20 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ End round 9 ++++++++++++++++
+
+++++++++++++++++ Begin round 10 ++++++++++++++++
+total dpus allocated 16
+--------------------- Begin load SCAN-SSA --------------------- 
+--------------------- End   load SCAN-SSA --------------------- 
+Allocated 16 DPU(s)
+nr_elements	62914560	NR_TASKLETS	16	BL	10
+Load input data
+Run program on DPU(s) 
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1079s, 15/20 are running 5 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1080s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1081s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1082s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1083s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1084s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1085s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1086s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1087s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1088s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1089s, 12/20 are running 8 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1090s, 3/20 are running 17 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1091s, 0/20 are running 20 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ End round 10 ++++++++++++++++
+
+++++++++++++++++ Begin round 11 ++++++++++++++++
+total dpus allocated 16
+--------------------- Begin load SEL --------------------- 
+--------------------- End   load SEL --------------------- 
+Allocated 16 DPU(s)
+nr_elements	62914560	NR_TASKLETS	16	BL	10
+Load input data
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1094s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1095s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1096s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1097s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1098s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1099s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1100s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1101s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1102s, 15/20 are running 5 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1103s, 15/20 are running 5 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1104s, 10/20 are running 10 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1105s, 5/20 are running 15 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1106s, 0/20 are running 20 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ End round 11 ++++++++++++++++
+
+++++++++++++++++ Begin round 12 ++++++++++++++++
+total dpus allocated 16
+--------------------- Begin load SpMV --------------------- 
+--------------------- End   load SpMV --------------------- 
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1116s, 10/20 are running 10 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1117s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1118s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1119s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1120s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1121s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1122s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1123s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1124s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1125s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1126s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1127s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1128s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1129s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1130s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1131s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1132s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1133s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1134s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1135s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1136s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1137s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1138s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1139s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1140s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1141s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1142s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1143s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1144s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1145s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1146s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1147s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1148s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1149s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1150s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1151s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1152s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1153s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1154s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1155s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1156s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1157s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1158s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1159s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1160s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1161s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1162s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1163s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1164s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1165s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1166s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1167s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1168s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1169s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1170s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1171s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1172s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1173s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1174s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1175s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1176s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1178s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1179s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1180s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1181s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1182s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1183s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1184s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1185s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1186s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1187s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1188s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1189s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1190s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1191s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1192s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1193s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1194s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1195s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1196s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1197s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1198s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1199s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1200s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1201s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1202s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1203s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1204s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1205s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1206s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1207s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1208s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1209s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1210s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1211s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1212s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1213s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1214s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1215s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1216s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1217s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1218s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1219s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1220s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1221s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1222s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1223s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1224s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1225s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1226s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1227s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1228s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1229s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1230s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1231s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1232s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1233s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1234s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1235s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1236s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1237s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1238s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1239s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1240s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1241s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1242s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1243s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1244s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1245s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1246s, 15/20 are running 5 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1247s, 15/20 are running 5 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1248s, 15/20 are running 5 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1249s, 14/20 are running 6 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1250s, 14/20 are running 6 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1251s, 13/20 are running 7 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1252s, 13/20 are running 7 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1253s, 11/20 are running 9 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1254s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1255s, 7/20 are running 13 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1256s, 5/20 are running 15 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1257s, 2/20 are running 18 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1258s, 0/20 are running 20 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ End round 12 ++++++++++++++++
+
+++++++++++++++++ Begin round 13 ++++++++++++++++
+total dpus allocated 16
+--------------------- Begin load TRNS --------------------- 
+--------------------- End   load TRNS --------------------- 
+nr_elements	25165824	NR_TASKLETS	16
+M_	12288, m	16, N_	16, n	8
+Allocated 16 DPU(s)
+Load input data (step 1)
+Run step 2 on DPU(s) 
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1349s, 15/20 are running 5 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1350s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1351s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1352s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1353s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1354s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1355s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1356s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1357s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1358s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1359s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1360s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1361s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1362s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1363s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1364s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1365s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1366s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1367s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1368s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1369s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1370s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1371s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1372s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1373s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1374s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1375s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1376s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1377s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1378s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1379s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1380s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1381s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1382s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1383s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1384s, 15/20 are running 5 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1385s, 14/20 are running 6 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1386s, 11/20 are running 9 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1387s, 11/20 are running 9 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1388s, 8/20 are running 12 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1389s, 5/20 are running 15 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1390s, 5/20 are running 15 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1391s, 4/20 are running 16 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1392s, 4/20 are running 16 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1393s, 4/20 are running 16 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1394s, 4/20 are running 16 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1395s, 3/20 are running 17 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1396s, 3/20 are running 17 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1397s, 3/20 are running 17 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1398s, 3/20 are running 17 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1399s, 3/20 are running 17 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1400s, 2/20 are running 18 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1401s, 0/20 are running 20 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ End round 13 ++++++++++++++++
+
+++++++++++++++++ Begin round 14 ++++++++++++++++
+total dpus allocated 16
+--------------------- Begin load UNI --------------------- 
+--------------------- End   load UNI --------------------- 
+Allocated 16 DPU(s)
+nr_elements	62914560	NR_TASKLETS	16	BL	10
+Load input data
+Run program on DPU(s) 
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1405s, 12/20 are running 8 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1406s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1407s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1408s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1409s, 15/20 are running 5 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1410s, 15/20 are running 5 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1411s, 13/20 are running 7 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1412s, 0/20 are running 20 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ End round 14 ++++++++++++++++
+
+++++++++++++++++ Begin round 15 ++++++++++++++++
+total dpus allocated 16
+--------------------- Begin load VA --------------------- 
+--------------------- End   load VA --------------------- 
+Allocated 16 DPU(s)
+nr_elements	41943040	NR_TASKLETS	16	BL	10
+Load input data
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1416s, 13/20 are running 7 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1417s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1418s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1419s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1420s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1421s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1422s, 16/20 are running 4 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ Begin checking ++++++++++++++++
+1423s, 0/20 are running 20 are wasted
+++++++++++++++++ End   checking ++++++++++++++++
+
+++++++++++++++++ End round 15 ++++++++++++++++
+
+
+################# END Excution of 15 programs #################
+

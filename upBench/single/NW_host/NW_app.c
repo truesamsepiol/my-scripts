@@ -203,7 +203,7 @@ void nw(int nr_dpus) {
     printf("Allocated %d DPU(s)\n", nr_of_dpus);
     printf("Allocated %d TASKLET(s) per DPU\n", NR_TASKLETS);
 #if DYNAMIC
-    max_dpus = nr_of_dpus;
+    //max_dpus = nr_of_dpus;
 #endif
     uint64_t max_rows = p.max_rows + 1;
     uint64_t max_cols = p.max_rows + 1;
@@ -226,8 +226,8 @@ void nw(int nr_dpus) {
     unsigned int mram_offset = 0;
 
     // Timer
-    Timer timer; 
-    Timer long_diagonal_timer; 
+    //Timer timer; 
+    //Timer long_diagonal_timer; 
 #if ENERGY
     double tacc_energy, tacc_time, tavg_time;
     double tavg_energy=0;
@@ -483,6 +483,7 @@ void nw(int nr_dpus) {
                 }
             }*/
             // Launch kernel on DPUs
+	}
             DPU_ASSERT(dpu_launch(dpu_set, DPU_ASYNCHRONOUS));
 
             pthread_create(&thread, NULL, check_dpus_running, NULL);
@@ -886,5 +887,5 @@ void nw(int nr_dpus) {
     free(reference);
     free(traceback_output);
     free(traceback_output_host);*/
-	}
+	//}
 }

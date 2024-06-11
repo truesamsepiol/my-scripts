@@ -130,11 +130,11 @@ void bs(int nr_dpus) {
 	uint32_t nr_of_dpus;
 	uint64_t input_size = INPUT_SIZE;
 	uint64_t num_querys = p.num_querys;
-	DTYPE result_host = -1;
-	DTYPE result_dpu  = -1;
+	//DTYPE result_host = -1;
+	//DTYPE result_dpu  = -1;
 
 	// Create the timer
-	Timer timer;
+	//Timer timer;
 
 	// Allocate DPUs and load binary
 	DPU_ASSERT(dpu_alloc(nr_dpus, NULL, &dpu_set));
@@ -159,9 +159,9 @@ void bs(int nr_dpus) {
 	create_test_file(input, querys, input_size, num_querys);
 
 	// Compute host solution
-	start(&timer, 0, 0);
-	result_host = binarySearch(input, querys, input_size - 1, num_querys);
-	stop(&timer, 0);
+	//start(&timer, 0, 0);
+	//result_host = binarySearch(input, querys, input_size - 1, num_querys);
+	//stop(&timer, 0);
 
 	// Create kernel arguments
 	uint64_t slice_per_dpu          = num_querys / nr_of_dpus;

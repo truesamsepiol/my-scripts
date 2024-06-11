@@ -69,7 +69,7 @@ void usage() {
         	exit(0);
       }
     }
-    p.num_querys    = 262144i * nr_dpus;
+    p.num_querys    = 262144 * nr_dpus;
     p.n_warmup      = 1;
     p.n_reps        = 3;
     assert(NR_DPUS > 0 && "Invalid # of dpus!");
