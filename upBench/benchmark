@@ -1,0 +1,18 @@
+Names   |    Use
++++++++   ++++++++
+VA      |   YES
+GEMV    |   YES
+SpMV    |   YES
+SEL     |   YES
+UNI     |   YES
+BS      |   YES
+TS      |   YES
+BFS     |   NO
+MLP     |   NO
+NW      |   NO
+HST-S   |   YES
+HST-L   |   YES
+RED     |   YES
+SCAN-SSA|   NO
+SCAN-RSS|   NO
+TRNS    |   NO
