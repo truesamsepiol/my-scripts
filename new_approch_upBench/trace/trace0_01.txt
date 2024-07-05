@@ -1,0 +1,7 @@
+72 ./simple-bench 24 11
+123 ./simple-bench 11 4
+152 ./simple-bench 9 15
+213 ./simple-bench 17 1
+309 ./simple-bench 30 1
+439 ./simple-bench 12 16
+561 ./simple-bench 21 2
