@@ -203,6 +203,16 @@ void single_scheduler(){
 			va(atoi(programs[id].program[2]));
 			printf("--------------------- End   VA --------------------- \n");
 		}
+		else if(!strcmp(programs[id].program[0], "./AES")){
+			printf("--------------------- Begin AES --------------------- \n");
+			aes(atoi(programs[id].program[2]));
+			printf("--------------------- End   AES --------------------- \n");
+		}
+		else if(!strcmp(programs[id].program[0], "./UPIS")){
+			printf("--------------------- Begin UPIS --------------------- \n");
+			upis(atoi(programs[id].program[2]));
+			printf("--------------------- End   UPIS --------------------- \n");
+		}
 		else{
 			printf("--------------------- UNKNOW %s for the moment --------------------- \n", programs[id].program[0]);
 		}

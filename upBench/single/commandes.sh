@@ -2,7 +2,7 @@
 
 rm -r *bin*
 
-apps="BFS_app.o BS_app.o GEMV_app.o timer.o HST-L_app.o HST-S_app.o NW_app.o RED_app.o SCAN-RSS_app.o SCAN-SSA_app.o SEL_app.o SpMV_app.o TRNS_app.o TS_app.o UNI_app.o VA_app.o MPL_app.o"
+apps="BFS_app.o BS_app.o GEMV_app.o timer.o HST-L_app.o HST-S_app.o NW_app.o RED_app.o SCAN-RSS_app.o SCAN-SSA_app.o SEL_app.o SpMV_app.o TRNS_app.o TS_app.o UNI_app.o VA_app.o MPL_app.o AES_host.o UPIS_main.o parser.o"
 
 gcc generate_trace.c -o generate_trace -lm && echo -e '\e[1;32m[ OK ] for generate_trace\e[m' \ &&
 
@@ -42,9 +42,13 @@ make -f UNI_Makefile &&  echo -e '\e[1;32m[ OK ] for UNI\e[m' \ &&
 
 make -f VA_Makefile &&  echo -e '\e[1;32m[ OK ] for VA\e[m' \ &&
 
+make -f AES_Makefile &&  echo -e '\e[1;32m[ OK ] for AES\e[m' \ &&
+
+make -f UPIS_Makefile &&  echo -e '\e[1;32m[ OK ] for UPIS\e[m' \ &&
+
 gcc -c timer.c &&  echo -e '\e[1;32m[ OK ] for timer\e[m' \ &&
 
-gcc -O0 -g --std=c99 -o single_scheduler single_scheduler.c $apps -lm -I/usr/include/dpu -ldpu -lpthread && echo -e '\e[1;32m[ OK ] for single_scheduler\e[m' \ &&
+gcc -O0 -g --std=c99 -o single_scheduler single_scheduler.c $apps -lm -I/usr/include/dpu -ldpu -lpthread -lcrypto && echo -e '\e[1;32m[ OK ] for single_scheduler\e[m' \ &&
 
 rm *.o && echo "" \ &&
 echo "USAGE: " \ && 

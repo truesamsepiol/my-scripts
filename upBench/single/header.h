@@ -59,3 +59,5 @@ void trns(unsigned int nr_dpus);
 void ts(int nr_dpus);
 void uni(int nr_dpus);
 void va(int nr_dpus);
+void aes(int nr_dpus);
+void upis(int nr_dpus);
